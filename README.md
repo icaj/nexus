@@ -63,14 +63,14 @@ Cada pilar recebe uma grade de crédito com base no seu score individual:
 
 O score total (soma dos três pilares) recebe uma grade consolidada:
 
-  Score total   Grade   Nível
-  ───────────   ──────  ──────────
-  600 a 749     B       Medium
-  750 a 899     BB      Medium
-  900 a 1.199   BBB     High
-  1.200 a 1.799 A       High
-  1.800 a 2.699 AA      Excellent
-  2.700 a 3.000 AAA     Excellent
+  | Score | total | Grade | Nível |
+  |-------|-------|-------|-------|
+  | 600 a 749 | B | Medium |
+  | 750 a 899 | BB | Medium |
+  | 900 a 1.199 | BBB | High |
+  | 1.200 a 1.799 | A | High |
+  | 1.800 a 2.699 | AA | Excellent |
+  | 2.700 a 3.000 | AAA | Excellent |
 
 Nota: a base de dados disponível contém apenas empresas com grades B, BB, BBB
 e A no score total (scores entre 600 e 1.536). Não há empresas com grades AA

@@ -7,9 +7,21 @@ Pipeline de Análise ESG de Fornecedores
 Edenred Brasil | CESAR School 2025
 
 ## Equipe:
-Fernando Cyreno (fcrs@cesar.school)
-Carolline Mariz (cam3@cesar.school)
-Ivo Caetano (icaj@cesar.school)
+- Fernando Cyreno (fcrs@cesar.school)
+- Carolline Mariz (cam3@cesar.school)
+- Ivo Caetano (icaj@cesar.school)
+
+## Nome da Disciplina:
+- Machine Learning I e Projeto 3
+
+## Instituição de Ensino:
+- CESAR School
+
+## Solução Desenvolvida:
+- ESG Nexus
+
+## Link Google Sites:
+- https://sites.google.com/cesar.school/projeto3equipe1/in%C3%ADcio
 
 ## 1. VISÃO GERAL
 

@@ -114,12 +114,16 @@ IMPACTO
 # ──────────────────────────────────────────────────────────────────
 
 CAMINHO_DADOS  = "./data/raw/data.csv"
+PASTA_BRONZE   = "./data/bronze"
 PASTA_SAIDA    = "./data/processed"
-os.makedirs(PASTA_SAIDA, exist_ok=True)
+PASTA_MODELOS  = "./models"
+
+os.makedirs(PASTA_BRONZE,  exist_ok=True)
+os.makedirs(PASTA_SAIDA,   exist_ok=True)
+os.makedirs(PASTA_MODELOS, exist_ok=True)
 
 # Colunas que não entram nos modelos
-COLUNAS_REMOVER = ['ticker', 'logo', 'weburl', 'last_processing_date', 'cik',
-                   'currency', 'exchange']
+COLUNAS_REMOVER = ['ticker', 'logo', 'weburl', 'last_processing_date', 'cik', 'currency', 'exchange']
 
 # Features numéricas dos scores dos pilares
 FEATURES_SCORES = ['environment_score', 'social_score', 'governance_score']
@@ -785,8 +789,8 @@ def etapa7_salvar(df, knn_final, rf_final, le_ind, le_target,
         'le_industry':  le_ind,
         'features':     FEATURES,
         'base_ref':     base_ref.to_dict('records'),
-    }, f'{PASTA_SAIDA}/modelo_knn.pkl')
-    print(f"  ✓ {PASTA_SAIDA}/modelo_knn.pkl")
+    }, f'{PASTA_MODELOS}/modelo_knn.pkl')
+    print(f"   {PASTA_MODELOS}/modelo_knn.pkl")
 
     joblib.dump({
         'modelo':       rf_final,
@@ -795,8 +799,8 @@ def etapa7_salvar(df, knn_final, rf_final, le_ind, le_target,
         'features':     FEATURES,
         'importancias': importancias,
         'base_ref':     base_ref.to_dict('records'),
-    }, f'{PASTA_SAIDA}/modelo_rf.pkl')
-    print(f"  ✓ {PASTA_SAIDA}/modelo_rf.pkl")
+    }, f'{PASTA_MODELOS}/modelo_rf.pkl')
+    print(f"   {PASTA_MODELOS}/modelo_rf.pkl")
 
     joblib.dump({
         'le_industry':      le_ind,
@@ -807,18 +811,18 @@ def etapa7_salvar(df, knn_final, rf_final, le_ind, le_target,
         'pesos_por_ind':    pesos_por_ind,
         'pesos_global':     pesos_global,
         'min_empresas_peso': MIN_EMPRESAS_PESO,
-    }, f'{PASTA_SAIDA}/config.pkl')
-    print(f"  ✓ {PASTA_SAIDA}/config.pkl")
+    }, f'{PASTA_MODELOS}/config.pkl')
+    print(f"   {PASTA_MODELOS}/config.pkl")
 
     # Salvar tabela de pesos por indústria para documentação
     pd.DataFrame(pesos_por_ind).T[
         ['w_E','w_S','w_G','n','fonte']
-    ].to_csv(f'{PASTA_SAIDA}/pesos_por_industria.csv')
-    print(f"  ✓ {PASTA_SAIDA}/pesos_por_industria.csv")
+    ].to_csv(f'{PASTA_BRONZE}/pesos_por_industria.csv')
+    print(f"   {PASTA_BRONZE}/pesos_por_industria.csv")
 
     # Salvar base processada em CSV
-    base_ref.to_csv(f'{PASTA_SAIDA}/base_processada.csv', index=False)
-    print(f"  ✓ {PASTA_SAIDA}/base_processada.csv")
+    base_ref.to_csv(f'{PASTA_BRONZE}/base_processada.csv', index=False)
+    print(f"   {PASTA_BRONZE}/base_processada.csv")
 
     print(f"\nPróximo passo: execute esg_predicao.py para classificar novos fornecedores.")
 

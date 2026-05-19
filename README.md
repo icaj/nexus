@@ -1,10 +1,15 @@
 # ESG Nexus
 Plataforma para análise, monitoramento e ranking de aderência às práticas ESG de fornecedores
 
-# DOCUMENTAÇÃO TÉCNICA - esg_pipeline.py
+
+# DOCUMENTAÇÃO TÉCNICA
 Pipeline de Análise ESG de Fornecedores
 Edenred Brasil | CESAR School 2025
 
+## Equipe:
+  Fernando Cyreno (fcrs@cesar.school)
+  Carolline Mariz (cam3@cesar.school)
+  Ivo Caetano (icaj@cesar.school)
 
 ## 1. VISÃO GERAL
 

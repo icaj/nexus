@@ -367,12 +367,12 @@ orientando a prioridade de ação da Edenred na gestão da cadeia de fornecedore
 O eixo de corte para ambas as dimensões é 50, que representa a mediana.
 Valores acima de 50 são considerados "altos" e abaixo de 50, "baixos".
 
-  Quadrante                        Impacto   Risco    Ação recomendada
-  ─────────────────────────────    ────────  ───────  ─────────────────────────
-  Alto Impacto / Alto Risco        > 50      > 50     Ação imediata e prioritária
-  Alto Impacto / Baixo Risco       > 50      <= 50    Engajamento e manutenção
-  Baixo Impacto / Alto Risco       <= 50     > 50     Monitoramento e capacitação
-  Baixo Impacto / Baixo Risco      <= 50     <= 50    Monitoramento leve
+  | Quadrante                   | Impacto | Risco | Ação recomendada            |
+  |-----------------------------|---------|-------|-----------------------------|
+  | Alto Impacto / Alto Risco   |  > 50   | > 50  | Ação imediata e prioritária | 
+  | Alto Impacto / Baixo Risco  |  > 50   | <= 50 | Engajamento e manutenção    |
+  | Baixo Impacto / Alto Risco  |  <= 50  | > 50  | Monitoramento e capacitação |
+  | Baixo Impacto / Baixo Risco |  <= 50  | <= 50 | Monitoramento leve          |
 
 ### 5.3 LÓGICA DE CLASSIFICAÇÃO
 
@@ -395,12 +395,12 @@ Usando os valores calculados no exemplo anterior (Banking):
 
 ### 5.5 DISTRIBUIÇÃO NA BASE DE 722 EMPRESAS
 
-  Quadrante                        Empresas
-  ─────────────────────────────    ────────
-  Alto Impacto / Alto Risco            ~180
-  Alto Impacto / Baixo Risco           ~180
-  Baixo Impacto / Alto Risco           ~180
-  Baixo Impacto / Baixo Risco          ~182
+  | Quadrante                   | Empresas |
+  |-----------------------------|----------|
+  | Alto Impacto / Alto Risco   | ~180     |
+  | Alto Impacto / Baixo Risco  | ~180     |
+  | Baixo Impacto / Alto Risco  | ~180     |
+  | Baixo Impacto / Baixo Risco | ~182     |
 
 A distribuição é aproximadamente equilibrada entre os quatro quadrantes porque
 tanto o risco quanto o impacto são calculados em relação à própria base —
@@ -469,8 +469,7 @@ entre High e Medium seja mantida em ambos os conjuntos.
 
 ## 8. ETAPA 5 — TREINO DOS MODELOS
 
-8.1 KNN (K-NEAREST NEIGHBORS)
-───────────────────────────────
+### 8.1 KNN (K-NEAREST NEIGHBORS)
 
 O KNN classifica uma empresa nova calculando a distância euclidiana entre seu
 vetor de features e todos os vetores do conjunto de treino. Em seguida, vota

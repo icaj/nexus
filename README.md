@@ -1,7 +1,7 @@
 # ESG Nexus
 Plataforma para análise, monitoramento e ranking de aderência às práticas ESG de fornecedores
 
-# DOCUMENTAÇÃO TÉCNICA — esg_pipeline.py
+# DOCUMENTAÇÃO TÉCNICA - esg_pipeline.py
 Pipeline de Análise ESG de Fornecedores
 Edenred Brasil | CESAR School 2025
 
@@ -30,7 +30,7 @@ metodologia descrita no documento ESG-Enterprise-Risk-Ratings-MethodologyV3.pdf.
 Esta seção resume os aspectos dessa metodologia que são diretamente relevantes
 para o pipeline.
 
-## 2.1 ESTRUTURA DOS SCORES
+### 2.1 ESTRUTURA DOS SCORES
 
 Cada empresa na base recebe quatro scores numéricos:
 
@@ -46,7 +46,7 @@ A relação entre eles é exata e verificável:
 O script verifica essa condição no pré-processamento e interrompe a execução
 caso haja qualquer inconsistência nos dados.
 
-## 2.2 GRADES POR PILAR (escala individual 0–1.000)
+### 2.2 GRADES POR PILAR (escala individual 0–1.000)
 
 Cada pilar recebe uma grade de crédito com base no seu score individual:
 

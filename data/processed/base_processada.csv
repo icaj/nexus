@@ -1,0 +1,723 @@
+name,industry,environment_score,social_score,governance_score,total_score,score_ponderado,total_grade,total_level,maturidade,risco,impacto,quadrante
+Walt Disney Co,Media,510,316,321,1147,401.4,BBB,High,Avançado,59.9,91.3,Alto Impacto / Alto Risco
+General Motors Co,Automobiles,510,303,255,1068,369.3,BBB,High,Avançado,63.1,100.0,Alto Impacto / Alto Risco
+WW Grainger Inc,Trading Companies and Distributors,255,385,240,880,277.3,BB,Medium,Iniciante,72.3,60.0,Alto Impacto / Alto Risco
+Mohawk Industries Inc,Consumer products,570,298,303,1171,400.9,BBB,High,Avançado,59.9,85.0,Alto Impacto / Alto Risco
+Live Nation Entertainment Inc,Media,492,310,250,1052,367.5,BBB,High,Avançado,63.2,73.9,Alto Impacto / Alto Risco
+Las Vegas Sands Corp,Hotels Restaurants and Leisure,547,318,313,1178,395.1,BBB,High,Avançado,60.5,95.8,Alto Impacto / Alto Risco
+Clorox Co,Consumer products,560,350,345,1255,426.6,A,High,Avançado,57.3,90.0,Alto Impacto / Alto Risco
+ATA Creativity Global,Diversified Consumer Services,203,200,205,608,202.6,B,Medium,Iniciante,79.7,33.3,Baixo Impacto / Alto Risco
+American Airlines Group Inc,Airlines,270,211,265,746,253.7,B,Medium,Iniciante,74.6,42.9,Baixo Impacto / Alto Risco
+Atlantic American Corp,Insurance,220,221,300,741,236.7,B,Medium,Iniciante,76.3,7.4,Baixo Impacto / Alto Risco
+Applied Optoelectronics Inc,Communications,311,256,218,785,263.1,BB,Medium,Iniciante,73.7,33.3,Baixo Impacto / Alto Risco
+Aaon Inc,Building,500,300,223,1023,364.2,BBB,High,Avançado,63.6,30.0,Baixo Impacto / Alto Risco
+Apple Inc,Technology,355,281,255,891,301.4,BB,Medium,Iniciante,69.9,23.8,Baixo Impacto / Alto Risco
+Autoscope Technologies Corp,Electrical Equipment,410,286,240,936,319.2,BBB,High,Avançado,68.1,51.9,Alto Impacto / Alto Risco
+Atlas Air Worldwide Holdings Inc,Logistics and Transportation,520,243,237,1000,383.8,BBB,High,Avançado,61.6,50.0,Baixo Impacto / Alto Risco
+Armada Acquisition Corp I,Unknown,205,200,200,605,200.6,B,Medium,Iniciante,79.9,15.4,Baixo Impacto / Alto Risco
+Aadi Bioscience Inc,Biotechnology,200,201,203,604,201.1,B,Medium,Iniciante,79.9,1.8,Baixo Impacto / Alto Risco
+Abeona Therapeutics Inc,Biotechnology,205,306,310,821,266.9,BB,Medium,Iniciante,73.3,46.4,Baixo Impacto / Alto Risco
+Airbnb Inc,Hotels Restaurants and Leisure,505,570,400,1475,492.1,A,High,Avançado,50.8,100.0,Alto Impacto / Alto Risco
+ARCA Biopharma Inc,Biotechnology,200,222,290,712,231.2,B,Medium,Iniciante,76.9,16.1,Baixo Impacto / Alto Risco
+ABIOMED Inc,Health Care,500,324,305,1129,382.2,BBB,High,Avançado,61.8,76.5,Alto Impacto / Alto Risco
+Acumen Pharmaceuticals Inc,Biotechnology,205,201,200,606,202.3,B,Medium,Iniciante,79.8,3.6,Baixo Impacto / Alto Risco
+Absci Corp,Life Sciences Tools and Services,205,224,230,659,217.2,B,Medium,Iniciante,78.3,6.2,Baixo Impacto / Alto Risco
+Allegiance Bancshares Inc,Banking,298,300,300,898,299.3,BB,Medium,Iniciante,70.1,55.2,Alto Impacto / Alto Risco
+Arbutus Biopharma Corp,Biotechnology,203,204,338,745,239.0,B,Medium,Iniciante,76.1,23.2,Baixo Impacto / Alto Risco
+ABVC Biopharma Inc,Biotechnology,220,212,205,637,213.3,B,Medium,Iniciante,78.7,12.5,Baixo Impacto / Alto Risco
+ACADIA Pharmaceuticals Inc,Biotechnology,230,230,305,765,249.8,BB,Medium,Iniciante,75.0,35.7,Baixo Impacto / Alto Risco
+Acri Capital Acquisition Corp,Unknown,200,205,300,705,248.6,B,Medium,Iniciante,75.1,53.8,Alto Impacto / Alto Risco
+Accolade Inc,Health Care,255,254,235,744,248.4,B,Medium,Iniciante,75.2,27.5,Baixo Impacto / Alto Risco
+Adicet Bio Inc,Biotechnology,215,211,305,731,237.4,B,Medium,Iniciante,76.3,21.4,Baixo Impacto / Alto Risco
+Abcellera Biologics Inc,Life Sciences Tools and Services,540,354,345,1239,432.9,A,High,Avançado,56.7,93.8,Alto Impacto / Alto Risco
+Ameris Bancorp,Banking,290,300,250,840,279.0,BB,Medium,Iniciante,72.1,41.4,Baixo Impacto / Alto Risco
+ACE Convergence Acquisition Corp,Unknown,225,211,215,651,214.6,B,Medium,Iniciante,78.5,23.1,Baixo Impacto / Alto Risco
+Achilles Therapeutics PLC,Biotechnology,230,288,285,803,264.1,BB,Medium,Iniciante,73.6,44.6,Baixo Impacto / Alto Risco
+Acadia Healthcare Company Inc,Health Care,330,231,220,781,263.6,BB,Medium,Iniciante,73.6,41.2,Baixo Impacto / Alto Risco
+ACI Worldwide Inc,Technology,500,327,300,1127,384.5,BBB,High,Avançado,61.6,60.3,Alto Impacto / Alto Risco
+Axcelis Technologies Inc,Semiconductors,515,306,260,1081,371.0,BBB,High,Avançado,62.9,41.7,Baixo Impacto / Alto Risco
+AC Immune SA,Biotechnology,250,296,305,851,280.1,BB,Medium,Iniciante,72.0,60.7,Alto Impacto / Alto Risco
+Achieve Life Sciences Inc,Biotechnology,215,222,305,742,241.1,B,Medium,Iniciante,75.9,30.4,Baixo Impacto / Alto Risco
+ACM Research Inc,Semiconductors,410,232,325,967,327.0,BBB,High,Avançado,67.3,33.3,Baixo Impacto / Alto Risco
+Acorda Therapeutics Inc,Biotechnology,230,307,310,847,277.2,BB,Medium,Iniciante,72.3,55.4,Alto Impacto / Alto Risco
+ACNB Corp,Banking,220,219,215,654,218.0,B,Medium,Iniciante,78.2,17.2,Baixo Impacto / Alto Risco
+Aclaris Therapeutics Inc,Pharmaceuticals,230,207,220,657,219.2,B,Medium,Iniciante,78.1,9.5,Baixo Impacto / Alto Risco
+AcelRx Pharmaceuticals Inc,Pharmaceuticals,200,237,300,737,238.8,B,Medium,Iniciante,76.1,42.9,Baixo Impacto / Alto Risco
+Enact Holdings Inc,Financial Services,540,328,315,1183,397.5,BBB,High,Avançado,60.2,93.9,Alto Impacto / Alto Risco
+Acacia Research Corp,Financial Services,200,200,275,675,224.5,B,Medium,Iniciante,77.6,33.3,Baixo Impacto / Alto Risco
+ACV Auctions Inc,Commercial Services and Supplies,235,262,315,812,265.5,BB,Medium,Iniciante,73.4,42.9,Baixo Impacto / Alto Risco
+Adagene Inc,Biotechnology,295,301,305,901,299.7,BBB,High,Avançado,70.0,66.1,Alto Impacto / Alto Risco
+Acurx Pharmaceuticals Inc,Biotechnology,235,301,305,841,275.8,BB,Medium,Iniciante,72.4,53.6,Alto Impacto / Alto Risco
+Adobe Inc,Technology,200,221,200,621,207.1,B,Medium,Iniciante,79.3,1.6,Baixo Impacto / Alto Risco
+Adaptimmune Therapeutics PLC,Biotechnology,365,283,305,953,321.4,BBB,High,Avançado,67.9,67.9,Alto Impacto / Alto Risco
+ADMA Biologics Inc,Biotechnology,240,264,320,824,269.2,BB,Medium,Iniciante,73.1,50.0,Baixo Impacto / Alto Risco
+Advanced Emissions Solutions Inc,Chemicals,205,201,300,706,230.7,B,Medium,Iniciante,76.9,10.5,Baixo Impacto / Alto Risco
+Analog Devices Inc,Semiconductors,350,318,300,968,324.7,BBB,High,Avançado,67.5,29.2,Baixo Impacto / Alto Risco
+Adial Pharmaceuticals Inc,Pharmaceuticals,200,203,300,703,226.6,B,Medium,Iniciante,77.3,19.0,Baixo Impacto / Alto Risco
+Adamis Pharmaceuticals Corp,Pharmaceuticals,285,204,215,704,238.0,B,Medium,Iniciante,76.2,38.1,Baixo Impacto / Alto Risco
+Acer Therapeutics Inc,Pharmaceuticals,223,291,310,824,269.6,BB,Medium,Iniciante,73.0,52.4,Alto Impacto / Alto Risco
+Edoc Acquisition Corp,Unknown,215,301,300,816,289.8,BB,Medium,Iniciante,71.0,100.0,Alto Impacto / Alto Risco
+Addus Homecare Corp,Health Care,210,215,218,643,214.1,B,Medium,Iniciante,78.6,9.8,Baixo Impacto / Alto Risco
+Arch Capital Group Ltd,Insurance,500,300,300,1100,388.7,BBB,High,Avançado,61.1,63.0,Alto Impacto / Alto Risco
+Adaptive Biotechnologies Corp,Life Sciences Tools and Services,260,348,260,868,287.0,BB,Medium,Iniciante,71.3,37.5,Baixo Impacto / Alto Risco
+Autodesk Inc,Technology,555,304,310,1169,400.4,BBB,High,Avançado,60.0,77.8,Alto Impacto / Alto Risco
+Automatic Data Processing Inc,Technology,500,300,200,1000,346.7,BBB,High,Avançado,65.3,41.3,Baixo Impacto / Alto Risco
+Aditxt Inc,Biotechnology,210,224,305,739,239.8,B,Medium,Iniciante,76.0,25.0,Baixo Impacto / Alto Risco
+Advantage Solutions Inc,Media,515,269,328,1112,395.8,BBB,High,Avançado,60.4,87.0,Alto Impacto / Alto Risco
+Adverum Biotechnologies Inc,Biotechnology,262,321,235,818,274.8,BB,Medium,Iniciante,72.5,51.8,Alto Impacto / Alto Risco
+Aehr Test Systems,Semiconductors,290,262,300,852,284.0,BB,Medium,Iniciante,71.6,12.5,Baixo Impacto / Alto Risco
+Antelope Enterprise Holdings Ltd,Building,238,237,325,800,256.1,BB,Medium,Iniciante,74.4,20.0,Baixo Impacto / Alto Risco
+Alset Ehome International Inc,Real Estate,520,207,210,937,322.4,BBB,High,Avançado,67.8,41.7,Baixo Impacto / Alto Risco
+Advanced Energy Industries Inc,Electrical Equipment,500,300,300,1100,373.8,BBB,High,Avançado,62.6,68.5,Alto Impacto / Alto Risco
+American Electric Power Company Inc,Utilities,500,300,300,1100,391.0,BBB,High,Avançado,60.9,20.0,Baixo Impacto / Alto Risco
+Aethlon Medical Inc,Health Care,200,262,315,777,255.9,BB,Medium,Iniciante,74.4,37.3,Baixo Impacto / Alto Risco
+Allied Esports Entertainment Inc,Hotels Restaurants and Leisure,200,200,200,600,200.0,B,Medium,Iniciante,80.0,4.2,Baixo Impacto / Alto Risco
+AudioEye Inc,Technology,235,301,308,844,278.1,BB,Medium,Iniciante,72.2,19.0,Baixo Impacto / Alto Risco
+Aerie Pharmaceuticals Inc,Pharmaceuticals,500,264,310,1074,366.7,BBB,High,Avançado,63.3,61.9,Alto Impacto / Alto Risco
+ADDvantage Technologies Group Inc,Electrical Equipment,235,234,300,769,252.4,BB,Medium,Iniciante,74.8,29.6,Baixo Impacto / Alto Risco
+AF Acquisition Corp,Unknown,200,200,200,600,200.0,B,Medium,Iniciante,80.0,7.7,Baixo Impacto / Alto Risco
+Affimed NV,Biotechnology,368,304,310,982,331.1,BBB,High,Avançado,66.9,71.4,Alto Impacto / Alto Risco
+AFC Gamma Inc,Real Estate,255,204,226,685,229.2,B,Medium,Iniciante,77.1,13.9,Baixo Impacto / Alto Risco
+Affinity Bancshares Inc,Banking,200,207,200,607,202.0,B,Medium,Iniciante,79.8,6.9,Baixo Impacto / Alto Risco
+Affirm Holdings Inc,Technology,225,335,335,895,293.5,BB,Medium,Iniciante,70.6,22.2,Baixo Impacto / Alto Risco
+Acutus Medical Inc,Health Care,205,211,235,651,216.3,B,Medium,Iniciante,78.4,11.8,Baixo Impacto / Alto Risco
+Agenus Inc,Biotechnology,290,245,300,835,277.4,BB,Medium,Iniciante,72.3,58.9,Alto Impacto / Alto Risco
+Afya Ltd,Diversified Consumer Services,290,203,205,698,237.2,B,Medium,Iniciante,76.3,66.7,Alto Impacto / Alto Risco
+AgroFresh Solutions Inc,Chemicals,500,301,275,1076,366.9,BBB,High,Avançado,63.3,36.8,Baixo Impacto / Alto Risco
+Agrify Corp,Machinery,540,361,305,1206,412.9,A,High,Avançado,58.7,85.7,Alto Impacto / Alto Risco
+AgileThought Inc,Technology,340,299,305,944,316.2,BBB,High,Avançado,68.4,30.2,Baixo Impacto / Alto Risco
+AGM Group Holdings Inc,Financial Services,205,204,210,619,206.3,B,Medium,Iniciante,79.4,6.1,Baixo Impacto / Alto Risco
+Agios Pharmaceuticals Inc,Biotechnology,520,303,325,1148,395.2,BBB,High,Avançado,60.5,94.6,Alto Impacto / Alto Risco
+Aeglea Bio Therapeutics Inc,Biotechnology,205,223,200,628,209.8,B,Medium,Iniciante,79.0,7.1,Baixo Impacto / Alto Risco
+AGNC Investment Corp,Real Estate,382,242,305,929,312.0,BBB,High,Avançado,68.8,38.9,Baixo Impacto / Alto Risco
+AgriFORCE Growing Systems Ltd,Food Products,510,248,305,1063,365.2,BBB,High,Avançado,63.5,21.4,Baixo Impacto / Alto Risco
+Agile Therapeutics Inc,Pharmaceuticals,240,203,260,703,231.8,B,Medium,Iniciante,76.8,33.3,Baixo Impacto / Alto Risco
+Agilysys Inc,Technology,500,303,300,1103,376.4,BBB,High,Avançado,62.4,50.8,Alto Impacto / Alto Risco
+Applied Genetic Technologies Corp,Biotechnology,235,323,305,863,283.2,BB,Medium,Iniciante,71.7,62.5,Alto Impacto / Alto Risco
+Adapthealth Corp,Health Care,210,211,235,656,218.1,B,Medium,Iniciante,78.2,15.7,Baixo Impacto / Alto Risco
+Allied Healthcare Products Inc,Health Care,210,228,325,763,251.7,BB,Medium,Iniciante,74.8,31.4,Baixo Impacto / Alto Risco
+AIB Acquisition Corp,Unknown,215,227,300,742,259.5,B,Medium,Iniciante,74.1,69.2,Alto Impacto / Alto Risco
+ADTRAN Inc,Communications,510,308,300,1118,374.9,BBB,High,Avançado,62.5,77.8,Alto Impacto / Alto Risco
+Advent Technologies Holdings Inc,Electrical Equipment,250,203,220,673,225.0,B,Medium,Iniciante,77.5,22.2,Baixo Impacto / Alto Risco
+Aikido Pharma Inc,Biotechnology,200,235,205,640,213.2,B,Medium,Iniciante,78.7,10.7,Baixo Impacto / Alto Risco
+Sports Ventures Acquisition Corp,Unknown,200,205,230,635,216.0,B,Medium,Iniciante,78.4,30.8,Baixo Impacto / Alto Risco
+Arteris Inc,Technology,500,286,300,1086,370.7,BBB,High,Avançado,62.9,47.6,Baixo Impacto / Alto Risco
+Akero Therapeutics Inc,Biotechnology,250,246,305,801,263.2,BB,Medium,Iniciante,73.7,42.9,Baixo Impacto / Alto Risco
+Air T Inc,Logistics and Transportation,234,210,325,769,227.2,BB,Medium,Iniciante,77.3,16.7,Baixo Impacto / Alto Risco
+Altra Industrial Motion Corp,Machinery,525,315,305,1145,394.8,BBB,High,Avançado,60.5,66.7,Alto Impacto / Alto Risco
+Akebia Therapeutics Inc,Biotechnology,200,218,215,633,210.0,B,Medium,Iniciante,79.0,8.9,Baixo Impacto / Alto Risco
+Airgain Inc,Electrical Equipment,500,300,330,1130,381.9,BBB,High,Avançado,61.8,81.5,Alto Impacto / Alto Risco
+Airsculpt Technologies Inc,Health Care,210,201,205,616,205.5,B,Medium,Iniciante,79.4,7.8,Baixo Impacto / Alto Risco
+Akamai Technologies Inc,Technology,515,341,305,1161,396.3,BBB,High,Avançado,60.4,73.0,Alto Impacto / Alto Risco
+Akumin Inc,Health Care,455,347,300,1102,371.6,BBB,High,Avançado,62.8,56.9,Alto Impacto / Alto Risco
+Akouos Inc,Biotechnology,205,221,295,721,234.2,B,Medium,Iniciante,76.6,17.9,Baixo Impacto / Alto Risco
+Akoustis Technologies Inc,Electrical Equipment,222,302,428,952,306.9,BBB,High,Avançado,69.3,44.4,Baixo Impacto / Alto Risco
+Akari Therapeutics PLC,Pharmaceuticals,225,216,305,746,242.1,B,Medium,Iniciante,75.8,47.6,Baixo Impacto / Alto Risco
+Albireo Pharma Inc,Biotechnology,500,300,310,1110,382.2,BBB,High,Avançado,61.8,87.5,Alto Impacto / Alto Risco
+Akoya Biosciences Inc,Life Sciences Tools and Services,512,303,215,1030,371.6,BBB,High,Avançado,62.8,43.8,Baixo Impacto / Alto Risco
+Alico Inc,Food Products,500,300,300,1100,378.4,BBB,High,Avançado,62.2,32.1,Baixo Impacto / Alto Risco
+Aldeyra Therapeutics Inc,Biotechnology,231,261,235,727,242.2,B,Medium,Iniciante,75.8,32.1,Baixo Impacto / Alto Risco
+Alector Inc,Biotechnology,240,277,300,817,268.4,BB,Medium,Iniciante,73.2,48.2,Baixo Impacto / Alto Risco
+Allegro Microsystems Inc,Semiconductors,542,314,250,1106,380.7,BBB,High,Avançado,61.9,62.5,Alto Impacto / Alto Risco
+Alfi Inc,Technology,225,260,315,800,262.6,BB,Medium,Iniciante,73.7,15.9,Baixo Impacto / Alto Risco
+Align Technology Inc,Health Care,235,285,255,775,257.4,BB,Medium,Iniciante,74.3,39.2,Baixo Impacto / Alto Risco
+Aligos Therapeutics Inc,Biotechnology,210,222,235,667,220.7,B,Medium,Iniciante,77.9,14.3,Baixo Impacto / Alto Risco
+Alignment Healthcare LLC,Unknown,210,302,256,768,269.1,BB,Medium,Iniciante,73.1,76.9,Alto Impacto / Alto Risco
+Alkermes Plc,Biotechnology,415,302,333,1050,355.1,BBB,High,Avançado,64.5,78.6,Alto Impacto / Alto Risco
+Alimera Sciences Inc,Pharmaceuticals,220,228,243,691,228.7,B,Medium,Iniciante,77.1,23.8,Baixo Impacto / Alto Risco
+Allegiant Travel Co,Airlines,287,208,248,743,254.8,B,Medium,Iniciante,74.5,57.1,Alto Impacto / Alto Risco
+Aesthetic Medical International Holdings Group Ltd,Health Care,220,250,300,770,254.7,BB,Medium,Iniciante,74.5,35.3,Baixo Impacto / Alto Risco
+Alkami Technology Inc,Technology,280,305,260,845,282.7,BB,Medium,Iniciante,71.7,20.6,Baixo Impacto / Alto Risco
+Alnylam Pharmaceuticals Inc,Biotechnology,331,346,325,1002,334.5,BBB,High,Avançado,66.6,73.2,Alto Impacto / Alto Risco
+Allot Ltd,Technology,508,324,310,1142,389.4,BBB,High,Avançado,61.1,66.7,Alto Impacto / Alto Risco
+Allogene Therapeutics Inc,Biotechnology,535,324,305,1164,402.9,BBB,High,Avançado,59.7,96.4,Alto Impacto / Alto Risco
+Applied Materials Inc,Semiconductors,525,317,300,1142,390.3,BBB,High,Avançado,61.0,70.8,Alto Impacto / Alto Risco
+Advanced Micro Devices Inc,Semiconductors,200,208,200,608,202.6,B,Medium,Iniciante,79.7,4.2,Baixo Impacto / Alto Risco
+Activision Blizzard Inc,Media,280,347,330,957,312.1,BBB,High,Avançado,68.8,56.5,Alto Impacto / Alto Risco
+Broadcom Inc,Semiconductors,210,212,200,622,207.7,B,Medium,Iniciante,79.2,8.3,Baixo Impacto / Alto Risco
+ANSYS Inc,Technology,580,337,285,1202,413.7,A,High,Avançado,58.6,88.9,Alto Impacto / Alto Risco
+Amazon.com Inc,Retail,668,305,460,1433,489.5,A,High,Avançado,51.0,100.0,Alto Impacto / Alto Risco
+Senmiao Technology Ltd,Financial Services,220,203,200,623,207.9,B,Medium,Iniciante,79.2,18.2,Baixo Impacto / Alto Risco
+APA Corp (US),Energy,510,316,325,1151,391.7,BBB,High,Avançado,60.8,52.4,Alto Impacto / Alto Risco
+Biogen Inc,Biotechnology,380,303,364,1047,349.7,BBB,High,Avançado,65.0,76.8,Alto Impacto / Alto Risco
+Booking Holdings Inc,Hotels Restaurants and Leisure,558,306,310,1174,393.9,BBB,High,Avançado,60.6,91.7,Alto Impacto / Alto Risco
+Cadence Design Systems Inc,Technology,500,308,295,1103,376.7,BBB,High,Avançado,62.3,52.4,Alto Impacto / Alto Risco
+CDW Corp,Electrical Equipment,225,209,200,634,212.4,B,Medium,Iniciante,78.8,18.5,Baixo Impacto / Alto Risco
+CH Robinson Worldwide Inc,Logistics and Transportation,575,330,338,1243,455.1,A,High,Avançado,54.5,100.0,Alto Impacto / Alto Risco
+Cincinnati Financial Corp,Insurance,235,275,250,760,252.1,BB,Medium,Iniciante,74.8,22.2,Baixo Impacto / Alto Risco
+Charter Communications Inc,Media,500,300,300,1100,386.3,BBB,High,Avançado,61.4,78.3,Alto Impacto / Alto Risco
+Comcast Corp,Media,507,343,315,1165,403.9,BBB,High,Avançado,59.6,95.7,Alto Impacto / Alto Risco
+Copart Inc,Commercial Services and Supplies,270,204,205,679,229.0,B,Medium,Iniciante,77.1,14.3,Baixo Impacto / Alto Risco
+Costco Wholesale Corp,Retail,537,306,225,1068,366.4,BBB,High,Avançado,63.4,65.4,Alto Impacto / Alto Risco
+CSX Corp,Road and Rail,510,310,325,1145,399.7,BBB,High,Avançado,60.0,50.0,Baixo Impacto / Alto Risco
+Cognizant Technology Solutions Corp,Technology,605,365,300,1270,436.9,A,High,Avançado,56.3,98.4,Alto Impacto / Alto Risco
+CME Group Inc,Financial Services,375,237,200,812,272.9,BB,Medium,Iniciante,72.7,39.4,Baixo Impacto / Alto Risco
+Cisco Systems Inc,Communications,280,234,220,734,245.5,B,Medium,Iniciante,75.4,22.2,Baixo Impacto / Alto Risco
+Cintas Corp,Commercial Services and Supplies,500,300,300,1100,375.0,BBB,High,Avançado,62.5,57.1,Alto Impacto / Alto Risco
+Citrix Systems Inc,Technology,530,305,305,1140,389.8,BBB,High,Avançado,61.0,68.3,Alto Impacto / Alto Risco
+Caesars Entertainment Inc,Hotels Restaurants and Leisure,265,228,200,693,231.6,B,Medium,Iniciante,76.8,37.5,Baixo Impacto / Alto Risco
+DISH Network Corp,Media,210,263,205,678,219.8,B,Medium,Iniciante,78.0,13.0,Baixo Impacto / Alto Risco
+Dollar Tree Inc,Retail,235,208,215,658,220.3,B,Medium,Iniciante,78.0,15.4,Baixo Impacto / Alto Risco
+Dexcom Inc,Health Care,215,236,215,666,221.8,B,Medium,Iniciante,77.8,19.6,Baixo Impacto / Alto Risco
+Electronic Arts Inc,Media,360,300,225,885,299.6,BB,Medium,Iniciante,70.0,43.5,Baixo Impacto / Alto Risco
+Alliant Energy Corp,Utilities,519,307,300,1126,401.7,BBB,High,Avançado,59.8,26.7,Baixo Impacto / Alto Risco
+Diamondback Energy Inc,Energy,513,271,300,1084,370.4,BBB,High,Avançado,63.0,33.3,Baixo Impacto / Alto Risco
+eBay Inc,Retail,500,302,305,1107,376.7,BBB,High,Avançado,62.3,76.9,Alto Impacto / Alto Risco
+LKQ Corp,Distributors,515,300,305,1120,384.6,BBB,High,Avançado,61.5,66.7,Alto Impacto / Alto Risco
+Alphabet Inc,Media,295,362,355,1012,330.6,BBB,High,Avançado,66.9,65.2,Alto Impacto / Alto Risco
+Marriott International Inc,Hotels Restaurants and Leisure,215,200,215,630,210.1,B,Medium,Iniciante,79.0,20.8,Baixo Impacto / Alto Risco
+Microchip Technology Inc,Semiconductors,500,300,300,1100,375.4,BBB,High,Avançado,62.5,52.1,Alto Impacto / Alto Risco
+Lam Research Corp,Semiconductors,510,325,315,1150,391.7,BBB,High,Avançado,60.8,79.2,Alto Impacto / Alto Risco
+Mondelez International Inc,Food Products,520,307,300,1127,388.7,BBB,High,Avançado,61.1,57.1,Alto Impacto / Alto Risco
+Meta Platforms Inc,Media,205,232,215,652,214.4,B,Medium,Iniciante,78.6,8.7,Baixo Impacto / Alto Risco
+Marketaxess Holdings Inc,Financial Services,230,213,210,653,217.9,B,Medium,Iniciante,78.2,27.3,Baixo Impacto / Alto Risco
+Monster Beverage Corp,Beverages,515,344,300,1159,397.5,BBB,High,Avançado,60.2,75.0,Alto Impacto / Alto Risco
+Moderna Inc,Biotechnology,500,300,300,1100,379.6,BBB,High,Avançado,62.0,83.0,Alto Impacto / Alto Risco
+Match Group Inc,Media,245,389,311,945,299.5,BBB,High,Avançado,70.0,39.1,Baixo Impacto / Alto Risco
+Monolithic Power Systems Inc,Semiconductors,330,287,235,852,287.6,BB,Medium,Iniciante,71.2,16.7,Baixo Impacto / Alto Risco
+Microsoft Corp,Technology,715,443,375,1533,526.1,A,High,Avançado,47.4,100.0,Alto Impacto / Baixo Risco
+Micron Technology Inc,Semiconductors,530,330,300,1160,396.4,BBB,High,Avançado,60.4,87.5,Alto Impacto / Alto Risco
+Nasdaq Inc,Financial Services,505,310,300,1115,374.6,BBB,High,Avançado,62.5,72.7,Alto Impacto / Alto Risco
+NortonLifeLock Inc,Technology,505,315,305,1125,383.8,BBB,High,Avançado,61.6,58.7,Alto Impacto / Alto Risco
+Northern Trust Corp,Financial Services,250,226,225,701,234.0,B,Medium,Iniciante,76.6,36.4,Baixo Impacto / Alto Risco
+Newell Brands Inc,Consumer products,525,303,315,1143,389.5,BBB,High,Avançado,61.0,80.0,Alto Impacto / Alto Risco
+NVIDIA Corp,Semiconductors,323,301,275,899,301.5,BB,Medium,Iniciante,69.8,20.8,Baixo Impacto / Alto Risco
+Allakos Inc,Biotechnology,200,273,300,773,251.1,BB,Medium,Iniciante,74.9,37.5,Baixo Impacto / Alto Risco
+News Corp,Media,509,300,300,1109,390.2,BBB,High,Avançado,61.0,82.6,Alto Impacto / Alto Risco
+Old Dominion Freight Line Inc,Road and Rail,467,423,280,1170,401.2,BBB,High,Avançado,59.9,66.7,Alto Impacto / Alto Risco
+Paccar Inc,Machinery,568,343,305,1216,419.2,A,High,Avançado,58.1,95.2,Alto Impacto / Alto Risco
+NXP Semiconductors NV,Semiconductors,505,329,305,1139,388.1,BBB,High,Avançado,61.2,66.7,Alto Impacto / Alto Risco
+O'Reilly Automotive Inc,Retail,500,300,300,1100,374.5,BBB,High,Avançado,62.6,71.2,Alto Impacto / Alto Risco
+Paychex Inc,Technology,500,300,200,1000,346.7,BBB,High,Avançado,65.3,41.3,Baixo Impacto / Alto Risco
+Principal Financial Group Inc,Insurance,555,320,300,1175,420.1,BBB,High,Avançado,58.0,92.6,Alto Impacto / Alto Risco
+Ross Stores Inc,Retail,375,325,300,1000,335.7,BBB,High,Avançado,66.4,57.7,Alto Impacto / Alto Risco
+SBA Communications Corp,Real Estate,250,251,215,716,239.9,B,Medium,Iniciante,76.0,19.4,Baixo Impacto / Alto Risco
+Qualcomm Inc,Semiconductors,409,300,300,1009,341.1,BBB,High,Avançado,65.9,37.5,Baixo Impacto / Alto Risco
+Pool Corp,Distributors,525,306,313,1144,392.7,BBB,High,Avançado,60.7,100.0,Alto Impacto / Alto Risco
+PepsiCo Inc,Beverages,719,340,358,1417,491.7,A,High,Avançado,50.8,100.0,Alto Impacto / Alto Risco
+Starbucks Corp,Hotels Restaurants and Leisure,475,385,295,1155,386.5,BBB,High,Avançado,61.4,83.3,Alto Impacto / Alto Risco
+Regency Centers Corp,Real Estate,575,372,365,1312,444.2,A,High,Avançado,55.6,94.4,Alto Impacto / Alto Risco
+Qorvo Inc,Semiconductors,535,310,305,1150,393.3,BBB,High,Avançado,60.7,83.3,Alto Impacto / Alto Risco
+PTC Inc,Technology,550,302,308,1160,397.2,BBB,High,Avançado,60.3,74.6,Alto Impacto / Alto Risco
+PENN Entertainment Inc,Hotels Restaurants and Leisure,371,300,220,891,298.2,BB,Medium,Iniciante,70.2,54.2,Alto Impacto / Alto Risco
+PayPal Holdings Inc,Technology,370,244,285,899,303.3,BB,Medium,Iniciante,69.7,25.4,Baixo Impacto / Alto Risco
+Regeneron Pharmaceuticals Inc,Biotechnology,505,327,305,1137,392.0,BBB,High,Avançado,60.8,92.9,Alto Impacto / Alto Risco
+Amgen Inc,Biotechnology,575,312,328,1215,420.9,A,High,Avançado,57.9,100.0,Alto Impacto / Alto Risco
+Synopsys Inc,Technology,525,316,315,1156,394.5,BBB,High,Avançado,60.6,71.4,Alto Impacto / Alto Risco
+Seagate Technology Holdings PLC,Technology,540,355,300,1195,409.0,BBB,High,Avançado,59.1,84.1,Alto Impacto / Alto Risco
+Bio-Techne Corp,Life Sciences Tools and Services,510,268,300,1078,381.8,BBB,High,Avançado,61.8,68.8,Alto Impacto / Alto Risco
+Teradyne Inc,Semiconductors,507,328,315,1150,391.6,BBB,High,Avançado,60.8,75.0,Alto Impacto / Alto Risco
+Skyworks Solutions Inc,Semiconductors,515,303,270,1088,373.0,BBB,High,Avançado,62.7,45.8,Baixo Impacto / Alto Risco
+Trimble Inc,Electrical Equipment,550,415,315,1280,437.5,A,High,Avançado,56.2,100.0,Alto Impacto / Alto Risco
+T Rowe Price Group Inc,Financial Services,510,325,310,1145,384.5,BBB,High,Avançado,61.6,87.9,Alto Impacto / Alto Risco
+Take-Two Interactive Software Inc,Media,225,307,310,842,272.7,BB,Medium,Iniciante,72.7,30.4,Baixo Impacto / Alto Risco
+Tesla Inc,Automobiles,555,160,278,993,346.5,BBB,High,Avançado,65.4,75.0,Alto Impacto / Alto Risco
+Tractor Supply Co,Retail,500,300,200,1000,342.8,BBB,High,Avançado,65.7,61.5,Alto Impacto / Alto Risco
+Texas Instruments Inc,Semiconductors,500,300,300,1100,375.4,BBB,High,Avançado,62.5,52.1,Alto Impacto / Alto Risco
+T-Mobile US Inc,Telecommunication,342,331,230,903,306.3,BBB,High,Avançado,69.4,66.7,Alto Impacto / Alto Risco
+United Airlines Holdings Inc,Airlines,205,203,221,629,209.7,B,Medium,Iniciante,79.0,14.3,Baixo Impacto / Alto Risco
+Verisk Analytics Inc,Professional Services,615,366,300,1281,470.1,A,High,Avançado,53.0,100.0,Alto Impacto / Alto Risco
+Ulta Beauty Inc,Retail,205,242,200,647,214.9,B,Medium,Iniciante,78.5,11.5,Baixo Impacto / Alto Risco
+Vertex Pharmaceuticals Inc,Biotechnology,500,300,300,1100,379.6,BBB,High,Avançado,62.0,83.0,Alto Impacto / Alto Risco
+Viatris Inc,Pharmaceuticals,500,300,200,1000,351.6,BBB,High,Avançado,64.8,57.1,Alto Impacto / Alto Risco
+Verisign Inc,Technology,548,354,325,1227,418.8,A,High,Avançado,58.1,90.5,Alto Impacto / Alto Risco
+Walgreens Boots Alliance Inc,Retail,515,325,300,1140,387.9,BBB,High,Avançado,61.2,84.6,Alto Impacto / Alto Risco
+NetApp Inc,Technology,545,359,325,1229,419.4,A,High,Avançado,58.1,93.7,Alto Impacto / Alto Risco
+Xcel Energy Inc,Utilities,223,201,205,629,212.0,B,Medium,Iniciante,78.8,3.3,Baixo Impacto / Alto Risco
+DENTSPLY SIRONA Inc,Health Care,530,318,305,1153,391.2,BBB,High,Avançado,60.9,84.3,Alto Impacto / Alto Risco
+Zebra Technologies Corp,Electrical Equipment,320,317,300,937,313.5,BBB,High,Avançado,68.6,48.1,Baixo Impacto / Alto Risco
+Advance Auto Parts Inc,Retail,264,261,210,735,245.9,B,Medium,Iniciante,75.4,34.6,Baixo Impacto / Alto Risco
+Zions Bancorporation NA,Banking,200,200,200,600,200.0,B,Medium,Iniciante,80.0,3.4,Baixo Impacto / Alto Risco
+Wynn Resorts Ltd,Hotels Restaurants and Leisure,225,201,200,626,208.9,B,Medium,Iniciante,79.1,16.7,Baixo Impacto / Alto Risco
+Agilent Technologies Inc,Life Sciences Tools and Services,573,231,233,1037,380.8,BBB,High,Avançado,61.9,56.2,Alto Impacto / Alto Risco
+Abbvie Inc,Biotechnology,505,317,300,1122,387.3,BBB,High,Avançado,61.3,89.3,Alto Impacto / Alto Risco
+Amerisourcebergen Corp,Health Care,505,300,315,1120,379.4,BBB,High,Avançado,62.1,69.6,Alto Impacto / Alto Risco
+Archer-Daniels-Midland Co,Food Products,587,353,305,1245,432.4,A,High,Avançado,56.8,92.9,Alto Impacto / Alto Risco
+Abbott Laboratories,Health Care,515,305,305,1125,381.5,BBB,High,Avançado,61.9,72.5,Alto Impacto / Alto Risco
+Ameren Corp,Utilities,562,345,300,1207,432.4,A,High,Avançado,56.8,56.7,Alto Impacto / Alto Risco
+AES Corp,Utilities,525,326,370,1221,427.7,A,High,Avançado,57.2,53.3,Alto Impacto / Alto Risco
+Aflac Inc,Insurance,454,300,235,989,354.9,BBB,High,Avançado,64.5,40.7,Baixo Impacto / Alto Risco
+Accenture PLC,Technology,515,360,305,1180,402.7,BBB,High,Avançado,59.7,80.2,Alto Impacto / Alto Risco
+Arthur J. Gallagher & Co.,Insurance,530,344,310,1184,419.5,BBB,High,Avançado,58.0,88.9,Alto Impacto / Alto Risco
+Assurant Inc,Insurance,438,316,300,1054,366.8,BBB,High,Avançado,63.3,44.4,Baixo Impacto / Alto Risco
+Alaska Air Group Inc,Airlines,515,303,259,1077,379.9,BBB,High,Avançado,62.0,85.7,Alto Impacto / Alto Risco
+Albemarle Corp,Chemicals,545,322,315,1182,402.2,BBB,High,Avançado,59.8,63.2,Alto Impacto / Alto Risco
+American International Group Inc,Insurance,518,323,310,1151,406.8,BBB,High,Avançado,59.3,85.2,Alto Impacto / Alto Risco
+Allstate Corp,Insurance,530,300,220,1050,385.6,BBB,High,Avançado,61.4,55.6,Alto Impacto / Alto Risco
+Allegion PLC,Building,542,322,315,1179,409.1,BBB,High,Avançado,59.1,90.0,Alto Impacto / Alto Risco
+Ameriprise Financial Inc,Financial Services,396,308,267,971,325.2,BBB,High,Avançado,67.5,54.5,Alto Impacto / Alto Risco
+AMETEK Inc,Electrical Equipment,540,329,270,1139,390.7,BBB,High,Avançado,60.9,85.2,Alto Impacto / Alto Risco
+American Tower Corp,Real Estate,530,333,305,1168,396.7,BBB,High,Avançado,60.3,77.8,Alto Impacto / Alto Risco
+A O Smith Corp,Building,510,315,310,1135,392.5,BBB,High,Avançado,60.8,60.0,Alto Impacto / Alto Risco
+Air Products and Chemicals Inc,Chemicals,700,442,300,1442,496.6,A,High,Avançado,50.3,100.0,Alto Impacto / Alto Risco
+Aon PLC,Insurance,485,304,288,1077,381.0,BBB,High,Avançado,61.9,48.1,Baixo Impacto / Alto Risco
+Arista Networks Inc,Communications,444,310,295,1049,351.4,BBB,High,Avançado,64.9,66.7,Alto Impacto / Alto Risco
+Amphenol Corp,Electrical Equipment,512,303,475,1290,427.0,A,High,Avançado,57.3,96.3,Alto Impacto / Alto Risco
+Atmos Energy Corp,Utilities,572,368,315,1255,447.4,A,High,Avançado,55.3,63.3,Alto Impacto / Alto Risco
+American Water Works Company Inc,Utilities,653,395,300,1348,488.4,A,High,Avançado,51.2,80.0,Alto Impacto / Alto Risco
+Alexandria Real Estate Equities Inc,Real Estate,600,337,345,1282,435.6,A,High,Avançado,56.4,91.7,Alto Impacto / Alto Risco
+Aptiv PLC,Auto Components,555,339,310,1204,414.2,A,High,Avançado,58.6,100.0,Alto Impacto / Alto Risco
+Avalonbay Communities Inc,Real Estate,500,300,298,1098,372.6,BBB,High,Avançado,62.7,50.0,Baixo Impacto / Alto Risco
+Avery Dennison Corp,Packaging,535,347,325,1207,413.4,A,High,Avançado,58.7,100.0,Alto Impacto / Alto Risco
+Boeing Co,Aerospace and Defense,220,224,235,679,225.8,B,Medium,Iniciante,77.4,18.2,Baixo Impacto / Alto Risco
+Bank of America Corp,Banking,220,394,265,879,284.3,BB,Medium,Iniciante,71.6,48.3,Baixo Impacto / Alto Risco
+Baxter International Inc,Health Care,500,316,300,1116,378.1,BBB,High,Avançado,62.2,64.7,Alto Impacto / Alto Risco
+Bath & Body Works Inc,Retail,525,303,300,1128,384.8,BBB,High,Avançado,61.5,80.8,Alto Impacto / Alto Risco
+Becton Dickinson and Co,Health Care,607,384,315,1306,443.7,A,High,Avançado,55.6,100.0,Alto Impacto / Alto Risco
+Bio Rad Laboratories Inc,Life Sciences Tools and Services,275,227,300,802,266.7,BB,Medium,Iniciante,73.3,25.0,Baixo Impacto / Alto Risco
+Best Buy Co Inc,Retail,430,231,300,961,327.1,BBB,High,Avançado,67.3,53.8,Alto Impacto / Alto Risco
+Bank of New York Mellon Corp,Financial Services,500,300,300,1100,369.6,BBB,High,Avançado,63.0,66.7,Alto Impacto / Alto Risco
+American Express Co,Financial Services,230,226,208,664,221.5,B,Medium,Iniciante,77.8,30.3,Baixo Impacto / Alto Risco
+Broadridge Financial Solutions Inc,Technology,550,313,325,1188,405.8,BBB,High,Avançado,59.4,82.5,Alto Impacto / Alto Risco
+Bristol-Myers Squibb Co,Pharmaceuticals,500,321,310,1131,387.2,BBB,High,Avançado,61.3,81.0,Alto Impacto / Alto Risco
+Brown & Brown Inc,Insurance,405,320,300,1025,353.6,BBB,High,Avançado,64.6,37.0,Baixo Impacto / Alto Risco
+Autozone Inc,Retail,260,222,213,695,233.3,B,Medium,Iniciante,76.7,26.9,Baixo Impacto / Alto Risco
+Boston Scientific Corp,Health Care,525,399,300,1224,414.0,A,High,Avançado,58.6,98.0,Alto Impacto / Alto Risco
+Blackstone Inc,Financial Services,534,343,320,1197,402.0,BBB,High,Avançado,59.8,97.0,Alto Impacto / Alto Risco
+Boston Properties Inc,Real Estate,532,339,305,1176,399.5,BBB,High,Avançado,60.0,80.6,Alto Impacto / Alto Risco
+SVB Financial Group,Banking,510,340,300,1150,389.7,BBB,High,Avançado,61.0,93.1,Alto Impacto / Alto Risco
+Citigroup Inc,Banking,515,300,303,1118,381.4,BBB,High,Avançado,61.9,89.7,Alto Impacto / Alto Risco
+Caterpillar Inc,Machinery,235,239,235,709,236.1,B,Medium,Iniciante,76.4,9.5,Baixo Impacto / Alto Risco
+Carrier Global Corp,Building,210,258,226,694,231.9,B,Medium,Iniciante,76.8,10.0,Baixo Impacto / Alto Risco
+CBRE Group Inc,Real Estate,200,209,200,609,203.0,B,Medium,Iniciante,79.7,2.8,Baixo Impacto / Alto Risco
+Crown Castle Inc,Real Estate,500,300,200,1000,343.3,BBB,High,Avançado,65.7,44.4,Baixo Impacto / Alto Risco
+Ceridian HCM Holding Inc,Technology,530,379,320,1229,419.0,A,High,Avançado,58.1,92.1,Alto Impacto / Alto Risco
+Comerica Inc,Banking,280,300,230,810,268.3,BB,Medium,Iniciante,73.2,31.0,Baixo Impacto / Alto Risco
+D R Horton Inc,Consumer products,250,271,205,726,242.2,B,Medium,Iniciante,75.8,30.0,Baixo Impacto / Alto Risco
+Dover Corp,Machinery,500,320,305,1125,386.2,BBB,High,Avançado,61.4,52.4,Alto Impacto / Alto Risco
+Darden Restaurants Inc,Hotels Restaurants and Leisure,515,309,300,1124,376.9,BBB,High,Avançado,62.3,66.7,Alto Impacto / Alto Risco
+Celanese Corp,Chemicals,500,319,300,1119,380.3,BBB,High,Avançado,62.0,42.1,Baixo Impacto / Alto Risco
+Dollar General Corp,Retail,247,222,200,669,224.3,B,Medium,Iniciante,77.6,23.1,Baixo Impacto / Alto Risco
+Chipotle Mexican Grill Inc,Hotels Restaurants and Leisure,210,241,213,664,221.2,B,Medium,Iniciante,77.9,33.3,Baixo Impacto / Alto Risco
+Quest Diagnostics Inc,Health Care,230,300,205,735,244.8,B,Medium,Iniciante,75.5,25.5,Baixo Impacto / Alto Risco
+Carnival Corp,Hotels Restaurants and Leisure,515,326,320,1161,389.0,BBB,High,Avançado,61.1,87.5,Alto Impacto / Alto Risco
+Church & Dwight Co Inc,Consumer products,578,341,348,1267,431.5,A,High,Avançado,56.8,95.0,Alto Impacto / Alto Risco
+Dow Inc,Chemicals,225,201,200,626,209.6,B,Medium,Iniciante,79.0,5.3,Baixo Impacto / Alto Risco
+Discover Financial Services,Financial Services,335,321,313,969,323.3,BBB,High,Avançado,67.7,51.5,Alto Impacto / Alto Risco
+Duke Energy Corp,Utilities,604,362,328,1294,463.5,A,High,Avançado,53.6,70.0,Alto Impacto / Alto Risco
+Duke Realty Corp,Real Estate,540,313,300,1153,392.2,BBB,High,Avançado,60.8,72.2,Alto Impacto / Alto Risco
+CF Industries Holdings Inc,Chemicals,525,307,310,1142,388.2,BBB,High,Avançado,61.2,57.9,Alto Impacto / Alto Risco
+Devon Energy Corp,Energy,570,301,300,1171,402.3,BBB,High,Avançado,59.8,66.7,Alto Impacto / Alto Risco
+Ecolab Inc,Chemicals,547,373,325,1245,423.4,A,High,Avançado,57.7,78.9,Alto Impacto / Alto Risco
+Home Depot Inc,Retail,230,317,205,752,249.0,BB,Medium,Iniciante,75.1,38.5,Baixo Impacto / Alto Risco
+DTE Energy Co,Utilities,592,313,210,1115,413.9,BBB,High,Avançado,58.6,40.0,Baixo Impacto / Alto Risco
+Edison International,Utilities,700,513,315,1528,548.0,A,High,Avançado,45.2,100.0,Alto Impacto / Baixo Risco
+Corning Inc,Electrical Equipment,200,200,200,600,200.0,B,Medium,Iniciante,80.0,7.4,Baixo Impacto / Alto Risco
+DaVita Inc,Health Care,260,332,300,892,295.7,BB,Medium,Iniciante,70.4,45.1,Baixo Impacto / Alto Risco
+Western Digital Corp,Technology,545,339,260,1144,394.0,BBB,High,Avançado,60.6,69.8,Alto Impacto / Alto Risco
+Goldman Sachs Group Inc,Financial Services,525,305,305,1135,381.6,BBB,High,Avançado,61.8,81.8,Alto Impacto / Alto Risco
+DXC Technology Co,Technology,505,326,305,1136,387.5,BBB,High,Avançado,61.3,63.5,Alto Impacto / Alto Risco
+Eaton Corporation PLC,Electrical Equipment,520,328,320,1168,396.6,BBB,High,Avançado,60.3,88.9,Alto Impacto / Alto Risco
+Consolidated Edison Inc,Utilities,700,358,300,1358,499.0,A,High,Avançado,50.1,86.7,Alto Impacto / Alto Risco
+Hershey Co,Food Products,525,361,300,1186,409.7,BBB,High,Avançado,59.0,71.4,Alto Impacto / Alto Risco
+Johnson & Johnson,Pharmaceuticals,565,308,300,1173,405.0,BBB,High,Avançado,59.5,95.2,Alto Impacto / Alto Risco
+JPMorgan Chase & Co,Banking,505,319,338,1162,395.1,BBB,High,Avançado,60.5,96.6,Alto Impacto / Alto Risco
+Coca-Cola Co,Beverages,200,201,200,601,200.3,B,Medium,Iniciante,80.0,25.0,Baixo Impacto / Alto Risco
+Carmax Inc,Retail,251,237,300,788,262.2,BB,Medium,Iniciante,73.8,42.3,Baixo Impacto / Alto Risco
+Leidos Holdings Inc,Professional Services,500,300,300,1100,394.1,BBB,High,Avançado,60.6,57.1,Alto Impacto / Alto Risco
+Leggett & Platt Inc,Consumer products,500,300,300,1100,374.5,BBB,High,Avançado,62.6,62.5,Alto Impacto / Alto Risco
+McDonald's Corp,Hotels Restaurants and Leisure,505,326,305,1136,380.7,BBB,High,Avançado,61.9,75.0,Alto Impacto / Alto Risco
+Linde PLC,Chemicals,210,240,275,725,238.9,B,Medium,Iniciante,76.1,15.8,Baixo Impacto / Alto Risco
+Lumen Technologies Inc,Telecommunication,535,327,305,1167,401.1,BBB,High,Avançado,59.9,100.0,Alto Impacto / Alto Risco
+LyondellBasell Industries NV,Chemicals,587,352,330,1269,432.3,A,High,Avançado,56.8,94.7,Alto Impacto / Alto Risco
+Moody's Corp,Financial Services,515,308,235,1058,356.2,BBB,High,Avançado,64.4,60.6,Alto Impacto / Alto Risco
+Mckesson Corp,Health Care,500,303,310,1113,377.0,BBB,High,Avançado,62.3,62.7,Alto Impacto / Alto Risco
+Masco Corp,Building,522,323,305,1150,399.3,BBB,High,Avançado,60.1,80.0,Alto Impacto / Alto Risco
+Lowe's Companies Inc,Retail,218,200,200,618,206.7,B,Medium,Iniciante,79.3,3.8,Baixo Impacto / Alto Risco
+Medtronic PLC,Health Care,515,308,315,1138,385.6,BBB,High,Avançado,61.4,78.4,Alto Impacto / Alto Risco
+McCormick & Company Inc,Food Products,500,300,300,1100,378.4,BBB,High,Avançado,62.2,32.1,Baixo Impacto / Alto Risco
+MetLife Inc,Insurance,517,305,305,1127,399.0,BBB,High,Avançado,60.1,77.8,Alto Impacto / Alto Risco
+MGM Resorts International,Hotels Restaurants and Leisure,500,300,200,1000,336.0,BBB,High,Avançado,66.4,58.3,Alto Impacto / Alto Risco
+Marsh & McLennan Companies Inc,Insurance,500,300,300,1100,388.7,BBB,High,Avançado,61.1,63.0,Alto Impacto / Alto Risco
+Altria Group Inc,Tobacco,500,327,341,1168,397.9,BBB,High,Avançado,60.2,50.0,Baixo Impacto / Alto Risco
+Borgwarner Inc,Auto Components,260,206,230,696,233.8,B,Medium,Iniciante,76.6,66.7,Alto Impacto / Alto Risco
+Merck & Co Inc,Pharmaceuticals,500,305,315,1120,382.7,BBB,High,Avançado,61.7,76.2,Alto Impacto / Alto Risco
+Marathon Oil Corp,Energy,530,313,305,1148,392.7,BBB,High,Avançado,60.7,57.1,Alto Impacto / Alto Risco
+Marathon Petroleum Corp,Energy,700,366,315,1381,478.1,A,High,Avançado,52.2,90.5,Alto Impacto / Alto Risco
+Morgan Stanley,Financial Services,555,303,320,1178,396.3,BBB,High,Avançado,60.4,90.9,Alto Impacto / Alto Risco
+M&T Bank Corp,Banking,500,303,260,1063,361.8,BBB,High,Avançado,63.8,72.4,Alto Impacto / Alto Risco
+Mettler-Toledo International Inc,Life Sciences Tools and Services,505,300,240,1045,374.1,BBB,High,Avançado,62.6,50.0,Baixo Impacto / Alto Risco
+Motorola Solutions Inc,Communications,505,305,347,1157,386.8,BBB,High,Avançado,61.3,100.0,Alto Impacto / Alto Risco
+Nextera Energy Inc,Utilities,668,306,313,1287,472.5,A,High,Avançado,52.8,73.3,Alto Impacto / Alto Risco
+MSCI Inc,Financial Services,580,347,335,1262,424.2,A,High,Avançado,57.6,100.0,Alto Impacto / Alto Risco
+Norwegian Cruise Line Holdings Ltd,Hotels Restaurants and Leisure,495,306,300,1101,369.0,BBB,High,Avançado,63.1,62.5,Alto Impacto / Alto Risco
+NiSource Inc,Utilities,361,322,223,906,314.7,BBB,High,Avançado,68.5,10.0,Baixo Impacto / Alto Risco
+Northrop Grumman Corp,Aerospace and Defense,505,302,300,1107,372.8,BBB,High,Avançado,62.7,45.5,Baixo Impacto / Alto Risco
+ServiceNow Inc,Technology,550,374,350,1274,433.5,A,High,Avançado,56.6,96.8,Alto Impacto / Alto Risco
+Nucor Corp,Metals and Mining,374,340,225,939,313.9,BBB,High,Avançado,68.6,40.0,Baixo Impacto / Alto Risco
+Nielsen Holdings PLC,Professional Services,500,310,300,1110,397.5,BBB,High,Avançado,60.2,71.4,Alto Impacto / Alto Risco
+Norfolk Southern Corp,Road and Rail,358,339,330,1027,344.6,BBB,High,Avançado,65.5,33.3,Baixo Impacto / Alto Risco
+NVR Inc,Consumer products,265,206,205,676,227.7,B,Medium,Iniciante,77.2,20.0,Baixo Impacto / Alto Risco
+Progressive Corp,Insurance,350,355,270,975,335.3,BBB,High,Avançado,66.5,33.3,Baixo Impacto / Alto Risco
+Pfizer Inc,Pharmaceuticals,500,300,300,1100,377.1,BBB,High,Avançado,62.3,71.4,Alto Impacto / Alto Risco
+Pultegroup Inc,Consumer products,215,203,240,658,219.3,B,Medium,Iniciante,78.1,15.0,Baixo Impacto / Alto Risco
+Parker-Hannifin Corp,Machinery,325,303,225,853,285.3,BB,Medium,Iniciante,71.5,19.0,Baixo Impacto / Alto Risco
+PerkinElmer Inc,Life Sciences Tools and Services,515,316,325,1156,405.2,BBB,High,Avançado,59.5,81.2,Alto Impacto / Alto Risco
+Prologis Inc,Real Estate,579,374,315,1268,431.4,A,High,Avançado,56.9,88.9,Alto Impacto / Alto Risco
+PPG Industries Inc,Chemicals,293,236,220,749,252.4,B,Medium,Iniciante,74.8,21.1,Baixo Impacto / Alto Risco
+Public Storage,Real Estate,235,245,205,685,229.4,B,Medium,Iniciante,77.1,16.7,Baixo Impacto / Alto Risco
+PNC Financial Services Group Inc,Banking,455,323,300,1078,364.4,BBB,High,Avançado,63.6,75.9,Alto Impacto / Alto Risco
+Philip Morris International Inc,Tobacco,520,327,315,1162,398.2,BBB,High,Avançado,60.2,100.0,Alto Impacto / Alto Risco
+Packaging Corp of America,Packaging,500,303,300,1103,378.3,BBB,High,Avançado,62.2,25.0,Baixo Impacto / Alto Risco
+Phillips 66,Energy,569,363,310,1242,426.2,A,High,Avançado,57.4,76.2,Alto Impacto / Alto Risco
+Prudential Financial Inc,Insurance,285,300,288,873,290.9,BB,Medium,Iniciante,70.9,25.9,Baixo Impacto / Alto Risco
+Pentair PLC,Machinery,433,330,315,1078,365.7,BBB,High,Avançado,63.4,33.3,Baixo Impacto / Alto Risco
+Pinnacle West Capital Corp,Utilities,629,479,300,1408,502.0,A,High,Avançado,49.8,90.0,Alto Impacto / Baixo Risco
+PPL Corp,Utilities,525,306,300,1131,404.1,BBB,High,Avançado,59.6,30.0,Baixo Impacto / Alto Risco
+Quanta Services Inc,Construction,540,382,310,1232,415.3,A,High,Avançado,58.5,83.3,Alto Impacto / Alto Risco
+Raymond James Financial Inc,Financial Services,505,309,305,1119,375.9,BBB,High,Avançado,62.4,78.8,Alto Impacto / Alto Risco
+Regions Financial Corp,Banking,490,304,305,1099,373.9,BBB,High,Avançado,62.6,82.8,Alto Impacto / Alto Risco
+Royal Caribbean Cruises Ltd,Hotels Restaurants and Leisure,503,327,310,1140,381.9,BBB,High,Avançado,61.8,79.2,Alto Impacto / Alto Risco
+Ralph Lauren Corp,Textiles Apparel and Luxury Goods,420,352,303,1075,360.9,BBB,High,Avançado,63.9,66.7,Alto Impacto / Alto Risco
+PVH Corp,Textiles Apparel and Luxury Goods,418,319,315,1052,355.6,BBB,High,Avançado,64.4,55.6,Alto Impacto / Alto Risco
+Robert Half International Inc,Professional Services,255,334,310,899,292.1,BB,Medium,Iniciante,70.8,28.6,Baixo Impacto / Alto Risco
+Pioneer Natural Resources Co,Energy,700,412,300,1412,489.9,A,High,Avançado,51.0,95.2,Alto Impacto / Alto Risco
+Rollins Inc,Commercial Services and Supplies,500,300,305,1105,376.3,BBB,High,Avançado,62.4,71.4,Alto Impacto / Alto Risco
+Resmed Inc,Health Care,330,312,300,942,314.8,BBB,High,Avançado,68.5,49.0,Baixo Impacto / Alto Risco
+Charles Schwab Corp,Financial Services,515,300,300,1115,374.8,BBB,High,Avançado,62.5,75.8,Alto Impacto / Alto Risco
+Rockwell Automation Inc,Electrical Equipment,308,243,210,761,258.0,BB,Medium,Iniciante,74.2,33.3,Baixo Impacto / Alto Risco
+TransDigm Group Inc,Aerospace and Defense,500,300,300,1100,370.4,BBB,High,Avançado,63.0,36.4,Baixo Impacto / Alto Risco
+Sealed Air Corp,Packaging,555,318,257,1130,392.1,BBB,High,Avançado,60.8,50.0,Baixo Impacto / Alto Risco
+Roper Technologies Inc,Technology,570,350,340,1260,430.1,A,High,Avançado,57.0,95.2,Alto Impacto / Alto Risco
+Stanley Black & Decker Inc,Machinery,555,315,300,1170,405.0,BBB,High,Avançado,59.5,81.0,Alto Impacto / Alto Risco
+Constellation Brands Inc,Beverages,459,313,295,1067,364.3,BBB,High,Avançado,63.6,50.0,Baixo Impacto / Alto Risco
+Stryker Corp,Health Care,485,321,325,1131,382.0,BBB,High,Avançado,61.8,74.5,Alto Impacto / Alto Risco
+Sysco Corp,Retail,555,301,305,1161,396.9,BBB,High,Avançado,60.3,92.3,Alto Impacto / Alto Risco
+Sherwin-Williams Co,Chemicals,295,259,220,774,261.2,BB,Medium,Iniciante,73.9,26.3,Baixo Impacto / Alto Risco
+S&P Global Inc,Financial Services,435,341,310,1086,363.6,BBB,High,Avançado,63.6,63.6,Alto Impacto / Alto Risco
+STERIS plc,Health Care,510,301,305,1116,378.4,BBB,High,Avançado,62.2,66.7,Alto Impacto / Alto Risco
+Synchrony Financial,Financial Services,325,312,310,947,315.9,BBB,High,Avançado,68.4,48.5,Baixo Impacto / Alto Risco
+Simon Property Group Inc,Real Estate,225,247,205,677,226.4,B,Medium,Iniciante,77.4,8.3,Baixo Impacto / Alto Risco
+Sempra Energy,Utilities,700,386,310,1396,509.7,A,High,Avançado,49.0,93.3,Alto Impacto / Baixo Risco
+Southern Co,Utilities,515,307,330,1152,407.5,BBB,High,Avançado,59.2,33.3,Baixo Impacto / Alto Risco
+State Street Corp,Financial Services,225,211,210,646,215.5,B,Medium,Iniciante,78.4,24.2,Baixo Impacto / Alto Risco
+Snap-On Inc,Machinery,500,300,261,1061,366.0,BBB,High,Avançado,63.4,38.1,Baixo Impacto / Alto Risco
+Raytheon Technologies Corp,Aerospace and Defense,520,330,400,1250,417.4,A,High,Avançado,58.3,100.0,Alto Impacto / Alto Risco
+Hartford Financial Services Group Inc,Insurance,500,305,305,1110,391.5,BBB,High,Avançado,60.8,70.4,Alto Impacto / Alto Risco
+TE Connectivity Ltd,Electrical Equipment,200,200,200,600,200.0,B,Medium,Iniciante,80.0,7.4,Baixo Impacto / Alto Risco
+Teleflex Inc,Health Care,200,200,200,600,200.0,B,Medium,Iniciante,80.0,2.0,Baixo Impacto / Alto Risco
+Truist Financial Corp,Banking,480,308,300,1088,369.6,BBB,High,Avançado,63.0,79.3,Alto Impacto / Alto Risco
+Teledyne Technologies Inc,Electrical Equipment,500,300,300,1100,373.8,BBB,High,Avançado,62.6,68.5,Alto Impacto / Alto Risco
+Target Corp,Retail,550,342,313,1205,410.3,A,High,Avançado,59.0,96.2,Alto Impacto / Alto Risco
+TJX Companies Inc,Retail,500,300,300,1100,374.5,BBB,High,Avançado,62.6,71.2,Alto Impacto / Alto Risco
+Tapestry Inc,Textiles Apparel and Luxury Goods,483,310,300,1093,372.9,BBB,High,Avançado,62.7,88.9,Alto Impacto / Alto Risco
+Travelers Companies Inc,Insurance,500,300,300,1100,388.7,BBB,High,Avançado,61.1,63.0,Alto Impacto / Alto Risco
+Thermo Fisher Scientific Inc,Life Sciences Tools and Services,527,332,280,1139,403.8,BBB,High,Avançado,59.6,75.0,Alto Impacto / Alto Risco
+Trane Technologies PLC,Building,700,389,320,1409,499.6,A,High,Avançado,50.0,100.0,Alto Impacto / Baixo Risco
+Tyson Foods Inc,Food Products,530,374,340,1244,426.5,A,High,Avançado,57.4,85.7,Alto Impacto / Alto Risco
+Tyler Technologies Inc,Technology,400,306,305,1011,341.2,BBB,High,Avançado,65.9,34.9,Baixo Impacto / Alto Risco
+Textron Inc,Aerospace and Defense,500,300,200,1000,341.0,BBB,High,Avançado,65.9,27.3,Baixo Impacto / Alto Risco
+UnitedHealth Group Inc,Health Care,500,300,300,1100,372.9,BBB,High,Avançado,62.7,59.8,Alto Impacto / Alto Risco
+United Parcel Service Inc,Logistics and Transportation,540,374,245,1159,452.9,BBB,High,Avançado,54.7,83.3,Alto Impacto / Alto Risco
+UDR Inc,Real Estate,225,301,215,741,247.5,B,Medium,Iniciante,75.2,25.0,Baixo Impacto / Alto Risco
+Universal Health Services Inc,Health Care,560,320,338,1218,413.1,A,High,Avançado,58.7,96.1,Alto Impacto / Alto Risco
+Mosaic Co,Chemicals,515,379,315,1209,410.9,A,High,Avançado,58.9,73.7,Alto Impacto / Alto Risco
+US Bancorp,Banking,336,317,300,953,318.2,BBB,High,Avançado,68.2,62.1,Alto Impacto / Alto Risco
+United Rentals Inc,Trading Companies and Distributors,472,318,300,1090,370.0,BBB,High,Avançado,63.0,100.0,Alto Impacto / Alto Risco
+Vornado Realty Trust,Real Estate,540,326,325,1191,404.0,BBB,High,Avançado,59.6,83.3,Alto Impacto / Alto Risco
+Valero Energy Corp,Energy,608,307,330,1245,427.0,A,High,Avançado,57.3,81.0,Alto Impacto / Alto Risco
+VF Corp,Textiles Apparel and Luxury Goods,505,301,300,1106,379.0,BBB,High,Avançado,62.1,100.0,Alto Impacto / Alto Risco
+Visa Inc,Technology,504,368,310,1182,402.7,BBB,High,Avançado,59.7,80.2,Alto Impacto / Alto Risco
+Ventas Inc,Real Estate,500,300,300,1100,373.2,BBB,High,Avançado,62.7,55.6,Alto Impacto / Alto Risco
+Vulcan Materials Co,Construction,570,319,300,1189,402.9,BBB,High,Avançado,59.7,66.7,Alto Impacto / Alto Risco
+WEC Energy Group Inc,Utilities,635,438,300,1373,492.7,A,High,Avançado,50.7,83.3,Alto Impacto / Alto Risco
+Welltower OP LLC,Real Estate,437,326,300,1063,358.8,BBB,High,Avançado,64.1,47.2,Baixo Impacto / Alto Risco
+Waters Corp,Life Sciences Tools and Services,270,292,235,797,267.8,BB,Medium,Iniciante,73.2,31.2,Baixo Impacto / Alto Risco
+Waste Management Inc,Commercial Services and Supplies,613,408,285,1306,453.3,A,High,Avançado,54.7,100.0,Alto Impacto / Alto Risco
+Westinghouse Air Brake Technologies Corp,Machinery,607,311,320,1238,431.3,A,High,Avançado,56.9,100.0,Alto Impacto / Alto Risco
+Williams Companies Inc,Energy,500,300,300,1100,375.5,BBB,High,Avançado,62.4,38.1,Baixo Impacto / Alto Risco
+Wells Fargo & Co,Banking,500,300,300,1100,374.8,BBB,High,Avançado,62.5,86.2,Alto Impacto / Alto Risco
+Whirlpool Corp,Consumer products,500,301,300,1101,374.8,BBB,High,Avançado,62.5,70.0,Alto Impacto / Alto Risco
+West Pharmaceutical Services Inc,Life Sciences Tools and Services,540,330,305,1175,415.2,BBB,High,Avançado,58.5,87.5,Alto Impacto / Alto Risco
+W R Berkley Corp,Insurance,360,294,300,954,324.5,BBB,High,Avançado,67.6,29.6,Baixo Impacto / Alto Risco
+Walmart Inc,Retail,310,281,220,811,272.4,BB,Medium,Iniciante,72.8,46.2,Baixo Impacto / Alto Risco
+Western Union Co,Technology,205,205,228,638,211.6,B,Medium,Iniciante,78.8,4.8,Baixo Impacto / Alto Risco
+Yum! Brands Inc,Hotels Restaurants and Leisure,500,320,310,1130,378.6,BBB,High,Avançado,62.1,70.8,Alto Impacto / Alto Risco
+Xylem Inc,Machinery,374,254,210,838,286.6,BB,Medium,Iniciante,71.3,23.8,Baixo Impacto / Alto Risco
+Weyerhaeuser Co,Real Estate,700,340,300,1340,459.8,A,High,Avançado,54.0,97.2,Alto Impacto / Alto Risco
+Westrock Co,Packaging,555,324,305,1184,407.9,BBB,High,Avançado,59.2,75.0,Alto Impacto / Alto Risco
+Exxon Mobil Corp,Energy,538,322,313,1173,401.1,BBB,High,Avançado,59.9,61.9,Alto Impacto / Alto Risco
+Zimmer Biomet Holdings Inc,Health Care,520,330,310,1160,393.0,BBB,High,Avançado,60.7,88.2,Alto Impacto / Alto Risco
+Zoetis Inc,Pharmaceuticals,520,348,310,1178,404.6,BBB,High,Avançado,59.5,90.5,Alto Impacto / Alto Risco
+Deere & Co,Machinery,560,339,305,1204,415.0,A,High,Avançado,58.5,90.5,Alto Impacto / Alto Risco
+Dupont De Nemours Inc,Chemicals,550,341,295,1186,404.9,BBB,High,Avançado,59.5,68.4,Alto Impacto / Alto Risco
+Dominion Energy Inc,Utilities,535,325,310,1170,416.8,BBB,High,Avançado,58.3,43.3,Baixo Impacto / Alto Risco
+CVS Health Corp,Health Care,540,302,315,1157,392.8,BBB,High,Avançado,60.7,86.3,Alto Impacto / Alto Risco
+Delta Air Lines Inc,Airlines,515,300,313,1128,396.6,BBB,High,Avançado,60.3,100.0,Alto Impacto / Alto Risco
+Salesforce Inc,Technology,215,241,200,656,219.4,B,Medium,Iniciante,78.1,7.9,Baixo Impacto / Alto Risco
+Chevron Corp,Energy,210,217,210,637,212.4,B,Medium,Iniciante,78.8,4.8,Baixo Impacto / Alto Risco
+Corteva Inc,Chemicals,610,312,320,1242,424.1,A,High,Avançado,57.6,84.2,Alto Impacto / Alto Risco
+Coterra Energy Inc,Energy,555,329,310,1194,409.1,BBB,High,Avançado,59.1,71.4,Alto Impacto / Alto Risco
+Catalent Inc,Pharmaceuticals,483,303,305,1091,372.9,BBB,High,Avançado,62.7,66.7,Alto Impacto / Alto Risco
+Campbell Soup Co,Food Products,515,301,305,1121,385.9,BBB,High,Avançado,61.4,42.9,Baixo Impacto / Alto Risco
+Charles River Laboratories International Inc,Life Sciences Tools and Services,510,322,235,1067,381.7,BBB,High,Avançado,61.8,62.5,Alto Impacto / Alto Risco
+Conocophillips,Energy,687,544,305,1536,532.2,A,High,Avançado,46.8,100.0,Alto Impacto / Baixo Risco
+Cooper Companies Inc,Health Care,500,300,300,1100,372.9,BBB,High,Avançado,62.7,59.8,Alto Impacto / Alto Risco
+Capital One Financial Corp,Financial Services,508,309,320,1137,381.9,BBB,High,Avançado,61.8,84.8,Alto Impacto / Alto Risco
+Centene Corp,Health Care,548,355,315,1218,412.8,A,High,Avançado,58.7,94.1,Alto Impacto / Alto Risco
+CenterPoint Energy Inc,Utilities,550,320,260,1130,409.5,BBB,High,Avançado,59.0,36.7,Baixo Impacto / Alto Risco
+CMS Energy Corp,Utilities,450,667,75,1192,418.4,BBB,High,Avançado,58.2,46.7,Baixo Impacto / Alto Risco
+Cummins Inc,Machinery,510,320,300,1130,388.5,BBB,High,Avançado,61.2,61.9,Alto Impacto / Alto Risco
+Colgate-Palmolive Co,Consumer products,520,310,310,1140,388.2,BBB,High,Avançado,61.2,75.0,Alto Impacto / Alto Risco
+3M Co,Industrial Conglomerates,526,310,305,1141,392.1,BBB,High,Avançado,60.8,66.7,Alto Impacto / Alto Risco
+Citizens Financial Group Inc,Banking,230,215,205,650,217.2,B,Medium,Iniciante,78.3,13.8,Baixo Impacto / Alto Risco
+Conagra Brands Inc,Food Products,525,306,300,1131,390.3,BBB,High,Avançado,61.0,64.3,Alto Impacto / Alto Risco
+Cigna Corp,Health Care,508,328,310,1146,388.0,BBB,High,Avançado,61.2,80.4,Alto Impacto / Alto Risco
+Cardinal Health Inc,Health Care,505,300,315,1120,379.4,BBB,High,Avançado,62.1,69.6,Alto Impacto / Alto Risco
+Mastercard Inc,Technology,210,230,215,655,218.2,B,Medium,Iniciante,78.2,6.3,Baixo Impacto / Alto Risco
+Lamb Weston Holdings Inc,Food Products,345,256,300,901,302.1,BBB,High,Avançado,69.8,7.1,Baixo Impacto / Alto Risco
+Mid-America Apartment Communities Inc,Real Estate,315,261,210,786,265.5,BB,Medium,Iniciante,73.4,33.3,Baixo Impacto / Alto Risco
+Martin Marietta Materials Inc,Construction,573,313,300,1186,402.1,BBB,High,Avançado,59.8,50.0,Baixo Impacto / Alto Risco
+Southwest Airlines Co,Airlines,295,314,218,827,274.9,BB,Medium,Iniciante,72.5,71.4,Alto Impacto / Alto Risco
+Lincoln National Corp,Insurance,700,300,300,1300,477.4,A,High,Avançado,52.3,100.0,Alto Impacto / Alto Risco
+Lennar Corp,Consumer products,363,344,220,927,311.6,BBB,High,Avançado,68.8,50.0,Baixo Impacto / Alto Risco
+Procter & Gamble Co,Consumer products,560,422,310,1292,437.7,A,High,Avançado,56.2,100.0,Alto Impacto / Alto Risco
+Organon & Co,Pharmaceuticals,515,335,305,1155,396.7,BBB,High,Avançado,60.3,85.7,Alto Impacto / Alto Risco
+Occidental Petroleum Corp,Energy,505,302,300,1107,378.1,BBB,High,Avançado,62.2,42.9,Baixo Impacto / Alto Risco
+Dell Technologies Inc,Technology,500,318,275,1093,374.3,BBB,High,Avançado,62.6,49.2,Baixo Impacto / Alto Risco
+Paycom Software Inc,Technology,470,305,315,1090,370.1,BBB,High,Avançado,63.0,46.0,Baixo Impacto / Alto Risco
+Public Service Enterprise Group Inc,Utilities,500,300,205,1005,367.0,BBB,High,Avançado,63.3,16.7,Baixo Impacto / Alto Risco
+ONEOK Inc,Energy,581,326,355,1262,430.3,A,High,Avançado,57.0,85.7,Alto Impacto / Alto Risco
+NRG Energy Inc,Utilities,371,327,218,916,319.4,BBB,High,Avançado,68.1,13.3,Baixo Impacto / Alto Risco
+Loews Corp,Insurance,505,303,313,1121,394.6,BBB,High,Avançado,60.5,74.1,Alto Impacto / Alto Risco
+Omnicom Group Inc,Media,543,333,305,1181,413.8,BBB,High,Avançado,58.6,100.0,Alto Impacto / Alto Risco
+Oracle Corp,Technology,500,300,200,1000,346.7,BBB,High,Avançado,65.3,41.3,Baixo Impacto / Alto Risco
+Realty Income Corp,Real Estate,500,300,300,1100,373.2,BBB,High,Avançado,62.7,55.6,Alto Impacto / Alto Risco
+Domino's Pizza Inc,Hotels Restaurants and Leisure,205,205,200,610,203.4,B,Medium,Iniciante,79.7,8.3,Baixo Impacto / Alto Risco
+AT&T Inc,Telecommunication,210,200,305,715,234.0,B,Medium,Iniciante,76.6,33.3,Baixo Impacto / Alto Risco
+Union Pacific Corp,Road and Rail,290,257,245,792,267.7,BB,Medium,Iniciante,73.2,16.7,Baixo Impacto / Alto Risco
+Newmont Corporation,Metals and Mining,675,389,355,1419,478.3,A,High,Avançado,52.2,100.0,Alto Impacto / Alto Risco
+FedEx Corp,Logistics and Transportation,335,278,255,868,306.0,BB,Medium,Iniciante,69.4,33.3,Baixo Impacto / Alto Risco
+Nike Inc,Textiles Apparel and Luxury Goods,205,275,200,680,221.8,B,Medium,Iniciante,77.8,22.2,Baixo Impacto / Alto Risco
+Ford Motor Co,Automobiles,292,246,215,753,254.9,BB,Medium,Iniciante,74.5,50.0,Baixo Impacto / Alto Risco
+Lockheed Martin Corp,Aerospace and Defense,510,324,320,1154,388.3,BBB,High,Avançado,61.2,63.6,Alto Impacto / Alto Risco
+Republic Services Inc,Commercial Services and Supplies,293,235,216,744,251.9,B,Medium,Iniciante,74.8,28.6,Baixo Impacto / Alto Risco
+Enphase Energy Inc,Semiconductors,565,316,300,1181,405.0,BBB,High,Avançado,59.5,95.8,Alto Impacto / Alto Risco
+Exelon Corp,Utilities,694,403,316,1413,513.4,A,High,Avançado,48.7,96.7,Alto Impacto / Baixo Risco
+Expeditors International of Washington Inc,Logistics and Transportation,510,302,300,1112,407.8,BBB,High,Avançado,59.2,66.7,Alto Impacto / Alto Risco
+Expedia Group Inc,Hotels Restaurants and Leisure,225,242,305,772,256.8,BB,Medium,Iniciante,74.3,45.8,Baixo Impacto / Alto Risco
+Fastenal Co,Trading Companies and Distributors,230,302,200,732,233.7,B,Medium,Iniciante,76.6,40.0,Baixo Impacto / Alto Risco
+F5 Inc,Communications,200,221,215,636,211.9,B,Medium,Iniciante,78.8,11.1,Baixo Impacto / Alto Risco
+Fiserv Inc,Technology,395,302,310,1007,339.4,BBB,High,Avançado,66.1,33.3,Baixo Impacto / Alto Risco
+Equinix Inc,Real Estate,515,323,315,1153,390.8,BBB,High,Avançado,60.9,69.4,Alto Impacto / Alto Risco
+Fortinet Inc,Technology,500,306,305,1111,378.9,BBB,High,Avançado,62.1,55.6,Alto Impacto / Alto Risco
+ETSY Inc,Retail,235,241,235,711,236.9,B,Medium,Iniciante,76.3,30.8,Baixo Impacto / Alto Risco
+Franklin Resources Inc,Financial Services,321,349,310,980,326.5,BBB,High,Avançado,67.4,57.6,Alto Impacto / Alto Risco
+Digital Realty Trust Inc,Real Estate,540,317,300,1157,393.5,BBB,High,Avançado,60.6,75.0,Alto Impacto / Alto Risco
+Danaher Corp,Life Sciences Tools and Services,530,344,385,1259,435.7,A,High,Avançado,56.4,100.0,Alto Impacto / Alto Risco
+Equifax Inc,Professional Services,390,300,305,995,343.4,BBB,High,Avançado,65.7,42.9,Baixo Impacto / Alto Risco
+Estee Lauder Companies Inc,Consumer products,500,300,300,1100,374.5,BBB,High,Avançado,62.6,62.5,Alto Impacto / Alto Risco
+Eastman Chemical Co,Chemicals,583,365,310,1258,429.7,A,High,Avançado,57.0,89.5,Alto Impacto / Alto Risco
+Emerson Electric Co,Electrical Equipment,605,323,315,1243,424.8,A,High,Avançado,57.5,92.6,Alto Impacto / Alto Risco
+EOG Resources Inc,Energy,550,252,240,1042,361.2,BBB,High,Avançado,63.9,28.6,Baixo Impacto / Alto Risco
+Equity Residential,Real Estate,235,208,210,653,218.5,B,Medium,Iniciante,78.1,5.6,Baixo Impacto / Alto Risco
+Eversource Energy,Utilities,576,409,310,1295,459.9,A,High,Avançado,54.0,66.7,Alto Impacto / Alto Risco
+Essex Property Trust Inc,Real Estate,377,304,210,891,302.7,BB,Medium,Iniciante,69.7,36.1,Baixo Impacto / Alto Risco
+Fifth Third Bancorp,Banking,313,300,215,828,275.5,BB,Medium,Iniciante,72.4,37.9,Baixo Impacto / Alto Risco
+Entergy Corp,Utilities,653,380,310,1343,486.5,A,High,Avançado,51.4,76.7,Alto Impacto / Alto Risco
+Extra Space Storage Inc,Real Estate,572,289,225,1086,373.4,BBB,High,Avançado,62.7,61.1,Alto Impacto / Alto Risco
+Edwards Lifesciences Corp,Health Care,290,333,305,928,308.5,BBB,High,Avançado,69.2,47.1,Baixo Impacto / Alto Risco
+Fox Corp,Media,295,330,315,940,309.6,BBB,High,Avançado,69.0,52.2,Alto Impacto / Alto Risco
+Freeport-McMoRan Inc,Metals and Mining,608,313,305,1226,414.1,A,High,Avançado,58.6,90.0,Alto Impacto / Alto Risco
+FirstEnergy Corp,Utilities,510,304,300,1114,396.7,BBB,High,Avançado,60.3,23.3,Baixo Impacto / Alto Risco
+Fleetcor Technologies Inc,Technology,410,302,300,1012,342.2,BBB,High,Avançado,65.8,36.5,Baixo Impacto / Alto Risco
+Fidelity National Information Services Inc,Technology,530,298,310,1138,388.9,BBB,High,Avançado,61.1,65.1,Alto Impacto / Alto Risco
+First Republic Bank,Banking,370,331,288,989,330.7,BBB,High,Avançado,66.9,69.0,Alto Impacto / Alto Risco
+FMC Corp,Chemicals,510,307,315,1132,384.1,BBB,High,Avançado,61.6,52.6,Alto Impacto / Alto Risco
+Federal Realty Investment Trust,Real Estate,525,302,300,1127,383.0,BBB,High,Avançado,61.7,63.9,Alto Impacto / Alto Risco
+Fortive Corp,Machinery,540,326,305,1171,403.6,BBB,High,Avançado,59.6,76.2,Alto Impacto / Alto Risco
+Gap Inc,Retail,515,349,300,1164,395.3,BBB,High,Avançado,60.5,88.5,Alto Impacto / Alto Risco
+Garmin Ltd,Consumer products,205,242,200,647,214.9,B,Medium,Iniciante,78.5,5.0,Baixo Impacto / Alto Risco
+Gartner Inc,Technology,500,316,315,1131,385.1,BBB,High,Avançado,61.5,61.9,Alto Impacto / Alto Risco
+Eli Lilly and Co,Pharmaceuticals,510,360,310,1180,405.1,BBB,High,Avançado,59.5,100.0,Alto Impacto / Alto Risco
+Everest Re Group Ltd,Insurance,505,276,305,1086,383.5,BBB,High,Avançado,61.6,51.9,Alto Impacto / Alto Risco
+Evergy Inc,Utilities,555,310,300,1165,419.0,BBB,High,Avançado,58.1,50.0,Baixo Impacto / Alto Risco
+Fortune Brands Home & Security Inc,Building,510,302,300,1112,385.3,BBB,High,Avançado,61.5,50.0,Baixo Impacto / Alto Risco
+Gilead Sciences Inc,Biotechnology,500,303,300,1103,380.6,BBB,High,Avançado,61.9,85.7,Alto Impacto / Alto Risco
+Hologic Inc,Health Care,515,324,315,1154,390.8,BBB,High,Avançado,60.9,82.4,Alto Impacto / Alto Risco
+Henry Schein Inc,Health Care,210,205,200,615,205.2,B,Medium,Iniciante,79.5,3.9,Baixo Impacto / Alto Risco
+Honeywell International Inc,Industrial Conglomerates,545,344,308,1197,411.4,BBB,High,Avançado,58.9,100.0,Alto Impacto / Alto Risco
+Host Hotels & Resorts Inc,Real Estate,510,318,318,1146,388.2,BBB,High,Avançado,61.2,66.7,Alto Impacto / Alto Risco
+General Dynamics Corp,Aerospace and Defense,510,310,300,1120,377.4,BBB,High,Avançado,62.3,54.5,Alto Impacto / Alto Risco
+Hasbro Inc,Leisure Products,255,301,300,856,283.0,BB,Medium,Iniciante,71.7,100.0,Alto Impacto / Alto Risco
+Huntington Bancshares Inc,Banking,308,300,300,908,303.0,BBB,High,Avançado,69.7,58.6,Alto Impacto / Alto Risco
+Globe Life Inc,Insurance,215,238,215,668,223.1,B,Medium,Iniciante,77.7,3.7,Baixo Impacto / Alto Risco
+Genuine Parts Co,Distributors,535,225,305,1065,367.8,BBB,High,Avançado,63.2,33.3,Baixo Impacto / Alto Risco
+Generac Holdings Inc,Electrical Equipment,535,311,250,1096,377.0,BBB,High,Avançado,62.3,74.1,Alto Impacto / Alto Risco
+Global Payments Inc,Technology,310,343,265,918,308.2,BBB,High,Avançado,69.2,27.0,Baixo Impacto / Alto Risco
+HCA Healthcare Inc,Health Care,520,348,305,1173,397.2,BBB,High,Avançado,60.3,90.2,Alto Impacto / Alto Risco
+HanesBrands Inc,Textiles Apparel and Luxury Goods,310,223,305,838,285.2,BB,Medium,Iniciante,71.5,33.3,Baixo Impacto / Alto Risco
+Huntington Ingalls Industries Inc,Aerospace and Defense,545,315,315,1175,395.9,BBB,High,Avançado,60.4,90.9,Alto Impacto / Alto Risco
+Hewlett Packard Enterprise Co,Technology,230,359,230,819,273.4,BB,Medium,Iniciante,72.7,17.5,Baixo Impacto / Alto Risco
+Hess Corp,Energy,535,300,305,1140,390.1,BBB,High,Avançado,61.0,47.6,Baixo Impacto / Alto Risco
+Hilton Worldwide Holdings Inc,Hotels Restaurants and Leisure,293,200,205,698,233.6,B,Medium,Iniciante,76.6,41.7,Baixo Impacto / Alto Risco
+Hormel Foods Corp,Food Products,570,322,300,1192,413.6,BBB,High,Avançado,58.6,78.6,Alto Impacto / Alto Risco
+HP Inc,Technology,245,211,200,656,220.7,B,Medium,Iniciante,77.9,9.5,Baixo Impacto / Alto Risco
+Humana Inc,Health Care,462,300,300,1062,359.0,BBB,High,Avançado,64.1,54.9,Alto Impacto / Alto Risco
+Howmet Aerospace Inc,Aerospace and Defense,525,315,320,1160,390.3,BBB,High,Avançado,61.0,81.8,Alto Impacto / Alto Risco
+Healthpeak Properties Inc,Real Estate,535,331,335,1201,406.8,A,High,Avançado,59.3,86.1,Alto Impacto / Alto Risco
+General Mills Inc,Food Products,585,326,365,1276,437.5,A,High,Avançado,56.2,100.0,Alto Impacto / Alto Risco
+General Electric Co,Industrial Conglomerates,533,300,300,1133,390.1,BBB,High,Avançado,61.0,33.3,Baixo Impacto / Alto Risco
+Spotify Technology SA,Media,500,283,255,1038,366.8,BBB,High,Avançado,63.3,69.6,Alto Impacto / Alto Risco
+Triton International Ltd,Trading Companies and Distributors,477,306,300,1083,369.3,BBB,High,Avançado,63.1,80.0,Alto Impacto / Alto Risco
+TPG RE Finance Trust Inc,Real Estate,230,239,300,769,253.9,BB,Medium,Iniciante,74.6,30.6,Baixo Impacto / Alto Risco
+TransUnion,Professional Services,510,313,310,1133,405.1,BBB,High,Avançado,59.5,85.7,Alto Impacto / Alto Risco
+Yeti Holdings Inc,Leisure Products,269,253,305,827,274.1,BB,Medium,Iniciante,72.6,66.7,Alto Impacto / Alto Risco
+Yelp Inc,Media,245,515,213,973,292.5,BBB,High,Avançado,70.8,34.8,Baixo Impacto / Alto Risco
+Yext Inc,Technology,325,314,310,949,317.0,BBB,High,Avançado,68.3,31.7,Baixo Impacto / Alto Risco
+Spirit AeroSystems Holdings Inc,Aerospace and Defense,515,337,300,1152,388.8,BBB,High,Avançado,61.1,72.7,Alto Impacto / Alto Risco
+Yatsen Holding Ltd,Consumer products,355,217,325,897,302.8,BB,Medium,Iniciante,69.7,45.0,Baixo Impacto / Alto Risco
+Yiren Digital Ltd,Financial Services,200,205,205,610,203.3,B,Medium,Iniciante,79.7,3.0,Baixo Impacto / Alto Risco
+Yum China Holdings Inc,Hotels Restaurants and Leisure,205,217,220,642,213.9,B,Medium,Iniciante,78.6,25.0,Baixo Impacto / Alto Risco
+Tronox Holdings PLC,Chemicals,503,320,300,1123,381.7,BBB,High,Avançado,61.8,47.4,Baixo Impacto / Alto Risco
+Zepp Health Corp,Electrical Equipment,202,210,295,707,230.2,B,Medium,Iniciante,77.0,25.9,Baixo Impacto / Alto Risco
+Lightning eMotors Inc,Machinery,535,391,240,1166,396.9,BBB,High,Avançado,60.3,71.4,Alto Impacto / Alto Risco
+Zuora Inc,Technology,240,234,200,674,226.5,B,Medium,Iniciante,77.4,11.1,Baixo Impacto / Alto Risco
+ZIM Integrated Shipping Services Ltd,Marine,329,351,320,1000,333.6,BBB,High,Avançado,66.6,100.0,Alto Impacto / Alto Risco
+Zymeworks Inc,Biotechnology,240,326,305,871,286.2,BB,Medium,Iniciante,71.4,64.3,Alto Impacto / Alto Risco
+Zurn Elkay Water Solutions Corp,Building,500,300,300,1100,380.5,BBB,High,Avançado,62.0,40.0,Baixo Impacto / Alto Risco
+Clear Secure Inc,Technology,515,278,205,998,346.4,BBB,High,Avançado,65.4,38.1,Baixo Impacto / Alto Risco
+Zendesk Inc,Technology,515,338,320,1173,399.6,BBB,High,Avançado,60.0,76.2,Alto Impacto / Alto Risco
+Plexus Corp,Electrical Equipment,510,300,300,1110,377.4,BBB,High,Avançado,62.3,77.8,Alto Impacto / Alto Risco
+Seanergy Maritime Holdings Corp,Marine,345,300,305,950,318.9,BBB,High,Avançado,68.1,66.7,Alto Impacto / Alto Risco
+Shoals Technologies Group Inc,Electrical Equipment,285,280,300,865,287.3,BB,Medium,Iniciante,71.3,37.0,Baixo Impacto / Alto Risco
+Steven Madden Ltd,Textiles Apparel and Luxury Goods,508,231,300,1039,361.6,BBB,High,Avançado,63.8,77.8,Alto Impacto / Alto Risco
+Shyft Group Inc,Machinery,510,303,275,1088,375.5,BBB,High,Avançado,62.4,47.6,Baixo Impacto / Alto Risco
+SI-BONE Inc,Health Care,220,228,210,658,219.4,B,Medium,Iniciante,78.1,17.6,Baixo Impacto / Alto Risco
+Siebert Financial Corp,Financial Services,300,299,235,834,278.4,BB,Medium,Iniciante,72.2,42.4,Baixo Impacto / Alto Risco
+Playa Hotels & Resorts NV,Hotels Restaurants and Leisure,210,200,205,615,205.1,B,Medium,Iniciante,79.5,12.5,Baixo Impacto / Alto Risco
+World Wrestling Entertainment Inc,Media,275,332,315,922,301.4,BBB,High,Avançado,69.9,47.8,Baixo Impacto / Alto Risco
+PharmaCyte Biotech Inc,Biotechnology,220,202,300,722,235.0,B,Medium,Iniciante,76.5,19.6,Baixo Impacto / Alto Risco
+Wolverine World Wide Inc,Textiles Apparel and Luxury Goods,390,298,308,996,336.9,BBB,High,Avançado,66.3,44.4,Baixo Impacto / Alto Risco
+Xenia Hotels & Resorts Inc,Real Estate,260,263,236,759,253.8,BB,Medium,Iniciante,74.6,27.8,Baixo Impacto / Alto Risco
+United States Steel Corp,Metals and Mining,535,364,300,1199,402.9,BBB,High,Avançado,59.7,80.0,Alto Impacto / Alto Risco
+Xpeng Inc,Automobiles,215,208,200,623,208.4,B,Medium,Iniciante,79.2,25.0,Baixo Impacto / Alto Risco
+XPO Logistics Inc,Road and Rail,560,318,300,1178,416.3,BBB,High,Avançado,58.4,100.0,Alto Impacto / Alto Risco
+Xinyuan Real Estate Co Ltd,Real Estate,205,242,300,747,245.8,B,Medium,Iniciante,75.4,22.2,Baixo Impacto / Alto Risco
+XL Fleet Corp,Auto Components,200,200,200,600,200.0,B,Medium,Iniciante,80.0,33.3,Baixo Impacto / Alto Risco
+X Financial,Financial Services,215,205,200,620,206.8,B,Medium,Iniciante,79.3,12.1,Baixo Impacto / Alto Risco
+Alleghany Corp,Insurance,215,240,300,755,241.2,BB,Medium,Iniciante,75.9,14.8,Baixo Impacto / Alto Risco
+Yalla Group Ltd,Media,233,244,220,697,230.8,B,Medium,Iniciante,76.9,17.4,Baixo Impacto / Alto Risco
+Watts Water Technologies Inc,Machinery,420,303,210,933,317.8,BBB,High,Avançado,68.2,28.6,Baixo Impacto / Alto Risco
+Sientra Inc,Health Care,219,308,236,763,253.0,BB,Medium,Iniciante,74.7,33.3,Baixo Impacto / Alto Risco
+Hain Celestial Group Inc,Food Products,520,302,305,1127,388.2,BBB,High,Avançado,61.2,50.0,Baixo Impacto / Alto Risco
+MMTEC Inc,Technology,221,225,305,751,246.4,BB,Medium,Iniciante,75.4,12.7,Baixo Impacto / Alto Risco
+Metacrine Inc,Biotechnology,210,207,330,747,240.7,B,Medium,Iniciante,75.9,28.6,Baixo Impacto / Alto Risco
+Molecular Templates Inc,Biotechnology,360,325,320,1005,337.6,BBB,High,Avançado,66.2,75.0,Alto Impacto / Alto Risco
+Materialise NV,Technology,505,301,300,1106,377.6,BBB,High,Avançado,62.2,54.0,Alto Impacto / Alto Risco
+Mannatech Inc,Consumer products,200,260,230,690,228.1,B,Medium,Iniciante,77.2,25.0,Baixo Impacto / Alto Risco
+Matrix Service Co,Construction,589,390,277,1256,424.6,A,High,Avançado,57.5,100.0,Alto Impacto / Alto Risco
+Halozyme Therapeutics Inc,Biotechnology,510,302,315,1127,388.2,BBB,High,Avançado,61.2,91.1,Alto Impacto / Alto Risco
+Hallmark Financial Services Inc,Insurance,215,233,300,748,238.7,B,Medium,Iniciante,76.1,11.1,Baixo Impacto / Alto Risco
+MVB Financial Corp,Banking,210,215,215,640,213.1,B,Medium,Iniciante,78.7,10.3,Baixo Impacto / Alto Risco
+Microvast Holdings Inc,Machinery,225,282,210,717,235.0,B,Medium,Iniciante,76.5,4.8,Baixo Impacto / Alto Risco
+MicroVision Inc,Electrical Equipment,451,300,330,1081,363.9,BBB,High,Avançado,63.6,63.0,Alto Impacto / Alto Risco
+MaxCyte Inc,Life Sciences Tools and Services,220,300,248,768,251.8,BB,Medium,Iniciante,74.8,12.5,Baixo Impacto / Alto Risco
+Myriad Genetics Inc,Biotechnology,353,321,294,968,326.6,BBB,High,Avançado,67.3,69.6,Alto Impacto / Alto Risco
+First Western Financial Inc,Banking,351,300,235,886,296.6,BB,Medium,Iniciante,70.3,51.7,Alto Impacto / Alto Risco
+Maxlinear Inc,Semiconductors,535,325,335,1195,407.1,BBB,High,Avançado,59.3,100.0,Alto Impacto / Alto Risco
+MyMD Pharmaceuticals Inc,Pharmaceuticals,205,257,230,692,230.1,B,Medium,Iniciante,77.0,28.6,Baixo Impacto / Alto Risco
+Playstudios Inc,Media,205,202,200,607,202.6,B,Medium,Iniciante,79.7,4.3,Baixo Impacto / Alto Risco
+Matterport Inc,Technology,346,325,260,931,314.3,BBB,High,Avançado,68.6,28.6,Baixo Impacto / Alto Risco
+MACOM Technology Solutions Holdings Inc,Semiconductors,377,309,255,941,318.4,BBB,High,Avançado,68.2,25.0,Baixo Impacto / Alto Risco
+Clearone Inc,Communications,370,228,210,808,271.2,BB,Medium,Iniciante,72.9,44.4,Baixo Impacto / Alto Risco
+Celsion Corp,Biotechnology,255,214,300,769,253.0,BB,Medium,Iniciante,74.7,39.3,Baixo Impacto / Alto Risco
+Gulf Resources Inc,Chemicals,408,206,300,914,307.2,BBB,High,Avançado,69.3,31.6,Baixo Impacto / Alto Risco
+GSE Systems Inc,Technology,505,307,245,1057,363.9,BBB,High,Avançado,63.6,44.4,Baixo Impacto / Alto Risco
+Gyrodyne LLC,Real Estate,240,206,240,686,228.6,B,Medium,Iniciante,77.1,11.1,Baixo Impacto / Alto Risco
+Global Water Resources Inc,Utilities,367,297,235,899,313.2,BB,Medium,Iniciante,68.7,6.7,Baixo Impacto / Alto Risco
+Hawaiian Holdings Inc,Airlines,200,321,200,721,230.0,B,Medium,Iniciante,77.0,28.6,Baixo Impacto / Alto Risco
+CleanSpark Inc,Technology,570,326,310,1206,413.4,A,High,Avançado,58.7,87.3,Alto Impacto / Alto Risco
+Clearside Biomedical Inc,Pharmaceuticals,215,230,200,645,216.6,B,Medium,Iniciante,78.3,4.8,Baixo Impacto / Alto Risco
+Health Assurance Acquisition Corp,Unknown,200,258,300,758,270.3,BB,Medium,Iniciante,73.0,84.6,Alto Impacto / Alto Risco
+Hanmi Financial Corp,Banking,250,207,233,690,232.1,B,Medium,Iniciante,76.8,20.7,Baixo Impacto / Alto Risco
+Catalyst Bancorp Inc,Financial Services,260,350,267,877,291.5,BB,Medium,Iniciante,70.9,45.5,Baixo Impacto / Alto Risco
+Euro Tech Holdings Company Ltd,Trading Companies and Distributors,230,201,210,641,215.7,B,Medium,Iniciante,78.4,20.0,Baixo Impacto / Alto Risco
+Calyxt Inc,Biotechnology,535,322,325,1182,407.5,BBB,High,Avançado,59.2,98.2,Alto Impacto / Alto Risco
+Cambium Networks Corp,Communications,505,337,300,1142,383.2,BBB,High,Avançado,61.7,88.9,Alto Impacto / Alto Risco
+Columbus McKinnon Corp,Machinery,200,323,240,763,246.2,BB,Medium,Iniciante,75.4,14.3,Baixo Impacto / Alto Risco
+Ever-Glory International Group Inc,Textiles Apparel and Luxury Goods,200,211,210,621,206.4,B,Medium,Iniciante,79.4,11.1,Baixo Impacto / Alto Risco
+Clovis Oncology Inc,Biotechnology,225,212,300,737,240.4,B,Medium,Iniciante,76.0,26.8,Baixo Impacto / Alto Risco
+Clever Leaves Holdings Inc,Pharmaceuticals,225,243,205,673,226.4,B,Medium,Iniciante,77.4,14.3,Baixo Impacto / Alto Risco
+Happiness Development Group Ltd,Consumer products,225,207,300,732,243.4,B,Medium,Iniciante,75.7,35.0,Baixo Impacto / Alto Risco
+Home Bancorp Inc,Financial Services,230,202,200,632,211.1,B,Medium,Iniciante,78.9,21.2,Baixo Impacto / Alto Risco
+Harvard Bioscience Inc,Life Sciences Tools and Services,250,221,300,771,253.9,BB,Medium,Iniciante,74.6,18.8,Baixo Impacto / Alto Risco
+Horizon Bancorp Inc,Banking,255,321,233,809,265.9,BB,Medium,Iniciante,73.4,27.6,Baixo Impacto / Alto Risco
+HBT Financial Inc,Banking,245,275,300,820,272.4,BB,Medium,Iniciante,72.8,34.5,Baixo Impacto / Alto Risco
+Health Catalyst Inc,Health Care,545,324,320,1189,403.3,BBB,High,Avançado,59.7,92.2,Alto Impacto / Alto Risco
+Healthcare Services Acquisition Corp,Unknown,245,205,300,750,254.2,BB,Medium,Iniciante,74.6,61.5,Alto Impacto / Alto Risco
+Harpoon Therapeutics Inc,Biotechnology,485,300,310,1095,376.3,BBB,High,Avançado,62.4,80.4,Alto Impacto / Alto Risco
+Haynes International Inc,Metals and Mining,500,301,300,1101,370.6,BBB,High,Avançado,62.9,60.0,Alto Impacto / Alto Risco
+Patriot National Bancorp Inc,Banking,205,302,210,717,233.9,B,Medium,Iniciante,76.6,24.1,Baixo Impacto / Alto Risco
+Harbor Custom Development Inc,Consumer products,222,221,208,651,217.2,B,Medium,Iniciante,78.3,10.0,Baixo Impacto / Alto Risco
+Heritage-Crystal Clean Inc,Commercial Services and Supplies,525,400,300,1225,421.2,A,High,Avançado,57.9,85.7,Alto Impacto / Alto Risco
+Pinnacle Financial Partners Inc,Banking,271,328,250,849,279.7,BB,Medium,Iniciante,72.0,44.8,Baixo Impacto / Alto Risco
+POINT Biopharma Global Inc,Biotechnology,320,221,285,826,277.3,BB,Medium,Iniciante,72.3,57.1,Alto Impacto / Alto Risco
+Predictive Oncology Inc,Health Care,278,297,220,795,266.0,BB,Medium,Iniciante,73.4,43.1,Baixo Impacto / Alto Risco
+Polar Power Inc,Electrical Equipment,200,200,200,600,200.0,B,Medium,Iniciante,80.0,7.4,Baixo Impacto / Alto Risco
+Insulet Corp,Health Care,215,233,205,653,217.7,B,Medium,Iniciante,78.2,13.7,Baixo Impacto / Alto Risco
+Power Integrations Inc,Semiconductors,575,285,305,1165,400.3,BBB,High,Avançado,60.0,91.7,Alto Impacto / Alto Risco
+Ammo Inc,Leisure Products,233,224,200,657,220.6,B,Medium,Iniciante,77.9,33.3,Baixo Impacto / Alto Risco
+Primeenergy Resources Corp,Energy,200,200,260,660,216.5,B,Medium,Iniciante,78.4,9.5,Baixo Impacto / Alto Risco
+Pennant Group Inc,Health Care,245,306,200,751,250.6,BB,Medium,Iniciante,74.9,29.4,Baixo Impacto / Alto Risco
+Pacific Premier Bancorp Inc,Banking,565,328,315,1208,412.1,A,High,Avançado,58.8,100.0,Alto Impacto / Alto Risco
+Perma-Pipe International Holdings Inc,Machinery,500,260,300,1060,368.6,BBB,High,Avançado,63.1,42.9,Baixo Impacto / Alto Risco
+Pilgrims Pride Corp,Food Products,500,302,220,1022,358.7,BBB,High,Avançado,64.1,14.3,Baixo Impacto / Alto Risco
+PRA Group Inc,Financial Services,473,321,310,1104,370.3,BBB,High,Avançado,63.0,69.7,Alto Impacto / Alto Risco
+Pioneer Power Solutions Inc,Electrical Equipment,299,305,315,919,305.5,BBB,High,Avançado,69.4,40.7,Baixo Impacto / Alto Risco
+Praxis Precision Medicines Inc,Biotechnology,200,215,215,630,209.0,B,Medium,Iniciante,79.1,5.4,Baixo Impacto / Alto Risco
+Procept Biorobotics Corp,Health Care,200,224,300,724,239.0,B,Medium,Iniciante,76.1,21.6,Baixo Impacto / Alto Risco
+Porch Group Inc,Retail,225,227,215,667,222.4,B,Medium,Iniciante,77.8,19.2,Baixo Impacto / Alto Risco
+Artisan Acquisition Corp,Unknown,245,203,265,713,237.1,B,Medium,Iniciante,76.3,38.5,Baixo Impacto / Alto Risco
+Perdoceo Education Corp,Diversified Consumer Services,365,297,250,912,309.8,BBB,High,Avançado,69.0,100.0,Alto Impacto / Alto Risco
+Shineco Inc,Consumer products,340,346,305,991,330.7,BBB,High,Avançado,66.9,55.0,Alto Impacto / Alto Risco
+SiTime Corp,Semiconductors,505,304,300,1109,378.5,BBB,High,Avançado,62.2,58.3,Alto Impacto / Alto Risco
+Sirius XM Holdings Inc,Media,240,302,205,747,241.2,B,Medium,Iniciante,75.9,21.7,Baixo Impacto / Alto Risco
+Scienjoy Holding Corp,Media,260,320,240,820,266.0,BB,Medium,Iniciante,73.4,26.1,Baixo Impacto / Alto Risco
+Powered Brands,Unknown,235,231,250,716,240.3,B,Medium,Iniciante,76.0,46.2,Baixo Impacto / Alto Risco
+Powell Industries Inc,Electrical Equipment,500,240,215,955,329.1,BBB,High,Avançado,67.1,59.3,Alto Impacto / Alto Risco
+Upwork Inc,Professional Services,275,264,278,817,271.9,BB,Medium,Iniciante,72.8,14.3,Baixo Impacto / Alto Risco
+USA Truck Inc,Road and Rail,532,311,303,1146,403.2,BBB,High,Avançado,59.7,83.3,Alto Impacto / Alto Risco
+US Gold Corp,Metals and Mining,400,240,300,940,316.1,BBB,High,Avançado,68.4,50.0,Baixo Impacto / Alto Risco
+Universal Stainless & Alloy Products Inc,Metals and Mining,238,231,200,669,223.2,B,Medium,Iniciante,77.7,30.0,Baixo Impacto / Alto Risco
+US Energy Corp,Energy,438,265,315,1018,344.1,BBB,High,Avançado,65.6,23.8,Baixo Impacto / Alto Risco
+Usio Inc,Technology,285,245,240,770,258.6,BB,Medium,Iniciante,74.1,14.3,Baixo Impacto / Alto Risco
+United Therapeutics Corp,Biotechnology,233,259,300,792,259.5,BB,Medium,Iniciante,74.1,41.1,Baixo Impacto / Alto Risco
+Urogen Pharma Ltd,Biotechnology,210,251,290,751,245.0,BB,Medium,Iniciante,75.5,33.9,Baixo Impacto / Alto Risco
+Urban Outfitters Inc,Retail,335,300,300,935,313.0,BBB,High,Avançado,68.7,50.0,Baixo Impacto / Alto Risco
+Utime Ltd,Electrical Equipment,217,200,200,617,206.3,B,Medium,Iniciante,79.4,14.8,Baixo Impacto / Alto Risco
+Minerva Surgical Inc,Health Care,205,201,210,616,205.3,B,Medium,Iniciante,79.5,5.9,Baixo Impacto / Alto Risco
+UTStarcom Holdings Corp,Communications,340,310,365,1015,337.4,BBB,High,Avançado,66.3,55.6,Alto Impacto / Alto Risco
+Uxin Ltd,Retail,203,202,225,630,209.7,B,Medium,Iniciante,79.0,7.7,Baixo Impacto / Alto Risco
+Univest Financial Corp,Banking,331,322,305,958,319.5,BBB,High,Avançado,68.0,65.5,Alto Impacto / Alto Risco
+Cheetah Mobile Inc,Technology,205,214,215,634,210.9,B,Medium,Iniciante,78.9,3.2,Baixo Impacto / Alto Risco
+Commercial Metals Co,Metals and Mining,223,212,200,635,211.9,B,Medium,Iniciante,78.8,20.0,Baixo Impacto / Alto Risco
+United States Lime & Minerals Inc,Construction,500,233,300,1033,350.6,BBB,High,Avançado,64.9,33.3,Baixo Impacto / Alto Risco
+Utah Medical Products Inc,Health Care,240,236,250,726,241.8,B,Medium,Iniciante,75.8,23.5,Baixo Impacto / Alto Risco
+Compass Minerals International Inc,Metals and Mining,505,302,320,1127,379.3,BBB,High,Avançado,62.1,70.0,Alto Impacto / Alto Risco
+Concord Acquisition Corp,Unknown,205,257,300,762,270.5,BB,Medium,Iniciante,73.0,92.3,Alto Impacto / Alto Risco
+CNFinance Holdings Ltd,Financial Services,200,200,220,620,206.5,B,Medium,Iniciante,79.4,9.1,Baixo Impacto / Alto Risco
+Conmed Corp,Health Care,441,300,270,1011,342.0,BBB,High,Avançado,65.8,51.0,Alto Impacto / Alto Risco
+Cinemark Holdings Inc,Media,330,300,300,930,312.9,BBB,High,Avançado,68.7,60.9,Alto Impacto / Alto Risco
+Cannae Holdings Inc,Financial Services,215,203,203,621,207.2,B,Medium,Iniciante,79.3,15.2,Baixo Impacto / Alto Risco
+CNO Financial Group Inc,Insurance,500,322,315,1137,399.5,BBB,High,Avançado,60.0,81.5,Alto Impacto / Alto Risco
+CNA Financial Corp,Insurance,540,329,340,1209,424.8,A,High,Avançado,57.5,96.3,Alto Impacto / Alto Risco
+Costamare Inc,Marine,242,204,200,646,217.6,B,Medium,Iniciante,78.2,33.3,Baixo Impacto / Alto Risco
+Granite Construction Inc,Construction,200,200,200,600,200.0,B,Medium,Iniciante,80.0,16.7,Baixo Impacto / Alto Risco
+Fabrinet,Electrical Equipment,510,209,210,929,320.3,BBB,High,Avançado,68.0,55.6,Alto Impacto / Alto Risco
+Hyatt Hotels Corp,Hotels Restaurants and Leisure,235,209,205,649,216.6,B,Medium,Iniciante,78.3,29.2,Baixo Impacto / Alto Risco
+Hannon Armstrong Sustainable Infrastructure Capital Inc,Real Estate,646,404,313,1363,465.4,A,High,Avançado,53.5,100.0,Alto Impacto / Alto Risco
+Hayward Holdings Inc,Building,535,305,300,1140,396.6,BBB,High,Avançado,60.3,70.0,Alto Impacto / Alto Risco
+Hamilton Beach Brands Holding Co,Consumer products,245,272,230,747,248.6,B,Medium,Iniciante,75.1,40.0,Baixo Impacto / Alto Risco
+Warrior Met Coal Inc,Metals and Mining,215,200,200,615,205.3,B,Medium,Iniciante,79.5,10.0,Baixo Impacto / Alto Risco
+Hci Group Inc,Insurance,205,260,300,765,243.8,BB,Medium,Iniciante,75.6,18.5,Baixo Impacto / Alto Risco
+Hawaiian Electric Industries Inc,Utilities,585,348,310,1243,446.2,A,High,Avançado,55.4,60.0,Alto Impacto / Alto Risco
+Guidewire Software Inc,Technology,549,321,330,1200,409.6,A,High,Avançado,59.0,85.7,Alto Impacto / Alto Risco
+Haemonetics Corp,Health Care,448,303,305,1056,356.5,BBB,High,Avançado,64.4,52.9,Alto Impacto / Alto Risco
+Holly Energy Partners LP,Energy,511,225,215,951,330.2,BBB,High,Avançado,67.0,19.0,Baixo Impacto / Alto Risco
+Hilton Grand Vacations Inc,Hotels Restaurants and Leisure,305,288,250,843,281.4,BB,Medium,Iniciante,71.9,50.0,Baixo Impacto / Alto Risco
+Hillenbrand Inc,Machinery,489,349,300,1138,387.8,BBB,High,Avançado,61.2,57.1,Alto Impacto / Alto Risco
+Howard Hughes Corp,Real Estate,500,300,300,1100,373.2,BBB,High,Avançado,62.7,55.6,Alto Impacto / Alto Risco
+HubSpot Inc,Technology,480,329,320,1129,383.4,BBB,High,Avançado,61.7,57.1,Alto Impacto / Alto Risco
+Hess Midstream LP,Energy,307,257,255,819,275.3,BB,Medium,Iniciante,72.5,14.3,Baixo Impacto / Alto Risco
+HEICO Corp,Aerospace and Defense,225,203,205,633,211.3,B,Medium,Iniciante,78.9,9.1,Baixo Impacto / Alto Risco

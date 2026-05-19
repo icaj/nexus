@@ -50,14 +50,14 @@ caso haja qualquer inconsistência nos dados.
 
 Cada pilar recebe uma grade de crédito com base no seu score individual:
 
-  Score         Grade   Nível
-  ──────────    ──────  ──────────
-  200 a 299     B       Low
-  300 a 399     BB      Low
-  400 a 499     BBB     High
-  500 a 599     A       High
-  600 a 899     AA      Excellent
-  900 a 1.000   AAA     Excellent
+  | Score       | Grade | Nível      |
+  |-------------|-------|------------|
+  | 200 a 299   |  B    |  Low       |
+  | 300 a 399   |  BB   |  Low       |
+  | 400 a 499   |  BBB  |  High      |
+  | 500 a 599   |  A    |  High      |
+  | 600 a 899   | AA    |  Excellent |
+  | 900 a 1.000 | AAA   |  Excellent |
 
 ### 2.3 GRADES DO SCORE TOTAL (escala 0–3.000)
 

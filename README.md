@@ -1,12 +1,6 @@
 # ESG Nexus
 Plataforma para análise, monitoramento e ranking de aderência às práticas ESG de fornecedores
 
-# Instruções para instalação
-1. baixar os arquivos
-2. instalar o python
-3. digitar o comando 'pip install -r requirements.txt'
-
-
 # DOCUMENTAÇÃO TÉCNICA — esg_pipeline.py
 Pipeline de Análise ESG de Fornecedores
 Edenred Brasil | CESAR School 2025

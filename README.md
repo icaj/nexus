@@ -59,7 +59,7 @@ Cada pilar recebe uma grade de crédito com base no seu score individual:
   600 a 899     AA      Excellent
   900 a 1.000   AAA     Excellent
 
-## 2.3 GRADES DO SCORE TOTAL (escala 0–3.000)
+### 2.3 GRADES DO SCORE TOTAL (escala 0–3.000)
 
 O score total (soma dos três pilares) recebe uma grade consolidada:
 
@@ -76,7 +76,7 @@ Nota: a base de dados disponível contém apenas empresas com grades B, BB, BBB
 e A no score total (scores entre 600 e 1.536). Não há empresas com grades AA
 ou AAA na base.
 
-## 2.4 PROCESSO DE CÁLCULO DA ESG ENTERPRISE (5 ETAPAS)
+### 2.4 PROCESSO DE CÁLCULO DA ESG ENTERPRISE (5 ETAPAS)
 
 O PDF descreve cinco etapas metodológicas para chegar ao score final:
 
@@ -114,20 +114,20 @@ O PDF descreve cinco etapas metodológicas para chegar ao score final:
 
 ## 3. ETAPA 1 — PRÉ-PROCESSAMENTO
 
-## 3.1 REMOÇÃO DE COLUNAS NÃO ANALÍTICAS
+### 3.1 REMOÇÃO DE COLUNAS NÃO ANALÍTICAS
 
 As colunas de metadados operacionais que não contribuem para a análise são
 removidas: ticker, logo, weburl, last_processing_date, cik, currency, exchange.
 Após a remoção, a base passa de 21 para 14 colunas.
 
-## 3.2 TRATAMENTO DE NULOS EM INDUSTRY
+### 3.2 TRATAMENTO DE NULOS EM INDUSTRY
 
 Treze registros não possuem o campo industry preenchido. Esses registros
 recebem o valor "Unknown". Isso evita que esses registros sejam descartados
 e permite que ainda participem do treino e da análise, recebendo os pesos
 globais no cálculo de risco e impacto.
 
-## 3.3 NORMALIZAÇÃO DE NOMES DE INDÚSTRIA
+### 3.3 NORMALIZAÇÃO DE NOMES DE INDÚSTRIA
 
 A base contém variações textuais para o mesmo setor, causadas por uso
 inconsistente de "&" versus "and", presença de vírgulas e espaços extras.
@@ -151,7 +151,7 @@ O pipeline trata dois tipos de problema:
 
     Resultado: a base passa de 47 setores únicos para 44 setores únicos.
 
-## 3.4 VERIFICAÇÃO DE INTEGRIDADE
+### 3.4 VERIFICAÇÃO DE INTEGRIDADE
 
 O script verifica que total_score é exatamente igual à soma dos três pilares
 para todas as 722 linhas. Se houver qualquer divergência, a execução é
@@ -162,7 +162,7 @@ com a metodologia da ESG Enterprise.
 
 ## 4. ETAPA 2 — CÁLCULO DAS MÉTRICAS: MATURIDADE, RISCO E IMPACTO
 
-## 4.1 MATURIDADE
+### 4.1 MATURIDADE
 
 A maturidade de cada empresa NÃO é calculada pelo pipeline. Ela já existe na
 base de dados como o campo total_level, produzido pela metodologia auditada da
@@ -188,13 +188,13 @@ Distribuição na base:
   Avançado  (High)   : 451 empresas — 62,5%
   Iniciante (Medium) : 271 empresas — 37,5%
 
-## 4.2 PESOS POR INDÚSTRIA
+### 4.2 PESOS POR INDÚSTRIA
 
 Antes de calcular o risco e o impacto, o pipeline calcula o peso relativo de
 cada pilar (E, S, G) para cada setor da base. Esses pesos expressam o quanto
 cada pilar contribui para explicar o desempenho ESG total dentro daquele setor.
 
-4.2.1 MOTIVAÇÃO
+#### 4.2.1 MOTIVAÇÃO
 
 Tratar os três pilares com pesos iguais ignoraria diferenças setoriais
 importantes. Uma empresa de Utilities tem exposição ambiental muito maior do
@@ -206,7 +206,7 @@ A própria metodologia da ESG Enterprise usa pesos variáveis por indústria
 (Materiality Matrix, Etapa 2 do PDF). Os pesos do pipeline seguem essa mesma
 lógica, calculados empiricamente a partir da base de treino.
 
-4.2.2 MÉTODO DE CÁLCULO
+#### 4.2.2 MÉTODO DE CÁLCULO
 
 Para cada setor com 5 ou mais empresas, o pipeline executa os seguintes passos:
 
@@ -234,7 +234,7 @@ Para cada setor com 5 ou mais empresas, o pipeline executa os seguintes passos:
     w_G = 0,82 / 2,38 = 0,346   (34,6%)
     soma dos pesos             = 1,000  ✓
 
-4.2.3 REGRA DE FALLBACK
+#### 4.2.3 REGRA DE FALLBACK
 
 Para setores com menos de 5 empresas, os pesos calculados seriam instáveis por
 se basearem em pouquíssimas observações. Nesses casos, o pipeline usa os pesos
@@ -253,7 +253,7 @@ Na base de 44 setores únicos:
   Setores com pesos empíricos : 30 (n >= 5)
   Setores com fallback        : 14 (n < 5)
 
-4.2.4 EXEMPLOS DE PESOS POR SETOR
+#### 4.2.4 EXEMPLOS DE PESOS POR SETOR
 
 Os pesos refletem a realidade setorial de forma coerente:
 
@@ -267,8 +267,7 @@ Os pesos refletem a realidade setorial de forma coerente:
   Logística e Transporte   0,509  0,447  0,043  E e S dominam; G quase nulo
   Professional Services    0,471  0,331  0,198  E forte; G pequeno
 
-4.3 SCORE PONDERADO
-────────────────────
+### 4.3 SCORE PONDERADO
 
 Com os pesos por setor calculados, o pipeline calcula o score ponderado de cada
 empresa. Esse score é a média ponderada dos três pilares, onde os pesos são os

@@ -7,16 +7,12 @@ Plataforma para análise, monitoramento e ranking de aderência às práticas ES
 3. digitar o comando 'pip install -r requirements.txt'
 
 
-================================================================================
-DOCUMENTAÇÃO TÉCNICA — esg_pipeline.py
+# DOCUMENTAÇÃO TÉCNICA — esg_pipeline.py
 Pipeline de Análise ESG de Fornecedores
 Edenred Brasil | CESAR School 2025
-================================================================================
 
 
-────────────────────────────────────────────────────────────────────────────────
-1. VISÃO GERAL
-────────────────────────────────────────────────────────────────────────────────
+# 1. VISÃO GERAL
 
 O script esg_pipeline.py implementa um pipeline completo de análise ESG
 (Environmental, Social and Governance) para classificação de empresas por nível

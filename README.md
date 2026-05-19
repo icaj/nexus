@@ -292,7 +292,7 @@ Exemplo (empresa do setor Banking):
                   = 149,6 + 84,0 + 121,1
                   = 354,7
 
-## 4.4 RISCO ESG
+### 4.4 RISCO ESG
 
 O risco mede o gap de não-conformidade ESG da empresa em relação ao máximo
 possível da escala. Quanto menor o score ponderado, maior o risco.
@@ -323,7 +323,7 @@ Referência de valores na base:
   Grade BB  (Iniciante): risco médio ≈ 68%
   Grade B   (Iniciante): risco médio ≈ 72%  (pior desempenho)
 
-## 4.5 IMPACTO
+### 4.5 IMPACTO
 
 O impacto mede a posição relativa da empresa dentro do seu setor, com base
 no score ponderado. Expressa o quanto aquela empresa está exposta em relação
@@ -351,7 +351,7 @@ pois os pesos do Banking valorizam o pilar G.
 
 ## 5. QUADRANTE — MATRIZ DE CRITICIDADE
 
-## 5.1 CONCEITO
+### 5.1 CONCEITO
 
 A Matriz de Criticidade é uma ferramenta de priorização que cruza duas
 dimensões para cada empresa:
@@ -362,7 +362,7 @@ dimensões para cada empresa:
 O objetivo é identificar em qual grupo de atenção a empresa se enquadra,
 orientando a prioridade de ação da Edenred na gestão da cadeia de fornecedores.
 
-## 5.2 DEFINIÇÃO DOS QUADRANTES
+### 5.2 DEFINIÇÃO DOS QUADRANTES
 
 O eixo de corte para ambas as dimensões é 50, que representa a mediana.
 Valores acima de 50 são considerados "altos" e abaixo de 50, "baixos".
@@ -374,7 +374,7 @@ Valores acima de 50 são considerados "altos" e abaixo de 50, "baixos".
   Baixo Impacto / Alto Risco       <= 50     > 50     Monitoramento e capacitação
   Baixo Impacto / Baixo Risco      <= 50     <= 50    Monitoramento leve
 
-## 5.3 LÓGICA DE CLASSIFICAÇÃO
+### 5.3 LÓGICA DE CLASSIFICAÇÃO
 
 A classificação é feita por uma função que recebe os valores de impacto e risco
 de cada empresa e aplica as quatro condições em ordem:
@@ -384,7 +384,7 @@ de cada empresa e aplica as quatro condições em ordem:
   Se impacto <= 50 E risco > 50  → "Baixo Impacto / Alto Risco"
   Caso contrário                 → "Baixo Impacto / Baixo Risco"
 
-## 5.4 EXEMPLO PRÁTICO
+### 5.4 EXEMPLO PRÁTICO
 
 Usando os valores calculados no exemplo anterior (Banking):
   score_ponderado = 354,7
@@ -393,7 +393,7 @@ Usando os valores calculados no exemplo anterior (Banking):
 
   Quadrante resultante: Alto Impacto / Alto Risco → Ação Imediata
 
-## 5.5 DISTRIBUIÇÃO NA BASE DE 722 EMPRESAS
+### 5.5 DISTRIBUIÇÃO NA BASE DE 722 EMPRESAS
 
   Quadrante                        Empresas
   ─────────────────────────────    ────────
@@ -438,7 +438,7 @@ Gera o arquivo analise_exploratoria.png com sete painéis:
 
 ## 7. ETAPA 4 — PREPARAÇÃO DAS FEATURES PARA MACHINE LEARNING
 
-## 7.1 FEATURES DE ENTRADA (X)
+### 7.1 FEATURES DE ENTRADA (X)
 
 Os modelos de machine learning recebem quatro features:
 
@@ -454,13 +454,13 @@ o modelo aprenderia uma identidade matemática em vez de padrões.
 A coluna industry é transformada por LabelEncoder em um número inteiro
 (encoding ordinal), tornando-a compatível com os modelos.
 
-## 7.2 VARIÁVEL-ALVO (y)
+### 7.2 VARIÁVEL-ALVO (y)
 
 A variável-alvo é total_level, codificada por LabelEncoder:
   Medium = 0
   High   = 1
 
-## 7.3 DIVISÃO TREINO/TESTE
+### 7.3 DIVISÃO TREINO/TESTE
 
 A base é dividida em 80% para treino (577 empresas) e 20% para teste
 (145 empresas). A divisão é estratificada, o que garante que a proporção
@@ -492,7 +492,7 @@ Resultado obtido na base:
   Acurácia CV : 95,2%
   Acurácia teste: 95,2%
 
-## 8.2 RANDOM FOREST
+### 8.2 RANDOM FOREST
 
 O Random Forest treina múltiplas árvores de decisão em subconjuntos aleatórios
 dos dados (técnica de bagging) e combina as predições por votação majoritária.

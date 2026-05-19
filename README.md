@@ -12,7 +12,7 @@ Pipeline de Análise ESG de Fornecedores
 Edenred Brasil | CESAR School 2025
 
 
-# 1. VISÃO GERAL
+## 1. VISÃO GERAL
 
 O script esg_pipeline.py implementa um pipeline completo de análise ESG
 (Environmental, Social and Governance) para classificação de empresas por nível
@@ -29,17 +29,14 @@ Ao final, os modelos treinados são salvos em disco e utilizados pelo script
 esg_predicao.py para classificar novas empresas que entrem no sistema.
 
 
-────────────────────────────────────────────────────────────────────────────────
-2. BASE DE DADOS E METODOLOGIA DE ORIGEM
-────────────────────────────────────────────────────────────────────────────────
+## 2. BASE DE DADOS E METODOLOGIA DE ORIGEM
 
 A base de dados utilizada foi rotulada pela ESG Enterprise seguindo a
 metodologia descrita no documento ESG-Enterprise-Risk-Ratings-MethodologyV3.pdf.
 Esta seção resume os aspectos dessa metodologia que são diretamente relevantes
 para o pipeline.
 
-2.1 ESTRUTURA DOS SCORES
-────────────────────────
+## 2.1 ESTRUTURA DOS SCORES
 
 Cada empresa na base recebe quatro scores numéricos:
 
@@ -55,8 +52,7 @@ A relação entre eles é exata e verificável:
 O script verifica essa condição no pré-processamento e interrompe a execução
 caso haja qualquer inconsistência nos dados.
 
-2.2 GRADES POR PILAR (escala individual 0–1.000)
-─────────────────────────────────────────────────
+## 2.2 GRADES POR PILAR (escala individual 0–1.000)
 
 Cada pilar recebe uma grade de crédito com base no seu score individual:
 
@@ -69,8 +65,7 @@ Cada pilar recebe uma grade de crédito com base no seu score individual:
   600 a 899     AA      Excellent
   900 a 1.000   AAA     Excellent
 
-2.3 GRADES DO SCORE TOTAL (escala 0–3.000)
-───────────────────────────────────────────
+## 2.3 GRADES DO SCORE TOTAL (escala 0–3.000)
 
 O score total (soma dos três pilares) recebe uma grade consolidada:
 
@@ -87,8 +82,7 @@ Nota: a base de dados disponível contém apenas empresas com grades B, BB, BBB
 e A no score total (scores entre 600 e 1.536). Não há empresas com grades AA
 ou AAA na base.
 
-2.4 PROCESSO DE CÁLCULO DA ESG ENTERPRISE (5 ETAPAS)
-──────────────────────────────────────────────────────
+## 2.4 PROCESSO DE CÁLCULO DA ESG ENTERPRISE (5 ETAPAS)
 
 O PDF descreve cinco etapas metodológicas para chegar ao score final:
 
@@ -124,27 +118,22 @@ O PDF descreve cinco etapas metodológicas para chegar ao score final:
     anteriores.
 
 
-────────────────────────────────────────────────────────────────────────────────
-3. ETAPA 1 — PRÉ-PROCESSAMENTO
-────────────────────────────────────────────────────────────────────────────────
+## 3. ETAPA 1 — PRÉ-PROCESSAMENTO
 
-3.1 REMOÇÃO DE COLUNAS NÃO ANALÍTICAS
-───────────────────────────────────────
+## 3.1 REMOÇÃO DE COLUNAS NÃO ANALÍTICAS
 
 As colunas de metadados operacionais que não contribuem para a análise são
 removidas: ticker, logo, weburl, last_processing_date, cik, currency, exchange.
 Após a remoção, a base passa de 21 para 14 colunas.
 
-3.2 TRATAMENTO DE NULOS EM INDUSTRY
-──────────────────────────────────────
+## 3.2 TRATAMENTO DE NULOS EM INDUSTRY
 
 Treze registros não possuem o campo industry preenchido. Esses registros
 recebem o valor "Unknown". Isso evita que esses registros sejam descartados
 e permite que ainda participem do treino e da análise, recebendo os pesos
 globais no cálculo de risco e impacto.
 
-3.3 NORMALIZAÇÃO DE NOMES DE INDÚSTRIA
-─────────────────────────────────────────
+## 3.3 NORMALIZAÇÃO DE NOMES DE INDÚSTRIA
 
 A base contém variações textuais para o mesmo setor, causadas por uso
 inconsistente de "&" versus "and", presença de vírgulas e espaços extras.
@@ -168,8 +157,7 @@ O pipeline trata dois tipos de problema:
 
     Resultado: a base passa de 47 setores únicos para 44 setores únicos.
 
-3.4 VERIFICAÇÃO DE INTEGRIDADE
-────────────────────────────────
+## 3.4 VERIFICAÇÃO DE INTEGRIDADE
 
 O script verifica que total_score é exatamente igual à soma dos três pilares
 para todas as 722 linhas. Se houver qualquer divergência, a execução é
@@ -178,12 +166,9 @@ subsequentes de score ponderado e risco sejam matematicamente consistentes
 com a metodologia da ESG Enterprise.
 
 
-────────────────────────────────────────────────────────────────────────────────
-4. ETAPA 2 — CÁLCULO DAS MÉTRICAS: MATURIDADE, RISCO E IMPACTO
-────────────────────────────────────────────────────────────────────────────────
+## 4. ETAPA 2 — CÁLCULO DAS MÉTRICAS: MATURIDADE, RISCO E IMPACTO
 
-4.1 MATURIDADE
-──────────────
+## 4.1 MATURIDADE
 
 A maturidade de cada empresa NÃO é calculada pelo pipeline. Ela já existe na
 base de dados como o campo total_level, produzido pela metodologia auditada da
@@ -209,8 +194,7 @@ Distribuição na base:
   Avançado  (High)   : 451 empresas — 62,5%
   Iniciante (Medium) : 271 empresas — 37,5%
 
-4.2 PESOS POR INDÚSTRIA
-────────────────────────
+## 4.2 PESOS POR INDÚSTRIA
 
 Antes de calcular o risco e o impacto, o pipeline calcula o peso relativo de
 cada pilar (E, S, G) para cada setor da base. Esses pesos expressam o quanto
@@ -315,8 +299,7 @@ Exemplo (empresa do setor Banking):
                   = 149,6 + 84,0 + 121,1
                   = 354,7
 
-4.4 RISCO ESG
-─────────────
+## 4.4 RISCO ESG
 
 O risco mede o gap de não-conformidade ESG da empresa em relação ao máximo
 possível da escala. Quanto menor o score ponderado, maior o risco.
@@ -347,8 +330,7 @@ Referência de valores na base:
   Grade BB  (Iniciante): risco médio ≈ 68%
   Grade B   (Iniciante): risco médio ≈ 72%  (pior desempenho)
 
-4.5 IMPACTO
-────────────
+## 4.5 IMPACTO
 
 O impacto mede a posição relativa da empresa dentro do seu setor, com base
 no score ponderado. Expressa o quanto aquela empresa está exposta em relação
@@ -374,12 +356,9 @@ Ambiental mediano será corretamente avaliado como de alto impacto no seu setor,
 pois os pesos do Banking valorizam o pilar G.
 
 
-────────────────────────────────────────────────────────────────────────────────
-5. QUADRANTE — MATRIZ DE CRITICIDADE
-────────────────────────────────────────────────────────────────────────────────
+## 5. QUADRANTE — MATRIZ DE CRITICIDADE
 
-5.1 CONCEITO
-─────────────
+## 5.1 CONCEITO
 
 A Matriz de Criticidade é uma ferramenta de priorização que cruza duas
 dimensões para cada empresa:
@@ -390,8 +369,7 @@ dimensões para cada empresa:
 O objetivo é identificar em qual grupo de atenção a empresa se enquadra,
 orientando a prioridade de ação da Edenred na gestão da cadeia de fornecedores.
 
-5.2 DEFINIÇÃO DOS QUADRANTES
-──────────────────────────────
+## 5.2 DEFINIÇÃO DOS QUADRANTES
 
 O eixo de corte para ambas as dimensões é 50, que representa a mediana.
 Valores acima de 50 são considerados "altos" e abaixo de 50, "baixos".
@@ -403,8 +381,7 @@ Valores acima de 50 são considerados "altos" e abaixo de 50, "baixos".
   Baixo Impacto / Alto Risco       <= 50     > 50     Monitoramento e capacitação
   Baixo Impacto / Baixo Risco      <= 50     <= 50    Monitoramento leve
 
-5.3 LÓGICA DE CLASSIFICAÇÃO
-─────────────────────────────
+## 5.3 LÓGICA DE CLASSIFICAÇÃO
 
 A classificação é feita por uma função que recebe os valores de impacto e risco
 de cada empresa e aplica as quatro condições em ordem:
@@ -414,8 +391,7 @@ de cada empresa e aplica as quatro condições em ordem:
   Se impacto <= 50 E risco > 50  → "Baixo Impacto / Alto Risco"
   Caso contrário                 → "Baixo Impacto / Baixo Risco"
 
-5.4 EXEMPLO PRÁTICO
-────────────────────
+## 5.4 EXEMPLO PRÁTICO
 
 Usando os valores calculados no exemplo anterior (Banking):
   score_ponderado = 354,7
@@ -424,8 +400,7 @@ Usando os valores calculados no exemplo anterior (Banking):
 
   Quadrante resultante: Alto Impacto / Alto Risco → Ação Imediata
 
-5.5 DISTRIBUIÇÃO NA BASE DE 722 EMPRESAS
-──────────────────────────────────────────
+## 5.5 DISTRIBUIÇÃO NA BASE DE 722 EMPRESAS
 
   Quadrante                        Empresas
   ─────────────────────────────    ────────
@@ -440,9 +415,7 @@ o impacto usa percentis intra-setor e o risco usa uma fórmula linear sobre
 o score ponderado, que por sua vez tem distribuição aproximadamente simétrica.
 
 
-────────────────────────────────────────────────────────────────────────────────
-6. ETAPA 3 — ANÁLISE EXPLORATÓRIA
-────────────────────────────────────────────────────────────────────────────────
+## 6. ETAPA 3 — ANÁLISE EXPLORATÓRIA
 
 Gera o arquivo analise_exploratoria.png com sete painéis:
 
@@ -470,12 +443,9 @@ Gera o arquivo analise_exploratoria.png com sete painéis:
     diminui conforme a grade melhora.
 
 
-────────────────────────────────────────────────────────────────────────────────
-7. ETAPA 4 — PREPARAÇÃO DAS FEATURES PARA MACHINE LEARNING
-────────────────────────────────────────────────────────────────────────────────
+## 7. ETAPA 4 — PREPARAÇÃO DAS FEATURES PARA MACHINE LEARNING
 
-7.1 FEATURES DE ENTRADA (X)
-─────────────────────────────
+## 7.1 FEATURES DE ENTRADA (X)
 
 Os modelos de machine learning recebem quatro features:
 
@@ -491,24 +461,20 @@ o modelo aprenderia uma identidade matemática em vez de padrões.
 A coluna industry é transformada por LabelEncoder em um número inteiro
 (encoding ordinal), tornando-a compatível com os modelos.
 
-7.2 VARIÁVEL-ALVO (y)
-──────────────────────
+## 7.2 VARIÁVEL-ALVO (y)
 
 A variável-alvo é total_level, codificada por LabelEncoder:
   Medium = 0
   High   = 1
 
-7.3 DIVISÃO TREINO/TESTE
-──────────────────────────
+## 7.3 DIVISÃO TREINO/TESTE
 
 A base é dividida em 80% para treino (577 empresas) e 20% para teste
 (145 empresas). A divisão é estratificada, o que garante que a proporção
 entre High e Medium seja mantida em ambos os conjuntos.
 
 
-────────────────────────────────────────────────────────────────────────────────
-8. ETAPA 5 — TREINO DOS MODELOS
-────────────────────────────────────────────────────────────────────────────────
+## 8. ETAPA 5 — TREINO DOS MODELOS
 
 8.1 KNN (K-NEAREST NEIGHBORS)
 ───────────────────────────────
@@ -533,8 +499,7 @@ Resultado obtido na base:
   Acurácia CV : 95,2%
   Acurácia teste: 95,2%
 
-8.2 RANDOM FOREST
-──────────────────
+## 8.2 RANDOM FOREST
 
 O Random Forest treina múltiplas árvores de decisão em subconjuntos aleatórios
 dos dados (técnica de bagging) e combina as predições por votação majoritária.
@@ -565,9 +530,7 @@ Importância das variáveis (valores aproximados):
   industry_enc      :  0,7%
 
 
-────────────────────────────────────────────────────────────────────────────────
-9. ETAPA 6 — AVALIAÇÃO DOS MODELOS
-────────────────────────────────────────────────────────────────────────────────
+## 9. ETAPA 6 — AVALIAÇÃO DOS MODELOS
 
 A avaliação gera o arquivo avaliacao_modelos.png com três painéis:
 
@@ -586,9 +549,7 @@ O comparativo final impresso no terminal resume as acurácias de ambos os modelo
 no conjunto de teste, permitindo decidir qual usar na predição.
 
 
-────────────────────────────────────────────────────────────────────────────────
-10. ETAPA 7 — SALVAMENTO DOS ARTEFATOS
-────────────────────────────────────────────────────────────────────────────────
+## 10. ETAPA 7 — SALVAMENTO DOS ARTEFATOS
 
 Todos os artefatos são salvos na pasta saida_esg/:
 
@@ -622,9 +583,7 @@ Todos os artefatos são salvos na pasta saida_esg/:
     Matrizes de confusão e importância de variáveis (Etapa 6).
 
 
-────────────────────────────────────────────────────────────────────────────────
-11. COMO EXECUTAR
-────────────────────────────────────────────────────────────────────────────────
+## 11. COMO EXECUTAR
 
 Pré-requisitos:
   pip install pandas numpy scikit-learn matplotlib seaborn joblib
@@ -645,9 +604,7 @@ O arquivo de entrada para predição deve conter as colunas:
   name, industry, environment_score, social_score, governance_score
 
 
-────────────────────────────────────────────────────────────────────────────────
-12. LIMITAÇÕES E CONSIDERAÇÕES METODOLÓGICAS
-────────────────────────────────────────────────────────────────────────────────
+## 12. LIMITAÇÕES E CONSIDERAÇÕES METODOLÓGICAS
 
 1. RÓTULO BINÁRIO
    A base disponível tem apenas dois níveis de maturidade (High e Medium).
@@ -678,7 +635,5 @@ O arquivo de entrada para predição deve conter as colunas:
    forem incorporados à base, para manter a relevância dos padrões aprendidos.
 
 
-================================================================================
 Fim da documentação — esg_pipeline.py
 Edenred Brasil | CESAR School 2025
-================================================================================

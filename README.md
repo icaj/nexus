@@ -169,10 +169,10 @@ base de dados como o campo total_level, produzido pela metodologia auditada da
 ESG Enterprise. O pipeline apenas mapeia os valores originais para os rótulos
 do projeto:
 
-  total_level original   Rótulo no projeto
-  ────────────────────   ─────────────────
-  High                   Avançado
-  Medium                 Iniciante
+  | total_level original | Rótulo no projeto |
+  |----------------------|-------------------|
+  | High | Avançado |
+  | Medium | Iniciante |
 
 Este mapeamento foi adotado porque a base disponível contém apenas dois níveis
 de maturidade (High e Medium). A maturidade Avançado corresponde às grades BBB

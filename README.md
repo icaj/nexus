@@ -257,15 +257,15 @@ Na base de 44 setores únicos:
 
 Os pesos refletem a realidade setorial de forma coerente:
 
-  Setor                    w_E    w_S    w_G    Interpretação
-  ─────────────────────    ─────  ─────  ─────  ───────────────────────────────
-  Utilities                0,455  0,292  0,253  Alta exposição ambiental
-  Airlines                 0,430  0,248  0,322  E domina; G segundo
-  Insurance                0,444  0,351  0,205  E domina; G menos relevante
-  Banking                  0,374  0,280  0,346  E e G equilibrados; G relevante
-  Financial Services       0,348  0,325  0,327  Os três pilares bem equilibrados
-  Logística e Transporte   0,509  0,447  0,043  E e S dominam; G quase nulo
-  Professional Services    0,471  0,331  0,198  E forte; G pequeno
+  | Setor                  | w_E   | w_S   | w_G   | Interpretação                    |
+  |------------------------|-------|-------|-------|----------------------------------|
+  | Utilities              | 0,455 | 0,292 | 0,253 | Alta exposição ambiental         |
+  | Airlines               | 0,430 | 0,248 | 0,322 | E domina; G segundo              |
+  | Insurance              | 0,444 | 0,351 | 0,205 | E domina; G menos relevante      |
+  | Banking                | 0,374 | 0,280 | 0,346 | E e G equilibrados; G relevante  |
+  | Financial Services     | 0,348 | 0,325 | 0,327 | Os três pilares bem equilibrados |
+  | Logística e Transporte | 0,509 | 0,447 | 0,043 | E e S dominam; G quase nulo      |
+  | Professional Services  | 0,471 | 0,331 | 0,198 | E forte; G pequeno               |
 
 ### 4.3 SCORE PONDERADO
 

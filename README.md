@@ -63,8 +63,8 @@ Cada pilar recebe uma grade de crédito com base no seu score individual:
 
 O score total (soma dos três pilares) recebe uma grade consolidada:
 
-  | Score | total | Grade | Nível |
-  |-------|-------|-------|-------|
+  | Score  total | Grade | Nível |
+  |--------------|-------|-------|
   | 600 a 749 | B | Medium |
   | 750 a 899 | BB | Medium |
   | 900 a 1.199 | BBB | High |

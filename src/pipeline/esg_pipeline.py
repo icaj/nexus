@@ -1,3 +1,5 @@
+from os import path
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -20,6 +22,8 @@ from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import StandardScaler
 import os
+import kagglehub
+import shutil
 
 warnings.filterwarnings("ignore")
 np.random.seed(42)
@@ -59,6 +63,13 @@ MAPA_MATURIDADE = {'High': 'Avançado', 'Medium': 'Iniciante'}
 # Número mínimo de empresas por setor para calcular pesos empíricos.
 # Setores abaixo desse limiar recebem os pesos globais (fallback).
 MIN_EMPRESAS_PESO = 5
+
+def carregar_dados_kaggle():
+    # obtém base de dados do KaggleHub (dataset público de ratings ESG de empresas)
+    path = kagglehub.dataset_download("alistairking/public-company-esg-ratings-dataset")
+    arquivos = os.listdir(path)
+    arquivo_csv = os.path.join(path, arquivos[0])
+    shutil.copy(arquivo_csv, CAMINHO_DADOS)
 
 # ──────────────────────────────────────────────────────────────────
 # ETAPA 1 — PRÉ-PROCESSAMENTO
@@ -686,6 +697,7 @@ if __name__ == "__main__":
     print("║  Edenred Brasil | CESAR School 2025                      ║")
     print("╚══════════════════════════════════════════════════════════╝")
 
+    carregar_dados_kaggle()
     df = etapa1_preprocessamento(CAMINHO_DADOS)
     df, pesos_por_ind, pesos_global = etapa2_metricas(df)
     etapa3_exploracao(df)

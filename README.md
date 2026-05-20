@@ -2,7 +2,7 @@
 Plataforma para análise, monitoramento e ranking de aderência às práticas ESG de fornecedores
 
 
-# DOCUMENTAÇÃO TÉCNICA
+# DOCUMENTAÇÃO TÉCNICA - esg_pipeline.py
 Pipeline de Análise ESG de Fornecedores
 Edenred Brasil | CESAR School 2025
 

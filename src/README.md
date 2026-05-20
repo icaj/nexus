@@ -48,9 +48,9 @@ O score total é a soma dos três pilares e varia de 0 a 3.000:
 
 Cada pilar individual é enquadrado em uma grade com base no seu score:
 
-  | Score ! Grade | Interpretação |
+  | Score | Grade | Interpretação |
   |-------|-------|---------------|
-  | < 200 | <B | Abaixo do mínimo avaliável |
+  | < 200 | < B | Abaixo do mínimo avaliável |
   | 200 a 299 | B | Desempenho baixo |
   | 300 a 399 | BB | Desempenho baixo-médio |
   | 400 a 499 | BBB | Desempenho médio-alto |
@@ -160,7 +160,7 @@ no score informado, usando a tabela da metodologia ESG Enterprise:
   | 400 a 499 | BBB |
   | 300 a 399 | BB |
   | 200 a 299 | B |
-  | < 200 | <B |
+  | < 200 | < B |
 
 
 ## 4. MATURIDADE — CLASSIFICAÇÃO VIA KNN E RANDOM FOREST

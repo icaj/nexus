@@ -34,8 +34,8 @@ np.random.seed(42)
 
 CAMINHO_DADOS  = "./data/raw/data.csv"
 PASTA_BRONZE   = "./data/bronze"
-PASTA_SAIDA    = "./data/processed"
-PASTA_MODELOS  = "./models"
+PASTA_SAIDA    = "./data/processado"
+PASTA_MODELOS  = "./modelos"
 
 os.makedirs(PASTA_BRONZE,  exist_ok=True)
 os.makedirs(PASTA_SAIDA,   exist_ok=True)

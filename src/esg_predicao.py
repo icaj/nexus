@@ -6,7 +6,7 @@ import joblib
 import warnings
 warnings.filterwarnings("ignore")
 
-PASTA_SAIDA = "saida_esg"
+PASTA_MODELOS = "./modelos"
 
 PLANOS_ACAO = {
     'E': [
@@ -50,9 +50,9 @@ def mapear_grade(total_score: int) -> tuple:
 
 def carregar_modelos():
     try:
-        knn_pack = joblib.load(f"{PASTA_SAIDA}/modelo_knn.pkl")
-        rf_pack  = joblib.load(f"{PASTA_SAIDA}/modelo_rf.pkl")
-        config   = joblib.load(f"{PASTA_SAIDA}/config.pkl")
+        knn_pack = joblib.load(f"{PASTA_MODELOS}/modelo_knn.pkl")
+        rf_pack  = joblib.load(f"{PASTA_MODELOS}/modelo_rf.pkl")
+        config   = joblib.load(f"{PASTA_MODELOS}/config.pkl")
         return knn_pack, rf_pack, config
     except FileNotFoundError as e:
         print(f"\n[ERRO] {e}")

@@ -1,8 +1,6 @@
-================================================================================
 # DOCUMENTAÇÃO TÉCNICA — esg_predicao.py
 Script de Classificação de Novos Fornecedores
-Edenred Brasil | CESAR School 2025
-================================================================================
+| Edenred Brasil | CESAR School 2025 |
 
 # 1. VISÃO GERAL
 

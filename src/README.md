@@ -48,8 +48,8 @@ O score total é a soma dos três pilares e varia de 0 a 3.000:
 
 Cada pilar individual é enquadrado em uma grade com base no seu score:
 
-  ! Score ! Grade | Interpretação |
-  !-------|-------|---------------|
+  | Score ! Grade | Interpretação |
+  |-------|-------|---------------|
   | < 200 | <B | Abaixo do mínimo avaliável |
   | 200 a 299 | B | Desempenho baixo |
   | 300 a 399 | BB | Desempenho baixo-médio |

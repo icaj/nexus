@@ -601,7 +601,3 @@ erro e solicita que o esg_pipeline.py seja executado primeiro.
    recomendável re-executar o esg_pipeline.py para atualizar os modelos e
    os pesos por indústria com os padrões mais recentes.
 
-==
-Fim da documentação — esg_predicao.py
-Edenred Brasil | CESAR School 2025
-==

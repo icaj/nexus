@@ -1,31 +1,3 @@
-"""
-esg_pipeline.py
-══════════════════════════════════════════════════════════════════
-Pipeline ESG — Do zero com a base data.csv
-Edenred Brasil | CESAR School 2025
-
-BASE DE DADOS
-─────────────
-  722 empresas reais rotuladas pela ESG Enterprise
-  Metodologia: ESG-Enterprise-Risk-Ratings-MethodologyV3.pdf
-
-ESTRUTURA DO SCRIPT
-────────────────────
-  Etapa 0 — Entendimento dos dados e metodologia
-  Etapa 1 — Pré-processamento
-  Etapa 2 — Cálculo de Maturidade, Risco e Impacto
-  Etapa 3 — Análise exploratória
-  Etapa 4 — Treino: KNN e Random Forest
-  Etapa 5 — Avaliação dos modelos
-  Etapa 6 — Salvar modelos
-
-Como executar:
-  python esg_pipeline.py
-
-Dependências:
-  pandas, numpy, scikit-learn, matplotlib, seaborn, joblib
-"""
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -55,59 +27,6 @@ np.random.seed(42)
 # ──────────────────────────────────────────────────────────────────
 # ETAPA 0 — ENTENDIMENTO DOS DADOS E METODOLOGIA
 # ──────────────────────────────────────────────────────────────────
-"""
-METODOLOGIA ESG ENTERPRISE (resumo do PDF)
-══════════════════════════════════════════
-
-ESTRUTURA DOS SCORES
-  Cada empresa recebe 3 scores de pilar (0–1000) e 1 score total (0–3000):
-    total_score = environment_score + social_score + governance_score
-
-GRADES POR PILAR (escala 0–1000 cada)
-  B   = 200–299  → Medium
-  BB  = 300–399  → Medium
-  BBB = 400–499  → High
-  A   = 500–599  → High
-  AA  = 600–899  → Excellent
-
-GRADES TOTAL (escala 0–3000)
-  B   = 600–749  → Medium
-  BB  = 750–899  → Medium
-  BBB = 900–1199 → High
-  A   = 1200+    → High
-
-MATURIDADE (nossa interpretação das grades)
-  Mapeamos total_level diretamente:
-    'High'   → Avançado  (BBB ou A: score ≥ 900)
-    'Medium' → Iniciante (B ou BB:  score 600–899)
-
-  Por que essa simplificação?
-  A base contém apenas 2 níveis em total_level (High e Medium),
-  o que representa o dado rotulado disponível. Usamos esse rótulo
-  como variável-alvo para os modelos de ML.
-
-RISCO ESG
-  Risco = gap percentual até o máximo teórico da escala.
-  Fórmula: Risco = (3000 − total_score) / 3000 × 100
-
-  Exemplos:
-    total_score = 1536 (máximo da base) → Risco = 48.8%
-    total_score =  600 (mínimo da base) → Risco = 80.0%
-    total_score =  900 (limiar High)    → Risco = 70.0%
-
-  Interpretação: quanto mais alto o score ESG, menor o gap de
-  não-conformidade com as práticas ideais de gestão E, S e G.
-
-IMPACTO
-  Impacto = intensidade de exposição ESG relativa ao setor.
-  Usa o environment_score como base porque:
-    1. É o pilar com maior variação entre setores
-    2. Correlação com total_score = 0.959 (mais preditivo)
-    3. Principal driver de exposição a riscos regulatórios
-
-  Fórmula: percentil do environment_score dentro da indústria × 100
-  Resultado: 0–100, onde 100 = máximo exposição no setor.
-"""
 
 # ──────────────────────────────────────────────────────────────────
 # CONFIGURAÇÕES
@@ -210,32 +129,6 @@ def etapa1_preprocessamento(caminho: str):
 # ──────────────────────────────────────────────────────────────────
 
 def calcular_pesos_por_industria(df: pd.DataFrame) -> dict:
-    """
-    Calcula os pesos de cada pilar (E, S, G) por indústria usando
-    a correlação intra-setor de cada pilar com o total_score.
-
-    LÓGICA
-    ──────
-    Para cada setor com n >= MIN_EMPRESAS_PESO:
-      1. Calcula a correlação de cada pilar com total_score
-         dentro do grupo de empresas daquele setor.
-      2. Clipa correlações negativas em 0 (correlação negativa
-         não faz sentido como peso de importância).
-      3. Normaliza para que os três pesos somem 1.
-
-    Para setores com n < MIN_EMPRESAS_PESO:
-      Usa os pesos globais (calculados na base inteira) como fallback.
-      Isso evita pesos instáveis baseados em 1–4 observações.
-
-    RESULTADO
-    ─────────
-    Dicionário: { indústria: {'w_E': float, 'w_S': float, 'w_G': float,
-                               'n': int, 'fonte': str} }
-
-    Interpretação dos pesos:
-      w_E = 0.45 → pilar Ambiental responde por 45% do score total
-                    naquele setor → receberá maior peso no risco e impacto.
-    """
     # Pesos globais (fallback) — correlação na base inteira
     corr_global = (df[FEATURES_SCORES]
                    .corrwith(df['total_score'])
@@ -273,50 +166,6 @@ def calcular_pesos_por_industria(df: pd.DataFrame) -> dict:
 
 
 def etapa2_metricas(df: pd.DataFrame) -> tuple:
-    """
-    Calcula as três métricas derivadas do projeto.
-
-    MATURIDADE
-    ──────────
-    Vem diretamente do rótulo da ESG Enterprise (total_level).
-    Mapeamos para termos do projeto: High→Avançado, Medium→Iniciante.
-
-    Não calculamos maturidade manualmente — ela é o RÓTULO DE TREINO,
-    produzido pela metodologia auditada do PDF.
-
-    RISCO ESG PONDERADO
-    ───────────────────
-    Em vez de tratar os três pilares igualmente, cada pilar recebe um
-    peso proporcional à sua correlação com o total_score no setor.
-
-    Fórmula:
-      score_pond = w_E × env + w_S × soc + w_G × gov
-
-    onde w_E + w_S + w_G = 1 e os pesos variam por indústria.
-
-    Depois:
-      Risco = (1000 − score_pond) / 1000 × 100
-
-    O denominador 1000 é o máximo de cada pilar individual.
-    Usamos a média ponderada dos pilares (não a soma) para manter
-    o risco na escala 0–100.
-
-    Exemplo (setor Banking — w_E=0.374, w_S=0.280, w_G=0.346):
-      env=400, soc=300, gov=350
-      score_pond = 0.374×400 + 0.280×300 + 0.346×350 = 150+84+121 = 355
-      Risco = (1000−355)/1000×100 = 64.5%
-
-    IMPACTO PONDERADO
-    ─────────────────
-    Percentil da média ponderada dos pilares dentro da indústria.
-
-      score_pond = w_E × env + w_S × soc + w_G × gov
-      Impacto = percentil(score_pond, dentro do setor) × 100
-
-    Ao ponderar os pilares, empresas de setores com alta exposição
-    ambiental (ex: Utilities) serão avaliadas com maior peso em E,
-    enquanto empresas de Banking terão G com maior influência.
-    """
     print("\n" + "═"*62)
     print("ETAPA 2 — CÁLCULO DE MATURIDADE, RISCO E IMPACTO")
     print("═"*62)

@@ -1,25 +1,3 @@
-"""
-esg_predicao.py
-══════════════════════════════════════════════════════════════════
-Classificação de novas empresas com os modelos treinados
-Edenred Brasil | CESAR School 2025
-
-Execute DEPOIS de esg_pipeline.py.
-
-Modos de uso:
-  python esg_predicao.py --arquivo nova_empresa.csv
-  python esg_predicao.py --interativo
-
-O que este script entrega para cada nova empresa:
-  • Maturidade (High/Medium) via KNN e Random Forest
-  • Score por pilar, score total
-  • Risco ESG (gap até o máximo)
-  • Impacto (posição relativa no setor)
-  • Quadrante da Matriz de Criticidade
-  • 3 empresas mais similares (benchmarking)
-  • Plano de ação por pilar mais fraco
-"""
-
 import sys
 import argparse
 import pandas as pd
@@ -83,15 +61,6 @@ def carregar_modelos():
 
 
 def obter_pesos(industry: str, config: dict) -> tuple:
-    """
-    Retorna (w_E, w_S, w_G, fonte) para o setor informado.
-
-    Pesos empíricos: calculados no treino como correlação intra-setor
-    de cada pilar com total_score, normalizados para somar 1.
-
-    Fallback: pesos globais para setores com n < MIN_EMPRESAS_PESO
-    ou setores não encontrados na base de treino.
-    """
     pesos_por_ind = config.get('pesos_por_ind', {})
     pesos_global  = config.get('pesos_global', {
         'environment_score': 0.3865,
@@ -108,8 +77,7 @@ def obter_pesos(industry: str, config: dict) -> tuple:
                 'fallback (setor não encontrado na base)')
 
 
-def calcular_score_ponderado(env: int, soc: int, gov: int,
-                              w_e: float, w_s: float, w_g: float) -> float:
+def calcular_score_ponderado(env: int, soc: int, gov: int, w_e: float, w_s: float, w_g: float) -> float:
     """
     Score ponderado = média ponderada dos três pilares com pesos do setor.
     Fórmula: score_pond = w_E × env + w_S × soc + w_G × gov
@@ -174,8 +142,7 @@ def gerar_plano(env_score, soc_score, gov_score, importancias_rf):
     return plano
 
 
-def classificar_empresa(nome, industry, env_score, soc_score, gov_score,
-                         knn_pack, rf_pack, config):
+def classificar_empresa(nome, industry, env_score, soc_score, gov_score, knn_pack, rf_pack, config):
     """Pipeline completo para uma empresa."""
 
     le_ind    = config['le_industry']
@@ -195,8 +162,7 @@ def classificar_empresa(nome, industry, env_score, soc_score, gov_score,
 
     # Pesos do setor
     w_e, w_s, w_g, fonte_peso = obter_pesos(industry_orig, config)
-    score_pond = calcular_score_ponderado(env_score, soc_score, gov_score,
-                                          w_e, w_s, w_g)
+    score_pond = calcular_score_ponderado(env_score, soc_score, gov_score, w_e, w_s, w_g)
 
     # KNN
     knn       = knn_pack['modelo']
@@ -355,7 +321,7 @@ def entrada_interativa():
     print("  Insira os scores na escala ESG Enterprise (0–1000)")
     print("═"*62)
 
-    nome     = input("\nNome da empresa: ").strip() or "Nova Empresa"
+    nome = input("\nNome da empresa: ").strip() or "Nova Empresa"
     industry = input("Setor (ex: Technology, Energy, Banking): ").strip() or "Unknown"
 
     def ler_score(label):
@@ -372,21 +338,15 @@ def entrada_interativa():
     soc = ler_score("Social")
     gov = ler_score("Governança")
 
-    classificar_empresa(nome, industry, env, soc, gov,
-                        knn_pack, rf_pack, config)
-
+    classificar_empresa(nome, industry, env, soc, gov, knn_pack, rf_pack, config)
 
 # ──────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="Classificação ESG — Edenred Brasil"
-    )
+    parser = argparse.ArgumentParser(description="Classificação ESG — Edenred Brasil")
     grupo = parser.add_mutually_exclusive_group(required=True)
-    grupo.add_argument("--arquivo",    "-a", metavar="ARQUIVO",
-                       help="CSV/Excel com colunas: name, industry, environment_score, social_score, governance_score")
-    grupo.add_argument("--interativo", "-i", action="store_true",
-                       help="Entrada manual no terminal")
+    grupo.add_argument("--arquivo", "-a", metavar="ARQUIVO", help="CSV/Excel com colunas: name, industry, environment_score, social_score, governance_score")
+    grupo.add_argument("--interativo", "-i", action="store_true", help="Entrada manual no terminal")
     args = parser.parse_args()
 
     if args.interativo:

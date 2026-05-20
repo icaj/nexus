@@ -2,7 +2,7 @@
 Script de Classificação de Novos Fornecedores
 | Edenred Brasil | CESAR School 2025 |
 
-# 1. VISÃO GERAL
+## 1. VISÃO GERAL
 
 O script esg_predicao.py é a etapa de uso dos modelos treinados pelo
 esg_pipeline.py. Enquanto o pipeline processa a base histórica de 722 empresas
@@ -26,14 +26,14 @@ Modos de execução:
   python esg_predicao.py --interativo
 
 
-# 2. METODOLOGIA DE REFERÊNCIA — ESG ENTERPRISE
+## 2. METODOLOGIA DE REFERÊNCIA — ESG ENTERPRISE
 
 Os modelos foram treinados com dados rotulados pela ESG Enterprise seguindo a
 metodologia do documento ESG-Enterprise-Risk-Ratings-MethodologyV3.pdf. Este
 script aplica a mesma estrutura de scores e grades ao classificar novas
 empresas.
 
-## 2.1 ESCALA DE SCORES
+### 2.1 ESCALA DE SCORES
 
 Cada empresa é avaliada em três pilares, cada um na escala de 0 a 1.000:
 
@@ -44,7 +44,7 @@ Cada empresa é avaliada em três pilares, cada um na escala de 0 a 1.000:
 O score total é a soma dos três pilares e varia de 0 a 3.000:
   total_score = environment_score + social_score + governance_score
 
-## 2.2 GRADES DE REFERÊNCIA POR PILAR (escala 0–1.000 cada)
+### 2.2 GRADES DE REFERÊNCIA POR PILAR (escala 0–1.000 cada)
 
 Cada pilar individual é enquadrado em uma grade com base no seu score:
 
@@ -58,7 +58,7 @@ Cada pilar individual é enquadrado em uma grade com base no seu score:
   | 600 a 899 | AA | Desempenho excelente |
   | 900 a 1.000 | AAA | Desempenho máximo |
 
-## 2.3 GRADES DO SCORE TOTAL (escala 0–3.000)
+### 2.3 GRADES DO SCORE TOTAL (escala 0–3.000)
 
 O score total também recebe uma grade consolidada:
 
@@ -76,7 +76,7 @@ Nota: a base de treino dos modelos contém apenas empresas com total_score
 entre 600 e 1.536 (grades B a A). As grades AA e AAA existem na escala
 teórica mas não possuem representantes nos modelos treinados.
 
-## 2.4 LIMIAR DE PLANO DE AÇÃO (score por pilar < 400)
+### 2.4 LIMIAR DE PLANO DE AÇÃO (score por pilar < 400)
 
 O limiar de 400 pontos por pilar corresponde ao início da grade BBB, que é
 o ponto de entrada para o nível High na metodologia ESG Enterprise. Pilares
@@ -84,9 +84,9 @@ abaixo de 400 estão em BB ou inferior, o que indica necessidade de intervençã
 Por isso, o plano de ação é gerado apenas para pilares com score < 400.
 
 
-# 3. SCORES — CÁLCULO E APRESENTAÇÃO
+## 3. SCORES — CÁLCULO E APRESENTAÇÃO
 
-## 3.1 ENTRADA DE DADOS
+### 3.1 ENTRADA DE DADOS
 
 O script recebe três scores por empresa, na escala ESG Enterprise (0–1.000):
   - environment_score : score do pilar Ambiental
@@ -96,7 +96,7 @@ O script recebe três scores por empresa, na escala ESG Enterprise (0–1.000):
 Esses valores podem ser fornecidos via arquivo CSV/Excel ou digitados
 interativamente no terminal.
 
-## 3.2 SCORE TOTAL
+### 3.2 SCORE TOTAL
 
 O score total é calculado como a soma simples dos três pilares:
 
@@ -105,7 +105,7 @@ O score total é calculado como a soma simples dos três pilares:
 Esse valor é usado para mapear a grade de referência (B, BB, BBB, A) e para
 o cálculo do nível e da maturidade de forma direta.
 
-## 3.3 SCORE PONDERADO
+### 3.3 SCORE PONDERADO
 
 O score ponderado é a média ponderada dos três pilares com pesos específicos
 do setor da empresa. É a métrica central usada para calcular risco e impacto.
@@ -121,7 +121,7 @@ Onde w_E + w_S + w_G = 1 e os pesos variam de acordo com o setor da empresa.
 O resultado está na escala 0–1.000 (mesma escala de cada pilar individual),
 pois é uma média ponderada — não uma soma.
 
-## 3.4 COMO OS PESOS DO SETOR SÃO OBTIDOS
+### 3.4 COMO OS PESOS DO SETOR SÃO OBTIDOS
 
 O script recupera os pesos calculados durante o treino do pipeline (salvos em
 config.pkl) para o setor informado. Se o setor existir na tabela de pesos
@@ -148,7 +148,7 @@ O relatório impresso informa a origem dos pesos utilizados:
   "fallback (n=3)"   → setor com menos de 5 empresas; usados pesos globais
   "fallback (setor não encontrado)" → setor não presente na base de treino
 
-## 3.5 GRADE DE REFERÊNCIA POR PILAR
+### 3.5 GRADE DE REFERÊNCIA POR PILAR
 
 No relatório, cada pilar recebe sua grade de referência individual com base
 no score informado, usando a tabela da metodologia ESG Enterprise:
@@ -163,9 +163,9 @@ no score informado, usando a tabela da metodologia ESG Enterprise:
   | < 200 | <B |
 
 
-# 4. MATURIDADE — CLASSIFICAÇÃO VIA KNN E RANDOM FOREST
+## 4. MATURIDADE — CLASSIFICAÇÃO VIA KNN E RANDOM FOREST
 
-## 4.1 O QUE É MATURIDADE NO PROJETO
+### 4.1 O QUE É MATURIDADE NO PROJETO
 
 A maturidade representa o nível de desenvolvimento das práticas ESG de uma
 empresa. O projeto usa dois níveis, derivados da metodologia ESG Enterprise:
@@ -178,7 +178,7 @@ empresa. O projeto usa dois níveis, derivados da metodologia ESG Enterprise:
 Empresas Avançadas (High) têm total_score >= 900 (grade BBB ou superior).
 Empresas Iniciantes (Medium) têm total_score entre 600 e 899 (grade B ou BB).
 
-## 4.2 VETOR DE FEATURES PARA OS MODELOS
+### 4.2 VETOR DE FEATURES PARA OS MODELOS
 
 Ambos os modelos recebem o mesmo vetor de quatro features:
 
@@ -187,7 +187,7 @@ Ambos os modelos recebem o mesmo vetor de quatro features:
 onde industry_enc é o código numérico do setor, gerado pelo LabelEncoder
 treinado no pipeline e carregado do arquivo config.pkl.
 
-## 4.3 CLASSIFICAÇÃO VIA KNN
+### 4.3 CLASSIFICAÇÃO VIA KNN
 
 O KNN (K-Nearest Neighbors) classifica a empresa nova calculando a distância
 euclidiana entre seu vetor de features e todos os 722 vetores da base de
@@ -211,7 +211,7 @@ Por que o KNN também serve para benchmarking:
   o da empresa nova. Isso permite dizer "sua empresa tem perfil similar ao
   da Empresa X, Y e Z", criando um benchmarking contextualizado.
 
-## 4.4 CLASSIFICAÇÃO VIA RANDOM FOREST
+### 4.4 CLASSIFICAÇÃO VIA RANDOM FOREST
 
 O Random Forest treina múltiplas árvores de decisão em subconjuntos aleatórios
 da base (bagging) e combina as predições por votação majoritária.
@@ -235,7 +235,7 @@ Importância das variáveis (valores obtidos no treino):
 Essa importância orienta diretamente a ordem dos planos de ação: o pilar
 com maior importância e score abaixo do limiar aparece primeiro.
 
-## 4.5 INTERPRETAÇÃO DOS DOIS MODELOS JUNTOS
+### 4.5 INTERPRETAÇÃO DOS DOIS MODELOS JUNTOS
 
 Apresentar os dois modelos simultaneamente é uma escolha deliberada. Quando
 ambos concordam na classificação, a confiança na predição é maior. Quando
@@ -244,9 +244,9 @@ scores próximos ao limiar entre Avançado e Iniciante — e merece atenção
 especial na avaliação.
 
 
-# 5. RISCO ESG — CÁLCULO PONDERADO
+## 5. RISCO ESG — CÁLCULO PONDERADO
 
-## 5.1 DEFINIÇÃO DE RISCO NO PROJETO
+### 5.1 DEFINIÇÃO DE RISCO NO PROJETO
 
 O risco ESG mede o gap de não-conformidade da empresa em relação ao máximo
 teórico da escala. Quanto menor o score ponderado, maior o risco — pois a
@@ -257,7 +257,7 @@ de uma boa gestão dos pilares Ambiental, Social e de Governança. Essa
 distinção está alinhada com a definição de risco ESG não-financeiro do
 COSO & WBCSD (2018).
 
-## 5.2 POR QUE USAR O SCORE PONDERADO E NÃO O SCORE TOTAL
+### 5.2 POR QUE USAR O SCORE PONDERADO E NÃO O SCORE TOTAL
 
 O score total (soma dos três pilares, escala 0–3.000) trata os três pilares
 como igualmente importantes para qualquer empresa de qualquer setor. Isso
@@ -270,7 +270,7 @@ Uma empresa de Banking com Governança fraca terá risco maior do que uma
 empresa de Airlines com a mesma Governança fraca — porque G tem mais peso
 no setor bancário do que no setor aéreo.
 
-## 5.3 FÓRMULA DO RISCO
+### 5.3 FÓRMULA DO RISCO
 
   Risco = (1.000 − score_ponderado) / 1.000 × 100
 
@@ -283,7 +283,7 @@ Interpretação:
   Risco = 50%  → score ponderado = 500   (metade do potencial ESG)
   Risco = 100% → score ponderado = 0     (nenhuma conformidade ESG)
 
-## 5.4 EXEMPLO COMPLETO DE CÁLCULO
+### 5.4 EXEMPLO COMPLETO DE CÁLCULO
 
 Empresa: "Banco Exemplo S.A."
 Setor: Banking
@@ -308,7 +308,7 @@ Interpretação: o Banco Exemplo S.A. tem 64,5% de gap em relação ao máximo
 possível de conformidade ESG, considerando o perfil de exposição do setor
 bancário.
 
-## 5.5 FAIXAS DE RISCO DE REFERÊNCIA NA BASE
+### 5.5 FAIXAS DE RISCO DE REFERÊNCIA NA BASE
 
   | Grade ESG | Risco médio | Interpretação |
   |-----------|-------------|---------------|
@@ -318,15 +318,15 @@ bancário.
   | B | ≈ 72% | Pior desempenho da base |
 
 
-# 6. IMPACTO — POSIÇÃO RELATIVA NO SETOR
+## 6. IMPACTO — POSIÇÃO RELATIVA NO SETOR
 
-## 6.1 DEFINIÇÃO DE IMPACTO
+### 6.1 DEFINIÇÃO DE IMPACTO
 
 O impacto mede onde a empresa está em relação às demais empresas do mesmo
 setor, com base no score ponderado. Expressa a exposição relativa da empresa
 no contexto setorial.
 
-## 6.2 FÓRMULA
+### 6.2 FÓRMULA
 
 O cálculo usa a média e o desvio padrão do score ponderado no setor como
 referência, transformando o score da empresa em uma posição na escala 0–100:
@@ -347,7 +347,7 @@ Interpretação:
   Impacto = 50 → empresa está na mediana do seu setor
   Impacto < 50 → empresa está abaixo da média do seu setor
 
-## 6.3 POR QUE USAR O SCORE PONDERADO NO IMPACTO
+### 6.3 POR QUE USAR O SCORE PONDERADO NO IMPACTO
 
 O uso do score ponderado (em vez de apenas o pilar Ambiental, como em versões
 anteriores) garante que o impacto seja coerente com os pesos setoriais. Um
@@ -356,23 +356,23 @@ avaliado como de alto impacto no seu setor, pois o pilar G tem mais peso
 no Banking. Usar apenas o pilar E subavaliaria esse banco.
 
 
-# 7. QUADRANTE — MATRIZ DE CRITICIDADE
+## 7. QUADRANTE — MATRIZ DE CRITICIDADE
 
-## 7.1 CONCEITO
+### 7.1 CONCEITO
 
 A Matriz de Criticidade é uma ferramenta de priorização que posiciona a empresa
 em um dos quatro quadrantes formados pelo cruzamento de Impacto × Risco.
 É o principal entregável estratégico do script — define qual ação a Edenred
 deve tomar em relação a cada fornecedor avaliado.
 
-## 7.2 EIXOS DA MATRIZ
+### 7.2 EIXOS DA MATRIZ
 
   Eixo X (horizontal) — Impacto: posição relativa da empresa no setor (0–100)
   Eixo Y (vertical)   — Risco  : gap de não-conformidade ESG (0–100%)
 
 O ponto de corte para ambos os eixos é 50, que representa a mediana.
 
-## 7.3 OS QUATRO QUADRANTES
+### 7.3 OS QUATRO QUADRANTES
 
   | Quadrante | Condição | Ação recomendada |
   |-----------|----------|------------------|
@@ -381,7 +381,7 @@ O ponto de corte para ambos os eixos é 50, que representa a mediana.
   | Baixo Impacto / Alto Risco | impacto<=50 e risco>50 | Monitoramento e capacitação |
   | Baixo Impacto / Baixo Risco | impacto<=50 e risco<=50 | Monitoramento leve |
 
-## 7.4 LÓGICA DE CLASSIFICAÇÃO
+### 7.4 LÓGICA DE CLASSIFICAÇÃO
 
 A classificação é feita pela função classificar_quadrante, que recebe os
 valores de impacto e risco e aplica as condições em ordem:
@@ -391,7 +391,7 @@ valores de impacto e risco e aplica as condições em ordem:
   Se impacto <= 50 E risco > 50  → "Baixo Impacto / Alto Risco"
   Caso contrário                 → "Baixo Impacto / Baixo Risco"
 
-## 7.5 EXEMPLO PRÁTICO COMPLETO
+### 7.5 EXEMPLO PRÁTICO COMPLETO
 
 Continuando o exemplo do "Banco Exemplo S.A." (Banking):
   score_ponderado = 354,6
@@ -408,7 +408,7 @@ Interpretação: o banco está abaixo da média do setor e com alto gap de
 conformidade ESG. Recomenda-se monitoramento periódico e capacitação nos
 pilares mais deficientes, sem necessidade de ação imediata.
 
-## 7.6 RELAÇÃO COM OS ENTREGÁVEIS DO PROJETO
+### 7.6 RELAÇÃO COM OS ENTREGÁVEIS DO PROJETO
 
 O quadrante conecta diretamente ao entregável "Matriz de Criticidade" definido
 na apresentação Edenred_ESG_Apresentacao.pptx (slide 15):
@@ -418,16 +418,16 @@ na apresentação Edenred_ESG_Apresentacao.pptx (slide 15):
   e auditoria nos fornecedores de maior risco."
 
 
-# 8. PLANO DE AÇÃO
+## 8. PLANO DE AÇÃO
 
-## 8.1 CRITÉRIO DE ATIVAÇÃO
+### 8.1 CRITÉRIO DE ATIVAÇÃO
 
 O plano de ação é gerado para pilares com score abaixo de 400 pontos. O limiar
 de 400 corresponde ao início da grade BBB na metodologia ESG Enterprise, que
 marca a entrada no nível High. Pilares em BB ou inferior (< 400) indicam
 necessidade de intervenção.
 
-## 8.2 PRIORIZAÇÃO PELO RANDOM FOREST
+### 8.2 PRIORIZAÇÃO PELO RANDOM FOREST
 
 Os pilares que atendem ao critério (score < 400) são ordenados pela importância
 que o Random Forest aprendeu para cada variável durante o treino. O pilar com
@@ -439,7 +439,7 @@ Ordem de importância aprendida (base de treino):
   2º — Social (27,4%)
   3º — Governança (7,3%)
 
-## 8.3 AÇÕES POR PILAR
+### 8.3 AÇÕES POR PILAR
 
 Para cada pilar com score < 400, as três primeiras ações da lista são
 apresentadas no plano:
@@ -459,16 +459,16 @@ apresentadas no plano:
     • Implantar código de conduta anticorrupção e canal de denúncias
     • Incluir cláusulas ESG nos contratos com fornecedores
 
-## 8.4 CASO SEM PLANO DE AÇÃO
+### 8.4 CASO SEM PLANO DE AÇÃO
 
 Se todos os pilares tiverem score >= 400 (grade BBB ou superior), nenhuma
 ação é gerada. O relatório indica que a empresa está em nível satisfatório
 e recomenda manter as práticas e evoluir para certificações externas.
 
 
-# 9. BENCHMARKING — 3 EMPRESAS MAIS SIMILARES
+## 9. BENCHMARKING — 3 EMPRESAS MAIS SIMILARES
 
-## 9.1 COMO FUNCIONA
+### 9.1 COMO FUNCIONA
 
 O benchmarking é um subproduto natural do KNN. Após classificar a empresa
 nova, o script recupera os 3 vizinhos mais próximos encontrados pelo modelo
@@ -476,7 +476,7 @@ durante a predição — ou seja, as 3 empresas da base de treino cujo vetor de
 features tem menor distância euclidiana (após normalização pelo StandardScaler)
 ao vetor da empresa nova.
 
-## 9.2 O QUE É EXIBIDO
+### 9.2 O QUE É EXIBIDO
 
 Para cada uma das 3 empresas mais similares, o relatório exibe:
   - Nome da empresa
@@ -485,7 +485,7 @@ Para cada uma das 3 empresas mais similares, o relatório exibe:
   - Score total na escala ESG Enterprise
   - Distância euclidiana (0 = idêntica, quanto menor mais similar)
 
-## 9.3 INTERPRETAÇÃO PRÁTICA
+### 9.3 INTERPRETAÇÃO PRÁTICA
 
 O benchmarking responde à pergunta: "quais empresas já avaliadas têm perfil
 ESG mais parecido com o meu?" Se os vizinhos mais próximos são majoritariamente
@@ -496,9 +496,9 @@ O gestor pode ainda usar os vizinhos como referência: "empresas similares à
 minha já implementaram estas práticas — o que elas fazem que eu ainda não faço?"
 
 
-# 10. MODOS DE EXECUÇÃO
+## 10. MODOS DE EXECUÇÃO
 
-## 10.1 MODO ARQUIVO (--arquivo ou -a)
+### 10.1 MODO ARQUIVO (--arquivo ou -a)
 
 Recebe um arquivo CSV ou Excel com uma ou mais empresas. O arquivo deve conter
 obrigatoriamente as seguintes colunas:
@@ -515,7 +515,7 @@ Execução:
 Para múltiplas empresas, cada linha do arquivo gera um relatório completo
 e independente.
 
-## 10.2 MODO INTERATIVO (--interativo ou -i)
+### 10.2 MODO INTERATIVO (--interativo ou -i)
 
 O script solicita os dados diretamente pelo terminal, um campo por vez:
 nome da empresa, setor e os três scores. Útil para avaliações pontuais sem
@@ -525,7 +525,7 @@ Execução:
   python esg_predicao.py --interativo
 
 
-# 11. ESTRUTURA DO RELATÓRIO DE SAÍDA
+## 11. ESTRUTURA DO RELATÓRIO DE SAÍDA
 
 Para cada empresa avaliada, o relatório impresso no terminal contém seis seções:
 
@@ -554,7 +554,7 @@ Para cada empresa avaliada, o relatório impresso no terminal contém seis seç�
     aprendida pelo Random Forest.
 
 
-# 12. ARQUIVOS NECESSÁRIOS PARA EXECUÇÃO
+## 12. ARQUIVOS NECESSÁRIOS PARA EXECUÇÃO
 
 O script depende dos seguintes arquivos gerados pelo esg_pipeline.py:
 
@@ -576,7 +576,7 @@ Se qualquer um desses arquivos estiver ausente, o script exibe mensagem de
 erro e solicita que o esg_pipeline.py seja executado primeiro.
 
 
-# 13. LIMITAÇÕES E CONSIDERAÇÕES
+## 13. LIMITAÇÕES E CONSIDERAÇÕES
 
 1. ESCALA DE ENTRADA
    Os scores informados devem estar na escala ESG Enterprise (0–1.000 por pilar).
@@ -601,8 +601,7 @@ erro e solicita que o esg_pipeline.py seja executado primeiro.
    recomendável re-executar o esg_pipeline.py para atualizar os modelos e
    os pesos por indústria com os padrões mais recentes.
 
-
-================================================================================
+==
 Fim da documentação — esg_predicao.py
 Edenred Brasil | CESAR School 2025
-================================================================================
+==

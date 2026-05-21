@@ -6,6 +6,7 @@ import joblib
 import warnings
 warnings.filterwarnings("ignore")
 
+ARQUIVO_DADOS = "./data/bronze/base_processada.csv"
 PASTA_MODELOS = "./modelos"
 
 PLANOS_ACAO = {
@@ -342,14 +343,11 @@ def entrada_interativa():
 
 # ──────────────────────────────────────────────────────────────────
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Classificação ESG — Edenred Brasil")
-    grupo = parser.add_mutually_exclusive_group(required=True)
-    grupo.add_argument("--arquivo", "-a", metavar="ARQUIVO", help="CSV/Excel com colunas: name, industry, environment_score, social_score, governance_score")
-    grupo.add_argument("--interativo", "-i", action="store_true", help="Entrada manual no terminal")
-    args = parser.parse_args()
-
-    if args.interativo:
-        entrada_interativa()
+def start(arquivo: str = ARQUIVO_DADOS):
+    if arquivo:
+        processar_arquivo(arquivo)
     else:
-        processar_arquivo(args.arquivo)
+         entrada_interativa()
+
+if __name__ == "__main__":
+    start()

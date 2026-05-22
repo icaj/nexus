@@ -10,12 +10,12 @@ from dotenv import load_dotenv
 
 ARQUIVO_BASE_PROCESSADA = Path("./data/bronze/base_processada.csv")
 ARQUIVO_PESOS_INDUSTRIA = Path("./data/bronze/pesos_por_industria.csv")
-#ARQUIVO_BRUTO = Path("./data/raw/data.csv")
+ARQUIVO_BRUTO = Path("./data/raw/data.csv")
 
 SCHEMA_NAME = "public"
 TABELA_BASE_PROCESSADA = "esg_base_processada"
 TABELA_PESOS_INDUSTRIA = "esg_pesos_industria"
-#TABELA_DADOS_BRUTOS = "esg_dados_brutos"
+TABELA_DADOS_BRUTOS = "esg_dados_brutos"
 
 
 def obter_database_url() -> str:
@@ -152,41 +152,53 @@ def carregar_pesos_industria(caminho: Path) -> pd.DataFrame:
     return df
 
 
-#def carregar_dados_brutos(caminho: Path) -> pd.DataFrame:
-#    df = pd.read_csv(caminho, sep=",", encoding="utf-8")
+def carregar_dados_brutos(caminho: Path) -> pd.DataFrame:
+    df = pd.read_csv(caminho, sep=",", encoding="utf-8")
 
-#    colunas_int = [
-#        "environment_score",
-#        "social_score",
-#        "governance_score",
-#        "total_score",
-#    ]
+    colunas_obrigatorias = [
+    ]
 
-#    colunas_float = [
-#        "score_ponderado",
-#        "risco",
-#        "impacto",
-#    ]
+    colunas_ausentes = [col for col in colunas_obrigatorias if col not in df.columns]
 
-#    for col in colunas_int:
-#        df[col] = pd.to_numeric(df[col], errors="raise").astype("int64")
+    if colunas_ausentes:
+        raise ValueError(
+            f"Colunas ausentes em {caminho}: {', '.join(colunas_ausentes)}"
+        )
 
-#    for col in colunas_float:
-#        df[col] = pd.to_numeric(df[col], errors="raise").astype("float64")
+    df = df[colunas_obrigatorias].copy()
 
-#    colunas_texto = [
-#        "name",
-#        "industry",
-#        "total_grade",
-#        "total_level",
-#        "maturidade",
-#        "quadrante",
-#    ]
+    colunas_int = [
+        "environment_score",
+        "social_score",
+        "governance_score",
+        "total_score",
+    ]
 
-#    for col in colunas_texto:
-#       df[col] = df[col].fillna("").astype(str).str.strip()
+    colunas_float = [
+        "score_ponderado",
+        "risco",
+        "impacto",
+    ]
 
-#    return df
+    for col in colunas_int:
+        df[col] = pd.to_numeric(df[col], errors="raise").astype("int64")
+
+    for col in colunas_float:
+        df[col] = pd.to_numeric(df[col], errors="raise").astype("float64")
+
+    colunas_texto = [
+        "name",
+        "industry",
+        "total_grade",
+        "total_level",
+        "maturidade",
+        "quadrante",
+    ]
+
+    for col in colunas_texto:
+        df[col] = df[col].fillna("").astype(str).str.strip()
+
+    return df
 
 
 def criar_tabelas_e_indices(conn: psycopg.Connection) -> None:
@@ -320,7 +332,28 @@ def importar_base_processada(conn: psycopg.Connection, df: pd.DataFrame) -> None
 
     copy_dataframe(conn, df, TABELA_BASE_PROCESSADA, colunas)
 
+def importar_dados_brutos(conn: psycopg.Connection, df: pd.DataFrame) -> None:
+    """
+    Importa o CSV dados_brutos.csv para a tabela esg_dados_brutos.
+    """
+    colunas = [
+        "name",
+        "industry",
+        "environment_score",
+        "social_score",
+        "governance_score",
+        "total_score",
+        "score_ponderado",
+        "total_grade",
+        "total_level",
+        "maturidade",
+        "risco",
+        "impacto",
+        "quadrante",
+    ]
 
+    copy_dataframe(conn, df, TABELA_DADOS_BRUTOS, colunas)
+    
 def importar_pesos_industria(conn: psycopg.Connection, df: pd.DataFrame) -> None:
     """
     Importa o CSV pesos_por_industria.csv para a tabela esg_pesos_industria.
@@ -354,17 +387,18 @@ def main() -> None:
         print(f"Arquivo {ARQUIVO_PESOS_INDUSTRIA} não encontrado. Verifique o caminho e tente novamente.")
         return
     
-#    if validar_arquivo(ARQUIVO_BRUTO) == -1:
-#        print(f"Arquivo {ARQUIVO_BRUTO} não encontrado. Verifique o caminho e tente novamente.")
-#        return
+    if validar_arquivo(ARQUIVO_BRUTO) == -1:
+        print(f"Arquivo {ARQUIVO_BRUTO} não encontrado. Verifique o caminho e tente novamente.")
+        return
 
     print("Carregando CSVs...")
     df_base = carregar_base_processada(ARQUIVO_BASE_PROCESSADA)
     df_pesos = carregar_pesos_industria(ARQUIVO_PESOS_INDUSTRIA)
-#    df_bruto = carregar_dados_brutos(ARQUIVO_BRUTO)
+#   df_bruto = carregar_dados_brutos(ARQUIVO_BRUTO)
 
     print(f"Registros base_processada.csv: {len(df_base)}")
     print(f"Registros pesos_por_industria.csv: {len(df_pesos)}")
+#   print(f"Registros dados_brutos.csv: {len(df_bruto)}")
 
     database_url = obter_database_url()
 
@@ -383,6 +417,9 @@ def main() -> None:
 
             print("Importando base processada...")
             importar_base_processada(conn, df_base)
+
+            print("Importando dados brutos...")
+            importar_dados_brutos(conn, df_bruto)
 
             print("Importação concluída com sucesso.")
 

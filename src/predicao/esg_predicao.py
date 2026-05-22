@@ -1,12 +1,10 @@
 import sys
-import argparse
 import pandas as pd
-import numpy as np
 import joblib
 import warnings
 warnings.filterwarnings("ignore")
 
-ARQUIVO_DADOS = "./data/bronze/base_processada.csv"
+ARQUIVO_DADOS = "./data/raw/data.csv"
 PASTA_MODELOS = "./modelos"
 
 PLANOS_ACAO = {

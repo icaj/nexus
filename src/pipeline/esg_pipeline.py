@@ -689,7 +689,7 @@ def etapa7_salvar(df, knn_final, rf_final, le_ind, le_target,
 # ──────────────────────────────────────────────────────────────────
 # EXECUÇÃO PRINCIPAL
 # ──────────────────────────────────────────────────────────────────
-def start():
+def main():
     print("╔══════════════════════════════════════════════════════════╗")
     print("║  PIPELINE ESG — BASE ESG ENTERPRISE                      ║")
     print("║  Edenred Brasil | CESAR School 2025                      ║")
@@ -709,4 +709,4 @@ def start():
     print("╚══════════════════════════════════════════════════════════╝")
 
 if __name__ == "__main__":
-    start()
+    main()

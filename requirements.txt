@@ -1,10 +1,43 @@
-pandas
-numpy
-scikit-learn
-matplotlib
-seaborn
-joblib
-kagglehub
-python-dotenv
-psycopg2-binary
-psycopg[binary]
+# ESG Nexus Enterprise — Merged (nexus_v2 + Enterprise)
+# Pipeline ML: KNN + Random Forest (GridSearchCV), base ESG tratada em data/raw/data.csv
+# Infraestrutura: FastAPI, NeonDB (PostgreSQL), JWT, Docker, MLflow, Airflow
+
+# ── API e servidor ─────────────────────────────────────────────────
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
+
+# ── Banco de dados ─────────────────────────────────────────────────
+sqlalchemy>=2.0
+psycopg[c]>=3.2          # extensão C compilada — mais rápida em produção (GCP/Docker)
+python-dotenv>=1.0
+
+# ── Segurança / Auth ───────────────────────────────────────────────
+python-jose[cryptography]>=3.3
+bcrypt>=4.0.1
+email-validator>=2.0
+
+# ── Machine Learning (nexus_v2) ───────────────────────────────────
+pandas>=2.2
+numpy>=1.24
+scikit-learn>=1.4
+joblib>=1.4
+
+# ── Dashboard e visualização ──────────────────────────────────────
+streamlit>=1.36
+plotly>=5.22
+matplotlib>=3.7
+openpyxl>=3.1
+
+# ── Configurações e logging ───────────────────────────────────────
+pydantic-settings>=2.2
+structlog>=24.1
+
+# ── MLflow (opcional) ─────────────────────────────────────────────
+mlflow>=2.12
+
+# ── Servidor WSGI para produção (GCP) ────────────────────────────
+gunicorn>=22.0
+
+# ── Airflow (instalar separado — ver README) ───────────────────────
+# apache-airflow>=2.9

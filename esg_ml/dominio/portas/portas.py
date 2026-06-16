@@ -1,0 +1,19 @@
+# esg_ml/dominio/portas/portas.py
+from typing import Protocol, Any, List
+import pandas as pd
+from esg_ml.dominio.entidades.empresa import Empresa
+from esg_ml.dominio.entidades.diagnostico import DiagnosticoESG
+
+class RepositorioDadosBrutos(Protocol):
+    def carregar(self) -> pd.DataFrame: ...
+
+class RepositorioEmpresas(Protocol):
+    def listar_empresas(self) -> List[Empresa]: ...
+
+class RepositorioModelos(Protocol):
+    def salvar(self, nome: str, modelo: Any, metadados: dict) -> None: ...
+    def carregar(self, nome: str) -> tuple: ...
+    def existe(self, nome: str) -> bool: ...
+
+class Notificador(Protocol):
+    def publicar(self, diagnosticos: List[DiagnosticoESG]) -> None: ...
